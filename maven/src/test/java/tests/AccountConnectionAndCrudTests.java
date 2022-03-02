@@ -30,7 +30,7 @@ public class AccountConnectionAndCrudTests extends elementsInAccountConnection{
 
 	  @AfterMethod
 	  public void afterTest() {
-		  driver.quit();
+		  //driver.quit();
 	  }
 	
   @Test
@@ -154,7 +154,6 @@ public class AccountConnectionAndCrudTests extends elementsInAccountConnection{
 		String ErrorMesTaknon=errorMesTaknon.getText();
 		errMes.add(ErrorMesTaknon);
 		functions.checkingErrorMesAccount(errMes);
-		 driver.quit();
 
   }
 
