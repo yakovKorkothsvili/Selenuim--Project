@@ -35,7 +35,7 @@ public class elementsTests {
 	static public WebElement errMesOrderId;
 	static public WebElement errMesphone;
 	static public WebElement errMes1phone;
-	
+	//butiqSparimCatgorys elements
 	static public WebElement noshimButton;
 	static public List <WebElement> categories;
 	static public WebElement allBooks;
@@ -105,4 +105,10 @@ public class elementsTests {
 	static public int YdisBackround;
 	static public String ColordisBackround;
 	static public int[]location;
+	//elements valuesInTable
+	static public WebElement pricesButton;
+	static public WebElement albumimButton;
+	static public List <WebElement> rowPrices;
+	static public List <WebElement> rowPrices2;
+	static public List <WebElement> rowPrices3;
 }

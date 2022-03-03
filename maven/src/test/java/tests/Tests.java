@@ -332,5 +332,17 @@ public class Tests extends elementsTests{
 	  functions.cssValueDiscount(location, ColordisText, ColordisBackround);
   }
   
+  @Test
+  static public void valuesInTable() throws InterruptedException {
+	 pricesButton=driver.findElement(By.xpath("//div[@class='menu-tabs']//button[@data-tab-title-id='806']"));
+	  js.executeScript("arguments[0].click();", pricesButton);
+	  albumimButton=driver.findElement(By.xpath("//nav[@class='tabs-content tabs-content--visible']//img[@alt='מחירי אלבומים ומשלוחים']"));
+	  js.executeScript("arguments[0].click();", albumimButton);
+	  Thread.sleep(3500);
+	  rowPrices=driver.findElements(By.xpath("//div[@class='table-responsive']//tr[2]//span[@class='price_list_table_format_price_number']"));
+	  rowPrices2=driver.findElements(By.xpath("//div[@class='table-responsive']//tr[3]//span[@class='price_list_table_format_price_number']"));
+	  rowPrices3=driver.findElements(By.xpath("//div[@class='table-responsive']//tr[4]//span[@class='price_list_table_format_price_number']"));
+	  functions.tableValues(rowPrices, rowPrices2, rowPrices3);
+  }
   
 }
