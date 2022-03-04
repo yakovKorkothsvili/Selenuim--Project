@@ -12,19 +12,35 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.IntPredicate;
 
+import org.apache.xmlbeans.impl.xb.xsdschema.Public;
+import org.checkerframework.common.value.qual.StaticallyExecutable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 public class Tests extends elementsTests{
 
+  @Parameters ("browser")
   @BeforeMethod
-  public void beforeTest() throws InterruptedException {
-  WebDriverManager.chromedriver().setup();
-  driver=new ChromeDriver();
+  public static void beforeTest(String browser) throws InterruptedException {
+	  try {
+		if (browser.equals("chrome")) {
+			WebDriverManager.chromedriver().setup();
+			  driver=new ChromeDriver();
+		}
+		else if (browser.equals("FF")) {
+			WebDriverManager.firefoxdriver().setup();
+			  driver=new FirefoxDriver();
+		}
+	} catch (Exception e) {
+	}
   driver.manage().window().maximize();
   driver.get("https://www.lupa.co.il/");
   js=(JavascriptExecutor) driver;
@@ -41,7 +57,7 @@ public class Tests extends elementsTests{
 
   @AfterMethod
   public void afterTest()  {
-  //driver.quit();
+  driver.quit();
   }
 
   @Test(priority = 1)
@@ -338,7 +354,7 @@ public class Tests extends elementsTests{
 	  js.executeScript("arguments[0].click();", pricesButton);
 	  albumimButton=driver.findElement(By.xpath("//nav[@class='tabs-content tabs-content--visible']//img[@alt='מחירי אלבומים ומשלוחים']"));
 	  js.executeScript("arguments[0].click();", albumimButton);
-	  Thread.sleep(3500);
+	  Thread.sleep(2500);
 	  rowPrices=driver.findElements(By.xpath("//div[@class='table-responsive']//tr[2]//span[@class='price_list_table_format_price_number']"));
 	  rowPrices2=driver.findElements(By.xpath("//div[@class='table-responsive']//tr[3]//span[@class='price_list_table_format_price_number']"));
 	  rowPrices3=driver.findElements(By.xpath("//div[@class='table-responsive']//tr[4]//span[@class='price_list_table_format_price_number']"));
