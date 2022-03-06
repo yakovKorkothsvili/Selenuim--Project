@@ -111,4 +111,9 @@ public class elementsTests {
 	static public List <WebElement> rowPrices;
 	static public List <WebElement> rowPrices2;
 	static public List <WebElement> rowPrices3;
+	//elements amountOfPages
+	static public WebElement plus;
+	static public WebElement pages;
+	static public String[]amuont=new String[8];
+	static public WebElement popupAd;
 }

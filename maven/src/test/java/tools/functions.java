@@ -341,6 +341,19 @@ public class functions {
 			  		}
 			  	}
 	}
+	static public void amuontOfPages(String[]pages) {
+		System.out.println("");
+		System.out.println("results for amuontOfPages");
+		String[]amuont1={"28","32","36","40","44","48","52","56"};
+		for (int i = 0; i < amuont1.length; i++) {
+			if (pages[i].equals(amuont1[i])) {
+				System.out.println("number "+amuont1[i]+" is visible");
+			}
+			else {
+				System.out.println("number "+amuont1[i]+" is NOT visible");
+			}
+		}
+	}
 	
 	
 	

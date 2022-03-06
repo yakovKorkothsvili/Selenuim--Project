@@ -18,6 +18,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -27,20 +28,22 @@ import org.testng.annotations.Parameters;
 
 public class Tests extends elementsTests{
 
-  @Parameters ("browser")
+ // @Parameters ("browser")
   @BeforeMethod
-  public static void beforeTest(String browser) throws InterruptedException {
-	  try {
-		if (browser.equals("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			  driver=new ChromeDriver();
-		}
-		else if (browser.equals("FF")) {
-			WebDriverManager.firefoxdriver().setup();
-			  driver=new FirefoxDriver();
-		}
-	} catch (Exception e) {
-	}
+  public static void beforeTest() throws InterruptedException {
+//	  try {
+//		if (browser.equals("chrome")) {
+//			WebDriverManager.chromedriver().setup();
+//			  driver=new ChromeDriver();
+//		}
+//		else if (browser.equals("Edge")) {
+//			WebDriverManager.edgedriver().setup();
+//			  driver=new EdgeDriver();
+//		}
+//	} catch (Exception e) {
+//	}
+	  WebDriverManager.edgedriver().setup();
+	  driver=new EdgeDriver();
   driver.manage().window().maximize();
   driver.get("https://www.lupa.co.il/");
   js=(JavascriptExecutor) driver;
@@ -57,7 +60,7 @@ public class Tests extends elementsTests{
 
   @AfterMethod
   public void afterTest()  {
-  driver.quit();
+  //driver.quit();
   }
 
   @Test(priority = 1)
@@ -359,6 +362,25 @@ public class Tests extends elementsTests{
 	  rowPrices2=driver.findElements(By.xpath("//div[@class='table-responsive']//tr[3]//span[@class='price_list_table_format_price_number']"));
 	  rowPrices3=driver.findElements(By.xpath("//div[@class='table-responsive']//tr[4]//span[@class='price_list_table_format_price_number']"));
 	  functions.tableValues(rowPrices, rowPrices2, rowPrices3);
+  }
+  
+  @Test
+  static public void amountOfPages() throws InterruptedException {
+		 pricesButton=driver.findElement(By.xpath("//div[@class='menu-tabs']//button[@data-tab-title-id='806']"));
+		  js.executeScript("arguments[0].click();", pricesButton);
+		  albumimButton=driver.findElement(By.xpath("//nav[@class='tabs-content tabs-content--visible']//img[@alt='מחירי אלבומים ומשלוחים']"));
+		  js.executeScript("arguments[0].click();", albumimButton);
+		  Thread.sleep(6500);
+		  popupAd=driver.findElement(By.xpath("//div//div[@role='button']"));
+		  js.executeScript("arguments[0].click();", popupAd);
+		  plus=driver.findElement(By.id("plus_sign"));
+		  pages=driver.findElement(By.id("pages-number-subtitle"));
+		  for (int i = 0; i < 8; i++) {
+			 plus.click();
+			 Thread.sleep(600);
+			 amuont[i]=pages.getText();
+		}
+		  functions.amuontOfPages(amuont);
   }
   
 }
