@@ -28,22 +28,22 @@ import org.testng.annotations.Parameters;
 
 public class Tests extends elementsTests{
 
- // @Parameters ("browser")
+  @Parameters ("browser")
   @BeforeMethod
-  public static void beforeTest() throws InterruptedException {
-//	  try {
-//		if (browser.equals("chrome")) {
-//			WebDriverManager.chromedriver().setup();
-//			  driver=new ChromeDriver();
-//		}
-//		else if (browser.equals("Edge")) {
-//			WebDriverManager.edgedriver().setup();
-//			  driver=new EdgeDriver();
-//		}
-//	} catch (Exception e) {
-//	}
-	  WebDriverManager.edgedriver().setup();
-	  driver=new EdgeDriver();
+  public static void beforeTest(String browser) throws InterruptedException {
+	  try {
+		if (browser.equals("chrome")) {
+			WebDriverManager.chromedriver().setup();
+			  driver=new ChromeDriver();
+		}
+		else if (browser.equals("Edge")) {
+			WebDriverManager.edgedriver().setup();
+			  driver=new EdgeDriver();
+		}
+	} catch (Exception e) {
+	}
+//	  WebDriverManager.edgedriver().setup();
+//	  driver=new EdgeDriver();
   driver.manage().window().maximize();
   driver.get("https://www.lupa.co.il/");
   js=(JavascriptExecutor) driver;
