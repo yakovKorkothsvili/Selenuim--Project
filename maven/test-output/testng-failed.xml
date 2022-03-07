@@ -6,8 +6,8 @@
       <class name="tests.Tests">
         <methods>
           <include name="afterTest"/>
+          <include name="Links"/>
           <include name="beforeTest"/>
-          <include name="amountOfPages"/>
         </methods>
       </class> <!-- tests.Tests -->
     </classes>

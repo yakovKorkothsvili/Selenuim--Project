@@ -116,4 +116,7 @@ public class elementsTests {
 	static public WebElement pages;
 	static public String[]amuont=new String[8];
 	static public WebElement popupAd;
+	//elements Links
+	static public List<WebElement>linkS;
+	static public String[] url;
 }

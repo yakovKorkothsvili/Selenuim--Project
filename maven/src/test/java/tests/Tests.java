@@ -383,4 +383,19 @@ public class Tests extends elementsTests{
 		  functions.amuontOfPages(amuont);
   }
   
+  @Test
+  static public void Links() throws InterruptedException {
+	
+	  linkS=driver.findElements(By.xpath("//div[@class='row']//ul[@id='menu-%d7%9e%d7%95%d7%a6%d7%a8%d7%99%d7%9d']//a[@href]"));
+	  url=new String[linkS.size()];
+	  for (int i = 0; i < linkS.size(); i++) {
+		  linkS=driver.findElements(By.xpath("//div[@class='row']//ul[@id='menu-%d7%9e%d7%95%d7%a6%d7%a8%d7%99%d7%9d']//a[@href]"));
+		js.executeScript("arguments[0].click();", linkS.get(i));
+	    Thread.sleep(500);
+		url[i]=driver.getCurrentUrl();
+		driver.navigate().back();
+	}
+	  functions.LinksBottomOfThePage(url);
+  }
+  
 }
