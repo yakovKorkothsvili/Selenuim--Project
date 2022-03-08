@@ -42,8 +42,7 @@ public class Tests extends elementsTests{
 		}
 	} catch (Exception e) {
 	}
-//	  WebDriverManager.edgedriver().setup();
-//	  driver=new EdgeDriver();
+
   driver.manage().window().maximize();
   driver.get("https://www.lupa.co.il/");
   js=(JavascriptExecutor) driver;
