@@ -415,7 +415,7 @@ public class Tests extends elementsTests{
 	 Email.sendKeys("yakovgmail.com");
 	 Thread.sleep(500);
 	 js.executeScript("arguments[0].click();", sendKey);
-	 Thread.sleep(1000);
+	Thread.sleep(1000);
 	 errorMessagesElements=driver.findElements(By.xpath("//span[@class='wpcf7-not-valid-tip']"));
 	 
 	 errorMessages=new String[errorMessagesElements.size()];
@@ -423,7 +423,6 @@ public class Tests extends elementsTests{
 		errorMessages[i]=errorMessagesElements.get(i).getText();
 		errorMessages[i].trim();
 	}
-	 System.out.println(errorMessagesElements.size());
 	 functions.LetTalkAboutItFormErrorMes(errorMessages);
   }
   
