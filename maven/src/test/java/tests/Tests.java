@@ -41,8 +41,8 @@ public class Tests extends elementsTests{
   js=(JavascriptExecutor) driver;
   Thread.sleep(500);
   cookie=driver.findElement(By.xpath("//*[@id='Layer_1']"));
-  //popUp=driver.findElement(By.xpath("//div[@id='spu-6651']//i[@class='spu-icon spu-icon-close']"));
   cookie.click();
+//popUp=driver.findElement(By.xpath("//div[@id='spu-6651']//i[@class='spu-icon spu-icon-close']"));
 //  popUp2=driver.findElement(By.xpath("//button[@class='inner-element']"));
   menuLinks=driver.findElements(By.xpath("//ul[@data-tab-content-id='801']//li"));
   menuAlbumTmonot=driver.findElement(By.xpath("//menu[@class='desktop-menu ']//button[@data-tab-title-id='801']"));
@@ -327,7 +327,7 @@ public class Tests extends elementsTests{
  }
   
   @Test
-  static public void cssValueDiscount() {
+  static public void cssValueDiscount() throws InterruptedException {
 	  discountText=driver.findElement(By.xpath("//div[@class='tabs-logo-discount-wrapper']//p"));
 	  discountBackround=driver.findElement(By.xpath("//div[@class='tabs-logo-discount-wrapper']//a[@href='#spu-6651']"));
 	  point=discountText.getLocation();
@@ -397,8 +397,8 @@ public class Tests extends elementsTests{
   static public void LetTalkAboutItForm() throws InterruptedException {
 	  haskimButton=driver.findElement(By.xpath("//ul[@class='top-nav-items']//li[2]"));
 	  haskimButton.click();
-	  POPup=driver.findElement(By.xpath("//div[@role='button' and @aria-label]"));
 	  Thread.sleep(1500);
+	  POPup=driver.findElement(By.xpath("//div[@role='button' and @aria-label]"));
 	  js.executeScript("arguments[0].click();", POPup);
 	 letsTalkAboutIt=driver.findElement(By.xpath("//div[@class='page-header__content aos-init aos-animate']//a"));
 	 js.executeScript("arguments[0].click();", letsTalkAboutIt);
@@ -415,7 +415,7 @@ public class Tests extends elementsTests{
 	 Email.sendKeys("yakovgmail.com");
 	 Thread.sleep(500);
 	 js.executeScript("arguments[0].click();", sendKey);
-	Thread.sleep(1000);
+	Thread.sleep(2000);
 	 errorMessagesElements=driver.findElements(By.xpath("//span[@class='wpcf7-not-valid-tip']"));
 	 
 	 errorMessages=new String[errorMessagesElements.size()];
@@ -424,6 +424,31 @@ public class Tests extends elementsTests{
 		errorMessages[i].trim();
 	}
 	 functions.LetTalkAboutItFormErrorMes(errorMessages);
+  }
+  
+  @Test
+  static public void contactMeForm() throws InterruptedException {
+	  haskimButton=driver.findElement(By.xpath("//ul[@class='top-nav-items']//li[2]"));
+	  haskimButton.click();
+	  Thread.sleep(1000);
+	  POPup=driver.findElement(By.xpath("//div[@role='button' and @aria-label]"));
+	  js.executeScript("arguments[0].click();", POPup);
+	  firstName=driver.findElement(By.id("business-form-private-name"));
+	  lastName=driver.findElement(By.id("business-form-family-name"));
+	  EMAIL=driver.findElement(By.id("business-form-email"));
+	  sendButton=driver.findElement(By.xpath("//form[@class='business-form']//div[@class='lupa_btn form_btn register-email-btn']//a"));
+	  firstName.sendKeys("ì");
+	  lastName.sendKeys("ò");
+	  EMAIL.sendKeys("jsmhonigmail.com");
+	  js.executeScript("arguments[0].click();", sendButton);
+	  Thread.sleep(1500);
+	  errmes=driver.findElements(By.xpath("//div[@class='lupa-error-message ']//span"));
+	  errorElements=new String[errmes.size()];
+	  for (int i = 0; i < errmes.size(); i++) {
+		errorElements[i]=errmes.get(i).getText();
+		errorElements[i]=errorElements[i].trim();
+	}
+	  functions.ContactMe(errorElements);
   }
   
 }

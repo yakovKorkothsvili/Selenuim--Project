@@ -31,6 +31,7 @@ public class functions {
 	            	System.out.println("the link "+LinksNames.get(i)+" is working");
                 	}
 	            else {
+	            	Thread.sleep(300);
 	            	System.err.println("the link "+LinksNames.get(i)+" is not working");
 				}
             }
@@ -57,17 +58,18 @@ public class functions {
 			}
 		}
 	}
-	static public void checkingConnctionToFacebook(String name) {
+	static public void checkingConnctionToFacebook(String name) throws InterruptedException {
 		System.out.println(" ");
 		System.out.println("results for connction to facebook");
 		if (name.contains("אהלן John")||name.contains("אהלן yakov")) {
 			System.out.println("the account has been connected with facebook");
 		}
 		else {
+			Thread.sleep(300);
 			System.err.println("the account didnt connect");
 		}
 	}
-	static public void checkingBotiqSparim(WebElement howManyLikes, List<WebElement>likeButtons) {
+	static public void checkingBotiqSparim(WebElement howManyLikes, List<WebElement>likeButtons) throws InterruptedException {
 		System.out.println("");
 		System.out.println("results like button butiq sparim");
 		String Likes=howManyLikes.getText();
@@ -76,10 +78,11 @@ public class functions {
 			System.out.println("all the like buttons r working and has been transferred to the 'like' category");
 		}
 		else {
+			Thread.sleep(300);
 			System.err.println("not all the like buttons r working");
 		}
 	}
-	static public void errMesOrderAndPhoneFields(String errorOrderId, String errorPhoneField, String errorPhoneField1){
+	static public void errMesOrderAndPhoneFields(String errorOrderId, String errorPhoneField, String errorPhoneField1) throws InterruptedException{
 		System.out.println(" ");
 		System.out.println("results for error message on tracking order");
 		String errorMes[]=new String[3];
@@ -97,6 +100,7 @@ public class functions {
 				
 			}
 			else {
+				Thread.sleep(300);
 				System.err.println("somthing went wrong in error message "+errMessage[i]);
 			}
 		}
@@ -172,13 +176,14 @@ public class functions {
 		}
 		
 	}
-	static public void designCheck(String harzlDesign, String mosahDesign) {
+	static public void designCheck(String harzlDesign, String mosahDesign) throws InterruptedException {
 		System.out.println("");
 		System.out.println("results for edit pics");
 		if (harzlDesign.equals("divImgOptionMainBlack")) {
 			System.out.println("the design for the harzl pic has been picked");
 		}
 		else {
+			Thread.sleep(300);
 			System.err.println("somthing went wrong with picking the design for harzl");
 		}
 		
@@ -186,6 +191,7 @@ public class functions {
 			System.out.println("the design for mosah pic has been picked");
 		}
 		else {
+			Thread.sleep(300);
 			System.out.println("somthing went wrong in picking the design for mosah pic");
 		}
 	}
@@ -202,12 +208,14 @@ public class functions {
 			System.out.println("location of the logo is in the right place");
 		}
 		else {
+			Thread.sleep(300);
 			System.err.println("location of the logo is in the wrong place");
 		}
 		if (widthlogo==widthLogo && heightlogo==heightLogo) {
 			System.out.println("width and height of the logo is right");
 		}
 		else {
+			Thread.sleep(300);
 			System.err.println("width and height of the logo is wrong");
 		}
 	}
@@ -224,6 +232,7 @@ public class functions {
 				if (i==0||i==1) {
 					System.out.println(name[i]+" of "+names[0]+" is correct");
 				} else {
+					Thread.sleep(300);
 					System.out.println(name[i]+" of "+names[1]+" is correct");
 				}
 			}	
@@ -257,7 +266,7 @@ public class functions {
 			}
 		}
 	}
-	static public void cssValueDiscount(int[]location, String ColorText, String ColorBackround) {
+	static public void cssValueDiscount(int[]location, String ColorText, String ColorBackround) throws InterruptedException {
 		System.out.println(" ");
 		System.out.println("the results for test cssValueDiscound");
 		int []locationOf=new int[]{71,77,45,66};
@@ -268,6 +277,7 @@ public class functions {
 			if (location[i]==locationOf[i]) {
 					System.out.println("location of "+name[0]+" is in place");
 			}else {
+				Thread.sleep(300);
 				System.err.println("location of "+name[0]+" is not in place");	
       		}	
 		}
@@ -275,6 +285,7 @@ public class functions {
 			if (location[i]==locationOf[i]) {
 				System.out.println("location of "+name[1]+" is in place");
 		}else {
+			Thread.sleep(300);
 			System.err.println("location of "+name[1]+" is not in place");	
   		}	
 	}
@@ -283,16 +294,18 @@ public class functions {
 			System.out.println("color of the "+name[0]+" is right");
 		}
 		else {
+			Thread.sleep(300);
 			System.err.println("color of the "+name[0]+" is wrong");
 		}
 		if (ColorBackround.equals(backroundColor)) {
 			System.out.println("color of the "+name[1]+" is right");
 		}
 		else {
+			Thread.sleep(300);
 			System.err.println("color of the "+name[1]+" is right");
 		}
 }
-	static public void tableValues(List<WebElement> row,List<WebElement>row1, List<WebElement>row2) {
+	static public void tableValues(List<WebElement> row,List<WebElement>row1, List<WebElement>row2) throws InterruptedException {
 		System.out.println(" ");
 		System.out.println("results for test valuesInTable");
 		System.out.println(" ");
@@ -307,6 +320,7 @@ public class functions {
 			System.out.println("the price on row 1 item number "+i+" is correct");
 		}
 		else {
+			Thread.sleep(300);
 			System.err.println("the price on row 1 item number "+i+" is NOT correct");
 		}
 	}
@@ -322,6 +336,7 @@ public class functions {
 	  			System.out.println("the price on row 2 item number "+i+" is correct");
 	  		}
 	  		else {
+	  			Thread.sleep(300);
 	  			System.err.println("the price on row 2 item number "+i+" is NOT correct");
 	  		}
 	  	}
@@ -337,11 +352,12 @@ public class functions {
 			  			System.out.println("the price on row 3 item number "+i+" is correct");
 			  		}
 			  		else {
+			  			Thread.sleep(300);
 			  			System.err.println("the price on row 3 item number "+i+" is NOT correct");
 			  		}
 			  	}
 	}
-	static public void amuontOfPages(String[]pages) {
+	static public void amuontOfPages(String[]pages) throws InterruptedException {
 		System.out.println("");
 		System.out.println("results for amuontOfPages");
 		String[]amuont1={"28","32","36","40","44","48","52","56"};
@@ -350,11 +366,12 @@ public class functions {
 				System.out.println("number "+amuont1[i]+" is visible");
 			}
 			else {
+				Thread.sleep(300);
 				System.out.println("number "+amuont1[i]+" is NOT visible");
 			}
 		}
 	}
-	static public void LinksBottomOfThePage(String[]Url) {
+	static public void LinksBottomOfThePage(String[]Url) throws InterruptedException {
 		String[]URLS=new String[Url.length];
 		URLS[0]="https://www.lupa.co.il/products/digital-album/";
 		URLS[1]="https://www.lupa.co.il/lupa-squared/tiles/";
@@ -375,11 +392,14 @@ public class functions {
 				System.out.println("menu ' מוצרים ' Link number "+i+" is working");
 			}
 			else {
+				Thread.sleep(300);
 				System.err.println("menu ' מוצרים ' Link number "+i+"is Not working");
 			}
 		}
 	}
-	static public void LetTalkAboutItFormErrorMes(String[]ERROR) {
+	static public void LetTalkAboutItFormErrorMes(String[]ERROR) throws InterruptedException {
+		System.out.println("");
+		System.out.println("results for test LetTalkAboutItForm");
 		String[]error=new String[ERROR.length];
 		error[0]="המינימום לשם פרטי הוא 2 אותית";
 		error[1]="המינימום לשם משפחה הוא 2 אותית";
@@ -393,6 +413,7 @@ public class functions {
 				System.out.println("error message "+error[i]+" is visible");
 			}
 			else {
+				Thread.sleep(300);
 				System.err.println("error message "+error[i]+" is NOT visible");
 			}
 		}
@@ -401,9 +422,24 @@ public class functions {
 //		 numbers=driver.findElements(By.xpath("//div[@aria-haspopup='listbox']//div[@class='lupa-custom-select open']//span"));
 //		 js.executeScript("arguments[0].click();", numbers.get(4));
 	}
-	
-	
-	
+	static public void ContactMe(String [] ERRORMES) throws InterruptedException {
+		System.out.println("");
+		System.out.println("results for test contactMeForm");
+		String[]messages=new String[ERRORMES.length];
+		messages[0]="שם מכיל לפחות 2 אותיות";
+		messages[1]="שם מכיל לפחות 2 אותיות";
+		messages[2]="כתובת המייל אינה חוקית";
+		for (int i = 0; i < messages.length; i++) {
+			if (ERRORMES[i].equals(messages[i])) {
+				System.out.println("error message "+messages[i]+" is visible");
+			}
+			else {
+				Thread.sleep(300);
+				System.err.println("error message "+messages[i]+" is NOT visible");
+			}
+		}
 	}
+	
+}
 
 

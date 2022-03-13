@@ -133,4 +133,11 @@ public class elementsTests {
 	static public List<WebElement>numbers;
 	static public String[] errorMessages;
 	static public List<WebElement> errorMessagesElements;
+	//elements contactMeForm
+	static public WebElement firstName;
+	static public WebElement lastName;
+	static public WebElement EMAIL;
+	static public WebElement sendButton;
+	static public List<WebElement>errmes;
+	static public String[]errorElements;
 }
