@@ -4,62 +4,58 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import tools.elementsTests;
 import tools.functions;
-
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
-import java.util.function.IntPredicate;
-
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
-import org.checkerframework.common.value.qual.StaticallyExecutable;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 public class Tests extends elementsTests{
 
-  @Parameters ("browser")
+//  @Parameters ("browser")
   @BeforeMethod
-  public static void beforeTest(String browser) throws InterruptedException {
-	  try {
-		if (browser.equals("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			  driver=new ChromeDriver();
-		}
-		else if (browser.equals("Edge")) {
-			WebDriverManager.edgedriver().setup();
-			  driver=new EdgeDriver();
-		}
-	} catch (Exception e) {
-	}
-
+  public static void beforeTest() throws InterruptedException {
+//	  try {
+//		if (browser.equals("chrome")) {
+//			WebDriverManager.chromedriver().setup();
+//			  driver=new ChromeDriver();
+//		}
+//		else if (browser.equals("Edge")) {
+//			WebDriverManager.edgedriver().setup();
+//			  driver=new EdgeDriver();
+//		}
+//	} catch (Exception e) {
+//	}
+	  WebDriverManager.chromedriver().setup();
+	  driver=new ChromeDriver();
   driver.manage().window().maximize();
   driver.get("https://www.lupa.co.il/");
   js=(JavascriptExecutor) driver;
   Thread.sleep(500);
   cookie=driver.findElement(By.xpath("//*[@id='Layer_1']"));
-  popUp=driver.findElement(By.xpath("//div[@id='spu-6651']//i[@class='spu-icon spu-icon-close']"));
+  //popUp=driver.findElement(By.xpath("//div[@id='spu-6651']//i[@class='spu-icon spu-icon-close']"));
   cookie.click();
+//  popUp2=driver.findElement(By.xpath("//button[@class='inner-element']"));
   menuLinks=driver.findElements(By.xpath("//ul[@data-tab-content-id='801']//li"));
   menuAlbumTmonot=driver.findElement(By.xpath("//menu[@class='desktop-menu ']//button[@data-tab-title-id='801']"));
   albumDesgin=driver.findElement(By.xpath("//ul[@data-tab-content-id='801']//li[contains(.,'עי')]"));
-  Thread.sleep(10000);
-  js.executeScript("arguments[0].click();", popUp);
+//  js.executeScript("arguments[0].click();", popUp2);
+  //driver.navigate().back();
+//  Thread.sleep(10000);
+//  js.executeScript("arguments[0].click();", popUp);
   }
 
   @AfterMethod
   public void afterTest()  {
- driver.quit();
+ //driver.quit();
   }
 
   @Test(priority = 1)
@@ -395,6 +391,40 @@ public class Tests extends elementsTests{
 		driver.navigate().back();
 	}
 	  functions.LinksBottomOfThePage(url);
+  }
+  
+  @Test
+  static public void LetTalkAboutItForm() throws InterruptedException {
+	  haskimButton=driver.findElement(By.xpath("//ul[@class='top-nav-items']//li[2]"));
+	  haskimButton.click();
+	  POPup=driver.findElement(By.xpath("//div[@role='button' and @aria-label]"));
+	  Thread.sleep(1500);
+	  js.executeScript("arguments[0].click();", POPup);
+	 letsTalkAboutIt=driver.findElement(By.xpath("//div[@class='page-header__content aos-init aos-animate']//a"));
+	 js.executeScript("arguments[0].click();", letsTalkAboutIt);
+	 
+	 privateName=driver.findElement(By.id("business_form_private_name"));
+	 lastNAME=driver.findElement(By.id("business_form_familiy_name"));
+	 phoneNum=driver.findElement(By.id("business_form_phone"));
+	 First3Numbers=driver.findElement(By.xpath("//div[@id='modular_business_service_form']//div[@class='lupa-custom-select__trigger']//span"));
+	 Email=driver.findElement(By.id("business_form_email"));
+	 sendKey=driver.findElement(By.xpath("//div[@class='contact-submit-container']//input")); 
+	 privateName.sendKeys("y");
+	 lastNAME.sendKeys("A");
+	 phoneNum.sendKeys("123456");
+	 Email.sendKeys("yakovgmail.com");
+	 Thread.sleep(500);
+	 js.executeScript("arguments[0].click();", sendKey);
+	 Thread.sleep(1000);
+	 errorMessagesElements=driver.findElements(By.xpath("//span[@class='wpcf7-not-valid-tip']"));
+	 
+	 errorMessages=new String[errorMessagesElements.size()];
+	 for (int i = 0; i < errorMessagesElements.size(); i++) {
+		errorMessages[i]=errorMessagesElements.get(i).getText();
+		errorMessages[i].trim();
+	}
+	 System.out.println(errorMessagesElements.size());
+	 functions.LetTalkAboutItFormErrorMes(errorMessages);
   }
   
 }

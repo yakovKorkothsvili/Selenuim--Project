@@ -379,6 +379,28 @@ public class functions {
 			}
 		}
 	}
+	static public void LetTalkAboutItFormErrorMes(String[]ERROR) {
+		String[]error=new String[ERROR.length];
+		error[0]="המינימום לשם פרטי הוא 2 אותית";
+		error[1]="המינימום לשם משפחה הוא 2 אותית";
+		error[2]="חסר שם חברה";
+		error[3]="חסר מספר עובדים";
+		error[4]="טלפון מכיל 7 ספרות";
+		error[5]="חסרה קידומת";
+		error[6]="כתובת האימייל שהוזנה אינה תקינה.";
+		for (int i = 0; i < error.length; i++) {
+			if (ERROR[i].equals(error[i])) {
+				System.out.println("error message "+error[i]+" is visible");
+			}
+			else {
+				System.err.println("error message "+error[i]+" is NOT visible");
+			}
+		}
+//		 js.executeScript("arguments[0].click();", First3Numbers);
+//		 Thread.sleep(1000);
+//		 numbers=driver.findElements(By.xpath("//div[@aria-haspopup='listbox']//div[@class='lupa-custom-select open']//span"));
+//		 js.executeScript("arguments[0].click();", numbers.get(4));
+	}
 	
 	
 	

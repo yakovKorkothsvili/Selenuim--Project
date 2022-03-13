@@ -16,6 +16,7 @@ public class elementsTests {
     static  public Actions act; 
 	static public  JavascriptExecutor js=null;
 	static public WebElement popUp;
+	static public WebElement popUp2;
 	//test MenuTestAlbumTmonot
     static public WebElement menuAlbumTmonot;
 	static public WebElement cookie;
@@ -119,4 +120,17 @@ public class elementsTests {
 	//elements Links
 	static public List<WebElement>linkS;
 	static public String[] url;
+	//elements LetTalkAboutItForm
+	static public WebElement haskimButton;
+	static public WebElement letsTalkAboutIt;
+    static public WebElement POPup;
+	static public WebElement privateName;
+	static public WebElement lastNAME;
+	static public WebElement First3Numbers;
+    static public WebElement phoneNum;
+    static public WebElement Email;
+	static public WebElement sendKey;
+	static public List<WebElement>numbers;
+	static public String[] errorMessages;
+	static public List<WebElement> errorMessagesElements;
 }
