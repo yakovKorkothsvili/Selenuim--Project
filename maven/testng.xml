@@ -9,7 +9,7 @@
     </classes>
   </test> 
 
-<test thread-count="5" name="TestEdge">
+ <test thread-count="5" name="TestEdge">
    <parameter name="browser" value="Edge"/>
     <classes>
       <class name="tests.Tests"/>

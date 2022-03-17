@@ -14,48 +14,47 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 public class Tests extends elementsTests{
 
-//  @Parameters ("browser")
+ @Parameters ("browser")
   @BeforeMethod
-  public static void beforeTest() throws InterruptedException {
-//	  try {
-//		if (browser.equals("chrome")) {
-//			WebDriverManager.chromedriver().setup();
-//			  driver=new ChromeDriver();
-//		}
-//		else if (browser.equals("Edge")) {
-//			WebDriverManager.edgedriver().setup();
-//			  driver=new EdgeDriver();
-//		}
-//	} catch (Exception e) {
-//	}
-	  WebDriverManager.chromedriver().setup();
-	  driver=new ChromeDriver();
+  public static void beforeTest(String browser) throws InterruptedException {
+	// String browser="chrome";
+	  try {
+		if (browser.equals("chrome")) {
+			WebDriverManager.chromedriver().setup();
+			  driver=new ChromeDriver();
+		}
+		else if (browser.equals("Edge")) {
+			WebDriverManager.edgedriver().setup();
+			  driver=new EdgeDriver();
+		}
+	} catch (Exception e) {
+	}
+	  
+
   driver.manage().window().maximize();
   driver.get("https://www.lupa.co.il/");
   js=(JavascriptExecutor) driver;
+  
+  //cookie pop up
   Thread.sleep(500);
   cookie=driver.findElement(By.xpath("//*[@id='Layer_1']"));
   cookie.click();
-//popUp=driver.findElement(By.xpath("//div[@id='spu-6651']//i[@class='spu-icon spu-icon-close']"));
-//  popUp2=driver.findElement(By.xpath("//button[@class='inner-element']"));
+
   menuLinks=driver.findElements(By.xpath("//ul[@data-tab-content-id='801']//li"));
   menuAlbumTmonot=driver.findElement(By.xpath("//menu[@class='desktop-menu ']//button[@data-tab-title-id='801']"));
   albumDesgin=driver.findElement(By.xpath("//ul[@data-tab-content-id='801']//li[contains(.,'עי')]"));
-//  js.executeScript("arguments[0].click();", popUp2);
-  //driver.navigate().back();
-//  Thread.sleep(10000);
-//  js.executeScript("arguments[0].click();", popUp);
   }
 
   @AfterMethod
   public void afterTest()  {
- //driver.quit();
+ driver.quit();
   }
 
   @Test(priority = 1)
@@ -63,6 +62,7 @@ public class Tests extends elementsTests{
 	  Thread.sleep(1000);
 		menuAlbumTmonot.click();	
 	  List<String> linksName = new ArrayList<String>();
+	  
 	  for (WebElement y:menuLinks) {
 		  Thread.sleep(150);
 		linksName.add(y.getText());
@@ -173,7 +173,7 @@ public class Tests extends elementsTests{
    functions.botiqAmountOfBooksCategory(amountOfBooks, nameOfCategory);
   }
   
-  @Test 
+  @Test (priority = 5)
   static public void connectToFacebookThroughChat() throws InterruptedException{
 	  chatButton=driver.findElement(By.id("services-widget-chat-icon"));
 	  js.executeScript("arguments[0].click();", chatButton);
@@ -183,6 +183,7 @@ public class Tests extends elementsTests{
 	  Thread.sleep(1000);
 	  iframe=driver.findElements(By.tagName("iframe"));
 
+	  
 		for (int i = 0; i < iframe.size(); i++) {
 			try {
 			driver.switchTo().frame(i);
@@ -193,6 +194,7 @@ public class Tests extends elementsTests{
 		driver.switchTo().parentFrame();
 	}
 }
+		
 	  driver.switchTo().parentFrame();
 		tabs = new ArrayList<String> (driver.getWindowHandles());
 		driver.switchTo().window(tabs.get(1));
@@ -207,15 +209,16 @@ public class Tests extends elementsTests{
 			driver.findElement(By.xpath("//span[@class='a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7 ltmttdrg g0qnabr5 ojkyduve' and contains(.,'המשך')]")).click();
 		} catch (Exception NoSuchElementException) {
 		}	
-		Thread.sleep(500);
+		
+		Thread.sleep(2500);
 		driver.switchTo().window(tabs.get(0));
 		iframe1=driver.findElements(By.tagName("iframe"));
 		for (int i = 0; i <iframe1.size(); i++) {
 			try {
 				driver.switchTo().frame(i);
-				nameEmail=driver.findElements(By.xpath("//div[@class='styles__UserProfileDetailsContainer-sc-1jj4i2k-0 kSRUDj']//div"));
-				 name=nameEmail.get(0).getText();
-				 email=nameEmail.get(1).getText();
+				nameEmail=driver.findElements(By.xpath("//div[@class='sc-eInJlc emAJPF']//div"));
+				 name=nameEmail.get(1).getText();
+				 email=nameEmail.get(2).getText();
 
 			} catch (Exception NotSuchElement) {
 				driver.switchTo().parentFrame();
@@ -223,7 +226,7 @@ public class Tests extends elementsTests{
 		}
 		functions.connectionToFacebookChat(name, email);
   }
-  @Test
+  @Test(priority = 6)
   static public void editPics() throws InterruptedException {
 	  howDoUDoLupa=driver.findElement(By.xpath("//button[@data-tab-title-id='810']"));
 	  howDoUDoLupa.click();
@@ -267,7 +270,7 @@ public class Tests extends elementsTests{
 	  js.executeScript("arguments[0].click();",saveMosahPic);
 	  functions.designCheck(harzlDesign, mosahDesign);
   }
-  @Test
+  @Test(priority = 7)
   static public void uxTest() throws InterruptedException {
 	  logo=driver.findElement(By.xpath("//div[@class='tabs-logo-discount-wrapper']//a//img"));
 	  point=logo.getLocation();
@@ -279,7 +282,7 @@ public class Tests extends elementsTests{
 	  
   }
  
-  @Test
+  @Test(priority = 8)
   static public void UXFontColorLinks() throws InterruptedException {
 	  links=driver.findElements(By.xpath("//div[@class='lupa_main_btn_container aos-init aos-animate']//a"));
 	  fontFamliyAlbum=links.get(0).getCssValue("font-family");
@@ -289,7 +292,7 @@ public class Tests extends elementsTests{
 	  FontAndColorLinks.add(fontFamliyAlbum); FontAndColorLinks.add(colorAlbum); FontAndColorLinks.add(fontFamliyKirTmonot); FontAndColorLinks.add(colorKirTmonot);
 	  functions.LinksCss(FontAndColorLinks);  
   }
-  @Test
+  @Test(priority = 9)
   static public void searchResults() throws InterruptedException, AWTException {
 	  chatButton=driver.findElement(By.id("services-widget-chat-icon"));
 	  js.executeScript("arguments[0].click();", chatButton);
@@ -314,6 +317,7 @@ public class Tests extends elementsTests{
 			Thread.sleep(500);
 			results=driver.findElements(By.xpath("//ol[@lang='he']//li//a"));
 			 Results=new ArrayList<String>(results.size());
+			 
 			for (int j = 0; j < results.size(); j++) {
 				b=results.get(j).getText();
 				b=b.trim();
@@ -326,10 +330,10 @@ public class Tests extends elementsTests{
    }				
  }
   
-  @Test
+  @Test(priority = 10)
   static public void cssValueDiscount() throws InterruptedException {
-	  discountText=driver.findElement(By.xpath("//div[@class='tabs-logo-discount-wrapper']//p"));
-	  discountBackround=driver.findElement(By.xpath("//div[@class='tabs-logo-discount-wrapper']//a[@href='#spu-6651']"));
+	  discountText=driver.findElement(By.xpath("//div[@class='tabs-logo-discount-wrapper']//a[@class='promotions-popup-link promotions-popup-trigger popup-trigger spu-clickable']//p"));
+	  discountBackround=driver.findElement(By.xpath("//div[@class='tabs-logo-discount-wrapper']//a[@class='promotions-popup-link promotions-popup-trigger popup-trigger spu-clickable']"));
 	  point=discountText.getLocation();
 	  XdisText=point.getX();
 	  YdisText=point.getY();
@@ -346,7 +350,7 @@ public class Tests extends elementsTests{
 	  functions.cssValueDiscount(location, ColordisText, ColordisBackround);
   }
   
-  @Test
+  @Test(priority = 11)
   static public void valuesInTable() throws InterruptedException {
 	 pricesButton=driver.findElement(By.xpath("//div[@class='menu-tabs']//button[@data-tab-title-id='806']"));
 	  js.executeScript("arguments[0].click();", pricesButton);
@@ -359,7 +363,7 @@ public class Tests extends elementsTests{
 	  functions.tableValues(rowPrices, rowPrices2, rowPrices3);
   }
   
-  @Test
+  @Test(priority = 12)
   static public void amountOfPages() throws InterruptedException {
 		 pricesButton=driver.findElement(By.xpath("//div[@class='menu-tabs']//button[@data-tab-title-id='806']"));
 		  js.executeScript("arguments[0].click();", pricesButton);
@@ -378,7 +382,7 @@ public class Tests extends elementsTests{
 		  functions.amuontOfPages(amuont);
   }
   
-  @Test
+  @Test(priority = 13)
   static public void Links() throws InterruptedException {
 	
 	  linkS=driver.findElements(By.xpath("//div[@class='row']//ul[@id='menu-%d7%9e%d7%95%d7%a6%d7%a8%d7%99%d7%9d']//a[@href]"));
@@ -393,7 +397,7 @@ public class Tests extends elementsTests{
 	  functions.LinksBottomOfThePage(url);
   }
   
-  @Test
+  @Test(priority = 14)
   static public void LetTalkAboutItForm() throws InterruptedException {
 	  haskimButton=driver.findElement(By.xpath("//ul[@class='top-nav-items']//li[2]"));
 	  haskimButton.click();
@@ -426,7 +430,7 @@ public class Tests extends elementsTests{
 	 functions.LetTalkAboutItFormErrorMes(errorMessages);
   }
   
-  @Test
+  @Test(priority = 15)
   static public void contactMeForm() throws InterruptedException {
 	  haskimButton=driver.findElement(By.xpath("//ul[@class='top-nav-items']//li[2]"));
 	  haskimButton.click();
@@ -450,5 +454,37 @@ public class Tests extends elementsTests{
 	}
 	  functions.ContactMe(errorElements);
   }
-  
+  @Test(priority = 16)
+  static public void SendEmailForm() throws InterruptedException {
+	  mainPageMenu=driver.findElements(By.xpath("//nav//li[@class='top-nav-item']"));
+	  mainPageMenu.get(3).click();
+	  
+	  sendEmailButton=driver.findElement(By.xpath("//div[@class='self-service-desktop']//a[@class='email-popup-trigger popup-trigger spu-clickable']"));
+	  js.executeScript("arguments[0].click();", sendEmailButton);
+	  
+	  subjectListButton=driver.findElement(By.id("modular-form-subject"));
+	  js.executeScript("arguments[0].click();", subjectListButton);
+	  dropList=driver.findElements(By.xpath("//div[@id='modular-form-subject']//div[@role='listbox']//span"));
+	  js.executeScript("arguments[0].click();", dropList.get(3));
+	  
+	  PrivateName=driver.findElement(By.id("sales_form_form_private_name"));
+	  LastName=driver.findElement(By.id("sales_form_form_familiy_name"));
+	  PhoneNUMBER=driver.findElement(By.id("sales_form_form_phone"));
+	  email1=driver.findElement(By.id("sales_form_form_email"));
+	  sendEmailButton=driver.findElement(By.xpath("//form[@action='/customer-service/#wpcf7-f7386-o7']//input[@type='submit']"));
+	  PrivateName.sendKeys("a");
+	  LastName.sendKeys("b");
+	  PhoneNUMBER.sendKeys("56784");
+	  email1.sendKeys("stivyslashgmail.com");
+	  js.executeScript("arguments[0].click();", sendEmailButton);
+	  
+	  Thread.sleep(1500);
+	  errorList=driver.findElements(By.xpath("//div[@id='wpcf7-f7386-o7']//span[@class='wpcf7-not-valid-tip']"));
+	  for (int i = 0; i < errorList.size(); i++) {
+		errorMess[i]=errorList.get(i).getText();
+		errorMess[i]=errorMess[i].trim();
+	}
+	  functions.sendEmail(errorMess);
+	  
+  }
 }

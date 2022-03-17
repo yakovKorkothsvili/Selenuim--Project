@@ -140,4 +140,16 @@ public class elementsTests {
 	static public WebElement sendButton;
 	static public List<WebElement>errmes;
 	static public String[]errorElements;
+	//elements SendEmailForm
+	static public WebElement sendEmailButton;
+	static public List<WebElement> mainPageMenu;
+	static public WebElement subjectListButton;
+	static public List <WebElement> dropList;
+	static public WebElement PrivateName;
+	static public WebElement LastName;
+	static public WebElement PhoneNUMBER;
+	static public WebElement email1;
+	static public WebElement SendMailButton;
+	static public List<WebElement>errorList;
+	static public String[]errorMess=new String[7];
 }

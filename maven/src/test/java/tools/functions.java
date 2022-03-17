@@ -2,6 +2,7 @@ package tools;
 
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import org.openqa.selenium.WebElement;
 
@@ -168,7 +169,7 @@ public class functions {
 		System.out.println("");
 		System.out.println("results for connectToFacebookThroughChat");
 		if (name.equals("John Smhoni")&& email.equals("jsmhoni@gmail.com")) {
-			System.out.println("the acoount to facebook through chat is working");
+			System.out.println("the connection to facebook through chat is working");
 		}		
 		else {
 			Thread.sleep(300);
@@ -278,7 +279,7 @@ public class functions {
 					System.out.println("location of "+name[0]+" is in place");
 			}else {
 				Thread.sleep(300);
-				System.err.println("location of "+name[0]+" is not in place");	
+				System.err.println("location of "+name[0]+" is wrong");	
       		}	
 		}
 		for (int i = 2; i < 4; i++) {
@@ -286,7 +287,7 @@ public class functions {
 				System.out.println("location of "+name[1]+" is in place");
 		}else {
 			Thread.sleep(300);
-			System.err.println("location of "+name[1]+" is not in place");	
+			System.err.println("location of "+name[1]+" is wrong");	
   		}	
 	}
 		
@@ -417,10 +418,12 @@ public class functions {
 				System.err.println("error message "+error[i]+" is NOT visible");
 			}
 		}
+		//kidoment!! just in case
 //		 js.executeScript("arguments[0].click();", First3Numbers);
 //		 Thread.sleep(1000);
 //		 numbers=driver.findElements(By.xpath("//div[@aria-haspopup='listbox']//div[@class='lupa-custom-select open']//span"));
 //		 js.executeScript("arguments[0].click();", numbers.get(4));
+		
 	}
 	static public void ContactMe(String [] ERRORMES) throws InterruptedException {
 		System.out.println("");
@@ -440,6 +443,28 @@ public class functions {
 		}
 	}
 	
+	static public void sendEmail(String[]err) throws InterruptedException {
+		System.out.println("");
+		System.out.println("results for test send email form");
+		String[]Messages=new String[7];
+		Messages[0]="יש לבחור נושא";
+		Messages[1]="חסר תוכן לנושא הפניה";
+		Messages[2]="המינימום לשם פרטי הוא 2 אותית";
+		Messages[3]="המינימום לשם משפחה הוא 2 אותית";
+		Messages[4]="טלפון מכיל 7 ספרות";
+		Messages[5]="חסרה קידומת";
+		Messages[6]="כתובת האימייל שהוזנה אינה תקינה.";
+		
+		for (int i = 0; i < Messages.length; i++) {
+			if (err[i].equals(Messages[i])) {
+				System.out.println("error message "+Messages[i]+" is visible");
+			}
+			else {
+				Thread.sleep(200);
+				System.err.println("error message "+Messages[i]+" is NOT visible");
+			}
+		}
+	}
 }
 
 
