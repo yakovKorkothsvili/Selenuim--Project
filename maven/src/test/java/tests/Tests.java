@@ -21,10 +21,10 @@ import org.testng.annotations.Parameters;
 
 public class Tests extends elementsTests{
 
- @Parameters ("browser")
+ //@Parameters ("browser")
   @BeforeMethod
-  public static void beforeTest(String browser) throws InterruptedException {
-	// String browser="chrome";
+  public static void beforeTest() throws InterruptedException {
+	 String browser="chrome";
 	  try {
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -47,6 +47,7 @@ public class Tests extends elementsTests{
   cookie=driver.findElement(By.xpath("//*[@id='Layer_1']"));
   cookie.click();
 
+  //menus top page
   menuLinks=driver.findElements(By.xpath("//ul[@data-tab-content-id='801']//li"));
   menuAlbumTmonot=driver.findElement(By.xpath("//menu[@class='desktop-menu ']//button[@data-tab-title-id='801']"));
   albumDesgin=driver.findElement(By.xpath("//ul[@data-tab-content-id='801']//li[contains(.,'עי')]"));
@@ -332,30 +333,37 @@ public class Tests extends elementsTests{
   
   @Test(priority = 10)
   static public void cssValueDiscount() throws InterruptedException {
+	  //elements of the discount
 	  discountText=driver.findElement(By.xpath("//div[@class='tabs-logo-discount-wrapper']//a[@class='promotions-popup-link promotions-popup-trigger popup-trigger spu-clickable']//p"));
 	  discountBackround=driver.findElement(By.xpath("//div[@class='tabs-logo-discount-wrapper']//a[@class='promotions-popup-link promotions-popup-trigger popup-trigger spu-clickable']"));
-	  point=discountText.getLocation();
-	  XdisText=point.getX();
-	  YdisText=point.getY();
-	  ColordisText=discountText.getCssValue("color");
-	  point=discountBackround.getLocation();
-	  XdisBackround=point.getX();
-	  YdisBackround=point.getY();
-	  ColordisBackround=discountBackround.getCssValue("color");
 	  location= new int[4];
-	  location[0]=XdisText;
-	  location[1]=YdisText;
-	  location[2]=XdisBackround;
-	  location[3]=YdisBackround;
+	  
+	  //taking location and color of text discount
+	  point=discountText.getLocation();
+	  location[0]=point.getX();
+	  location[1]=point.getY();
+	  ColordisText=discountText.getCssValue("color");
+	  
+	  //taking location and color of
+	  point=discountBackround.getLocation();
+	  location[2]=point.getX();
+	  location[3]=point.getY();
+	  ColordisBackround=discountBackround.getCssValue("color");
+	  
+
 	  functions.cssValueDiscount(location, ColordisText, ColordisBackround);
   }
   
   @Test(priority = 11)
   static public void valuesInTable() throws InterruptedException {
+	  
+	  //click on menu and sub menu
 	 pricesButton=driver.findElement(By.xpath("//div[@class='menu-tabs']//button[@data-tab-title-id='806']"));
 	  js.executeScript("arguments[0].click();", pricesButton);
 	  albumimButton=driver.findElement(By.xpath("//nav[@class='tabs-content tabs-content--visible']//img[@alt='מחירי אלבומים ומשלוחים']"));
 	  js.executeScript("arguments[0].click();", albumimButton);
+	  
+	  //taking values for the table (3 rows)
 	  Thread.sleep(2500);
 	  rowPrices=driver.findElements(By.xpath("//div[@class='table-responsive']//tr[2]//span[@class='price_list_table_format_price_number']"));
 	  rowPrices2=driver.findElements(By.xpath("//div[@class='table-responsive']//tr[3]//span[@class='price_list_table_format_price_number']"));
@@ -365,13 +373,18 @@ public class Tests extends elementsTests{
   
   @Test(priority = 12)
   static public void amountOfPages() throws InterruptedException {
+	  
 		 pricesButton=driver.findElement(By.xpath("//div[@class='menu-tabs']//button[@data-tab-title-id='806']"));
 		  js.executeScript("arguments[0].click();", pricesButton);
 		  albumimButton=driver.findElement(By.xpath("//nav[@class='tabs-content tabs-content--visible']//img[@alt='מחירי אלבומים ומשלוחים']"));
 		  js.executeScript("arguments[0].click();", albumimButton);
 		  Thread.sleep(6500);
+		  
+		  //click out of the pop up ad
 		  popupAd=driver.findElement(By.xpath("//div//div[@role='button']"));
 		  js.executeScript("arguments[0].click();", popupAd);
+		  
+		  //press on the plus button to add more pages and take the amount of the page after every click
 		  plus=driver.findElement(By.id("plus_sign"));
 		  pages=driver.findElement(By.id("pages-number-subtitle"));
 		  for (int i = 0; i < 8; i++) {
@@ -384,9 +397,12 @@ public class Tests extends elementsTests{
   
   @Test(priority = 13)
   static public void Links() throws InterruptedException {
-	
+	  
+	//find the elements links (bottom of the page)
 	  linkS=driver.findElements(By.xpath("//div[@class='row']//ul[@id='menu-%d7%9e%d7%95%d7%a6%d7%a8%d7%99%d7%9d']//a[@href]"));
 	  url=new String[linkS.size()];
+	  
+	  //click on one of the menu links and take the URL
 	  for (int i = 0; i < linkS.size(); i++) {
 		  linkS=driver.findElements(By.xpath("//div[@class='row']//ul[@id='menu-%d7%9e%d7%95%d7%a6%d7%a8%d7%99%d7%9d']//a[@href]"));
 		js.executeScript("arguments[0].click();", linkS.get(i));
@@ -399,14 +415,21 @@ public class Tests extends elementsTests{
   
   @Test(priority = 14)
   static public void LetTalkAboutItForm() throws InterruptedException {
+	  
+	  //business page
 	  haskimButton=driver.findElement(By.xpath("//ul[@class='top-nav-items']//li[2]"));
 	  haskimButton.click();
 	  Thread.sleep(1500);
-	  POPup=driver.findElement(By.xpath("//div[@role='button' and @aria-label]"));
-	  js.executeScript("arguments[0].click();", POPup);
+	  
+	  //close pop up
+	 POPup=driver.findElement(By.xpath("//div[@role='button' and @aria-label]"));
+	 js.executeScript("arguments[0].click();", POPup);
+	 
+	 //open the form
 	 letsTalkAboutIt=driver.findElement(By.xpath("//div[@class='page-header__content aos-init aos-animate']//a"));
 	 js.executeScript("arguments[0].click();", letsTalkAboutIt);
 	 
+	//fill personal details on the form 
 	 privateName=driver.findElement(By.id("business_form_private_name"));
 	 lastNAME=driver.findElement(By.id("business_form_familiy_name"));
 	 phoneNum=driver.findElement(By.id("business_form_phone"));
@@ -420,8 +443,9 @@ public class Tests extends elementsTests{
 	 Thread.sleep(500);
 	 js.executeScript("arguments[0].click();", sendKey);
 	Thread.sleep(2000);
+	
+	//take the error messages from the form
 	 errorMessagesElements=driver.findElements(By.xpath("//span[@class='wpcf7-not-valid-tip']"));
-	 
 	 errorMessages=new String[errorMessagesElements.size()];
 	 for (int i = 0; i < errorMessagesElements.size(); i++) {
 		errorMessages[i]=errorMessagesElements.get(i).getText();
@@ -432,11 +456,16 @@ public class Tests extends elementsTests{
   
   @Test(priority = 15)
   static public void contactMeForm() throws InterruptedException {
+	  //business page
 	  haskimButton=driver.findElement(By.xpath("//ul[@class='top-nav-items']//li[2]"));
 	  haskimButton.click();
 	  Thread.sleep(1000);
+	  
+	  //close pop up
 	  POPup=driver.findElement(By.xpath("//div[@role='button' and @aria-label]"));
 	  js.executeScript("arguments[0].click();", POPup);
+	  
+	  //fill personal details on the form 
 	  firstName=driver.findElement(By.id("business-form-private-name"));
 	  lastName=driver.findElement(By.id("business-form-family-name"));
 	  EMAIL=driver.findElement(By.id("business-form-email"));
@@ -446,6 +475,8 @@ public class Tests extends elementsTests{
 	  EMAIL.sendKeys("jsmhonigmail.com");
 	  js.executeScript("arguments[0].click();", sendButton);
 	  Thread.sleep(1500);
+	  
+	//take the error messages from the form
 	  errmes=driver.findElements(By.xpath("//div[@class='lupa-error-message ']//span"));
 	  errorElements=new String[errmes.size()];
 	  for (int i = 0; i < errmes.size(); i++) {
@@ -456,17 +487,22 @@ public class Tests extends elementsTests{
   }
   @Test(priority = 16)
   static public void SendEmailForm() throws InterruptedException {
+	  
+	  //customer service page
 	  mainPageMenu=driver.findElements(By.xpath("//nav//li[@class='top-nav-item']"));
 	  mainPageMenu.get(3).click();
 	  
+	  //open the form 
 	  sendEmailButton=driver.findElement(By.xpath("//div[@class='self-service-desktop']//a[@class='email-popup-trigger popup-trigger spu-clickable']"));
 	  js.executeScript("arguments[0].click();", sendEmailButton);
 	  
+	  //pick a subject for the email 
 	  subjectListButton=driver.findElement(By.id("modular-form-subject"));
 	  js.executeScript("arguments[0].click();", subjectListButton);
 	  dropList=driver.findElements(By.xpath("//div[@id='modular-form-subject']//div[@role='listbox']//span"));
 	  js.executeScript("arguments[0].click();", dropList.get(3));
 	  
+	  //fill personal details on the form 
 	  PrivateName=driver.findElement(By.id("sales_form_form_private_name"));
 	  LastName=driver.findElement(By.id("sales_form_form_familiy_name"));
 	  PhoneNUMBER=driver.findElement(By.id("sales_form_form_phone"));
@@ -478,6 +514,8 @@ public class Tests extends elementsTests{
 	  email1.sendKeys("stivyslashgmail.com");
 	  js.executeScript("arguments[0].click();", sendEmailButton);
 	  
+	  
+	  //take the error messages from the form
 	  Thread.sleep(1500);
 	  errorList=driver.findElements(By.xpath("//div[@id='wpcf7-f7386-o7']//span[@class='wpcf7-not-valid-tip']"));
 	  for (int i = 0; i < errorList.size(); i++) {
