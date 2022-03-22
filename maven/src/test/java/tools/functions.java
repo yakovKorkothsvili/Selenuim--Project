@@ -13,6 +13,7 @@ import com.google.common.primitives.ImmutableIntArray;
 public class functions {
 
 	static public void menuTest(String[] url, List<String>LinksNames) throws InterruptedException {
+		
 		System.out.println(" ");
 		System.out.println("results for Menu Test");
 		String[] URLs= new String[LinksNames.size()];
@@ -38,38 +39,8 @@ public class functions {
             }
 	}
 	
-	static public void checkingErrorMesAccount(ArrayList<String>errMes) throws InterruptedException {
-		System.out.println(" ");
-		System.out.println("results for error message creating account");
-		String []errorMes= new String[6];
-		errorMes[0]="שם פרטי לא יכול להכיל ספרות";
-		errorMes[1]="זה שם ממאדים. כאן יש מינימום של 2 אותיות לשם";
-		errorMes[2]="hopa@lupa.co.il דוגמה לכתובת מייל נכונה";
-		errorMes[3]="במספר טלפון תקין יש 10 ספרות";
-		errorMes[4]="המינימום כאן, הוא שילוב של 6 אותיות באנגלית וספרות";
-		errorMes[5]="נא לאשר את התקנון";
-		for (int i = 0; i < errMes.size(); i++) {
-			if (errMes.get(i).equals(errorMes[i])) {
-				System.out.println("the error message "+errorMes[i]+" is visible");
-			}
-			else {
-				Thread.sleep(300);
-				System.err.println("the error message "+errorMes[i]+" is not visible");
-				
-			}
-		}
-	}
-	static public void checkingConnctionToFacebook(String name) throws InterruptedException {
-		System.out.println(" ");
-		System.out.println("results for connction to facebook");
-		if (name.contains("אהלן John")||name.contains("אהלן yakov")) {
-			System.out.println("the account has been connected with facebook");
-		}
-		else {
-			Thread.sleep(300);
-			System.err.println("the account didnt connect");
-		}
-	}
+
+
 	static public void checkingBotiqSparim(WebElement howManyLikes, List<WebElement>likeButtons) throws InterruptedException {
 		System.out.println("");
 		System.out.println("results like button butiq sparim");
@@ -83,30 +54,9 @@ public class functions {
 			System.err.println("not all the like buttons r working");
 		}
 	}
-	static public void errMesOrderAndPhoneFields(String errorOrderId, String errorPhoneField, String errorPhoneField1) throws InterruptedException{
-		System.out.println(" ");
-		System.out.println("results for error message on tracking order");
-		String errorMes[]=new String[3];
-		errorMes[0]=errorOrderId;
-		errorMes[1]=errorPhoneField;
-		errorMes[2]=errorPhoneField1;
-		String[] errMessage=new String[3];
-		errMessage[0]="מספר ההזמנה אינו תקין";
-		errMessage[1]="במספר תקין יש קידומת + 7 ספרות";
-		errMessage[2]="המספר אינו קיים במערכת";
-		
-		for (int i = 0; i < errMessage.length; i++) {
-			if (errorMes[i].equals(errMessage[i])) {
-				System.out.println("the error message "+errorMes[i]+" is up");
-				
-			}
-			else {
-				Thread.sleep(300);
-				System.err.println("somthing went wrong in error message "+errMessage[i]);
-			}
-		}
-	}
+
 	static public void botiqAmountOfBooksCategory(int[]amountOfBooks, ArrayList<String>nameOfCategory) throws InterruptedException {
+		
 		System.out.println(" ");
 		System.out.println("results for butiq sparim");
 		int[]amountOfBooks1=new int[amountOfBooks.length];
@@ -139,32 +89,6 @@ public class functions {
 			}
 		}
 	}
-	static public void checkingValueCrudTest(String FirstName, String LastName, String BdDay, String BdMonth, String BdYear, String PhoneNumber) throws InterruptedException {
-		System.out.println(" ");
-		System.out.println("results for crud test");
-		String[]det= {FirstName, LastName, BdDay, BdMonth, BdYear, PhoneNumber};
-		String[]name= {"first name", "last name", "birth day", "birth month", "birth year", "phone number"};
-		String [] change= new String[6];
-		change[0]="yakov";
-		change[1]="korkot";
-		change[2]="3";
-		change[3]="1";
-		change[4]="1999";
-		change[5]="054-1234567";
-		for (int i = 0; i < change.length; i++) {
-			det[i]=det[i].trim();
-		}
-		for (int i = 0; i < change.length; i++) {
-			if (det[i].equals(change[i])) {
-				System.out.println(name[i]+" has been changed successfully to "+det[i]);
-			}
-			else {
-				Thread.sleep(300);
-				System.err.println(name[i]+" has not been changed to "+change[i]);
-			}
-		}
-		
-	}
 	static public void connectionToFacebookChat(String name, String email) throws InterruptedException {
 		System.out.println("");
 		System.out.println("results for connectToFacebookThroughChat");
@@ -196,53 +120,8 @@ public class functions {
 			System.out.println("somthing went wrong in picking the design for mosah pic");
 		}
 	}
-	static public void LogoCss(int xLogo, int ylogo, int widthLogo, int heightLogo) throws InterruptedException {
-		Thread.sleep(500);
-		System.out.println(" ");
-		System.out.println("results for logo css test");
-		int XLogo=1419;
-		int YLogo=62;
-		int widthlogo=64;
-		int heightlogo=56;
 
-		if (XLogo==xLogo && YLogo==ylogo) {
-			System.out.println("location of the logo is in the right place");
-		}
-		else {
-			Thread.sleep(300);
-			System.err.println("location of the logo is in the wrong place");
-		}
-		if (widthlogo==widthLogo && heightlogo==heightLogo) {
-			System.out.println("width and height of the logo is right");
-		}
-		else {
-			Thread.sleep(300);
-			System.err.println("width and height of the logo is wrong");
-		}
-	}
 	
-	static public void LinksCss(ArrayList<String>cssElements) throws InterruptedException {
-		System.out.println("");
-		System.out.println("results for Css value Links");
-       String[]name= {"font","color","font","color"};
-       String[]names= {"Link album tmonot","Link kir tmonot"};
-
-		String []CssValue= {"\"ploni medium\", sans-serif","rgba(0, 0, 0, 1)","\"ploni medium\", sans-serif","rgba(0, 0, 0, 1)"};
-		for (int i = 0; i < cssElements.size(); i++) {
-			if (cssElements.get(i).equals(CssValue[i])) {
-				if (i==0||i==1) {
-					System.out.println(name[i]+" of "+names[0]+" is correct");
-				} else {
-					Thread.sleep(300);
-					System.out.println(name[i]+" of "+names[1]+" is correct");
-				}
-			}	
-			else {
-				Thread.sleep(200);
-				System.err.println("somthing went wrong");
-			}
-		}
-	}
 	
 	static public void SearchResultsTest(ArrayList<String>REsults) throws InterruptedException {
 		System.out.println("");
@@ -267,45 +146,7 @@ public class functions {
 			}
 		}
 	}
-	static public void cssValueDiscount(int[]location, String ColorText, String ColorBackround) throws InterruptedException {
-		System.out.println(" ");
-		System.out.println("the results for test cssValueDiscound");
-		int []locationOf=new int[]{71,77,45,66};
-		String []name= {"text","backround"};
-		String textColor="rgba(0, 0, 0, 1)";
-		String backroundColor="rgba(0, 0, 0, 1)";
-		for (int i = 0; i < 2; i++) {
-			if (location[i]==locationOf[i]) {
-					System.out.println("location of "+name[0]+" is in place");
-			}else {
-				Thread.sleep(300);
-				System.err.println("location of "+name[0]+" is wrong");	
-      		}	
-		}
-		for (int i = 2; i < 4; i++) {
-			if (location[i]==locationOf[i]) {
-				System.out.println("location of "+name[1]+" is in place");
-		}else {
-			Thread.sleep(300);
-			System.err.println("location of "+name[1]+" is wrong");	
-  		}	
-	}
-		
-		if (ColorText.equals(textColor)) {
-			System.out.println("color of the "+name[0]+" is right");
-		}
-		else {
-			Thread.sleep(300);
-			System.err.println("color of the "+name[0]+" is wrong");
-		}
-		if (ColorBackround.equals(backroundColor)) {
-			System.out.println("color of the "+name[1]+" is right");
-		}
-		else {
-			Thread.sleep(300);
-			System.err.println("color of the "+name[1]+" is right");
-		}
-}
+
 	static public void tableValues(List<WebElement> row,List<WebElement>row1, List<WebElement>row2) throws InterruptedException {
 		System.out.println(" ");
 		System.out.println("results for test valuesInTable");
@@ -316,6 +157,7 @@ public class functions {
 	   String a=row.get(i).getText();
 	   row0[i]=Integer.parseInt(a);
       } 
+      
       for (int i = 0; i < row0.length; i++) {
 		if (row0[i]==rowA[i]) {
 			System.out.println("the price on row 1 item number "+i+" is correct");
@@ -325,6 +167,7 @@ public class functions {
 			System.err.println("the price on row 1 item number "+i+" is NOT correct");
 		}
 	}
+      
       System.out.println(" ");
 		int[]rowOne=new int[row1.size()];
 		int[]rowB=new int[] {120,121,96,69};
@@ -341,6 +184,7 @@ public class functions {
 	  			System.err.println("the price on row 2 item number "+i+" is NOT correct");
 	  		}
 	  	}
+	      
 	      System.out.println(" ");
 			int[]rowTwo=new int[row2.size()];
 			int[]rowC=new int[] {216,303,226,202,333,225};
@@ -372,6 +216,7 @@ public class functions {
 			}
 		}
 	}
+	
 	static public void LinksBottomOfThePage(String[]Url) throws InterruptedException {
 		String[]URLS=new String[Url.length];
 		URLS[0]="https://www.lupa.co.il/products/digital-album/";
@@ -398,73 +243,10 @@ public class functions {
 			}
 		}
 	}
-	static public void LetTalkAboutItFormErrorMes(String[]ERROR) throws InterruptedException {
-		System.out.println("");
-		System.out.println("results for test LetTalkAboutItForm");
-		String[]error=new String[ERROR.length];
-		error[0]="המינימום לשם פרטי הוא 2 אותית";
-		error[1]="המינימום לשם משפחה הוא 2 אותית";
-		error[2]="חסר שם חברה";
-		error[3]="חסר מספר עובדים";
-		error[4]="טלפון מכיל 7 ספרות";
-		error[5]="חסרה קידומת";
-		error[6]="כתובת האימייל שהוזנה אינה תקינה.";
-		for (int i = 0; i < error.length; i++) {
-			if (ERROR[i].equals(error[i])) {
-				System.out.println("error message "+error[i]+" is visible");
-			}
-			else {
-				Thread.sleep(300);
-				System.err.println("error message "+error[i]+" is NOT visible");
-			}
-		}
-		//kidoment!! just in case
-//		 js.executeScript("arguments[0].click();", First3Numbers);
-//		 Thread.sleep(1000);
-//		 numbers=driver.findElements(By.xpath("//div[@aria-haspopup='listbox']//div[@class='lupa-custom-select open']//span"));
-//		 js.executeScript("arguments[0].click();", numbers.get(4));
-		
-	}
-	static public void ContactMe(String [] ERRORMES) throws InterruptedException {
-		System.out.println("");
-		System.out.println("results for test contactMeForm");
-		String[]messages=new String[ERRORMES.length];
-		messages[0]="שם מכיל לפחות 2 אותיות";
-		messages[1]="שם מכיל לפחות 2 אותיות";
-		messages[2]="כתובת המייל אינה חוקית";
-		for (int i = 0; i < messages.length; i++) {
-			if (ERRORMES[i].equals(messages[i])) {
-				System.out.println("error message "+messages[i]+" is visible");
-			}
-			else {
-				Thread.sleep(300);
-				System.err.println("error message "+messages[i]+" is NOT visible");
-			}
-		}
-	}
+
+
 	
-	static public void sendEmail(String[]err) throws InterruptedException {
-		System.out.println("");
-		System.out.println("results for test send email form");
-		String[]Messages=new String[7];
-		Messages[0]="יש לבחור נושא";
-		Messages[1]="חסר תוכן לנושא הפניה";
-		Messages[2]="המינימום לשם פרטי הוא 2 אותית";
-		Messages[3]="המינימום לשם משפחה הוא 2 אותית";
-		Messages[4]="טלפון מכיל 7 ספרות";
-		Messages[5]="חסרה קידומת";
-		Messages[6]="כתובת האימייל שהוזנה אינה תקינה.";
-		
-		for (int i = 0; i < Messages.length; i++) {
-			if (err[i].equals(Messages[i])) {
-				System.out.println("error message "+Messages[i]+" is visible");
-			}
-			else {
-				Thread.sleep(200);
-				System.err.println("error message "+Messages[i]+" is NOT visible");
-			}
-		}
-	}
+
 }
 
 

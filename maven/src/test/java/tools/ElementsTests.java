@@ -11,31 +11,22 @@ import org.openqa.selenium.interactions.Actions;
 
 
 
-public class elementsTests {
+public class ElementsTests {
+	
+	//all tests have those elements
 	static public WebDriver driver=null;
     static  public Actions act; 
 	static public  JavascriptExecutor js=null;
-	static public WebElement popUp;
-	static public WebElement popUp2;
+	static public WebElement cookie;
+	static public Point point;
+	
 	//test MenuTestAlbumTmonot
     static public WebElement menuAlbumTmonot;
-	static public WebElement cookie;
 	static public List<WebElement> menuLinks;
 	static public WebElement albumDesgin;
 	//test LikeButtons
 	static public List<WebElement>likebuttons;
 	static public WebElement howManyLikes;
-	//followOrderFailed
-	static public WebElement customerServiceButton;
-	static public List<WebElement>followOrder;
-	static public WebElement first3Numbers;
-	static public List<WebElement>kidomet;
-	static public WebElement phoneField;
-	static public WebElement orderIdField;
-	static public WebElement showDetes;
-	static public WebElement errMesOrderId;
-	static public WebElement errMesphone;
-	static public WebElement errMes1phone;
 	//butiqSparimCatgorys elements
 	static public WebElement noshimButton;
 	static public List <WebElement> categories;
@@ -75,20 +66,6 @@ public class elementsTests {
 	static public WebElement typeOfdesign;
     static public WebElement saveMosahPic;
     static public String mosahDesign;
-    //elements UX
-	static public WebElement logo;
-	static public Point point;
-	static public int xLogo;
-	static public int yLogo;
-	static public int widthLogo;
-	static public int heightLogo;
-	//elements UX Links
-	static public List<WebElement> links;
-	static public String  fontFamliyAlbum;
-	static public String colorAlbum;
-	static public String fontFamliyKirTmonot;
-	static public String colorKirTmonot;
-	static public ArrayList<String> FontAndColorLinks=new ArrayList<String>(4);
 	//elements search results
 	static public WebElement returnButton;
 	static public WebElement searchField;
@@ -96,16 +73,6 @@ public class elementsTests {
 	static public List<WebElement> results;
 	static public ArrayList<String> Results;
 	static public String b;
-	//elements ccsValueDiscount
-	static public WebElement discountText;
-	static public WebElement discountBackround;
-	static public int XdisText;
-	static public int YdisText;
-	static public String ColordisText;
-	static public int XdisBackround;
-	static public int YdisBackround;
-	static public String ColordisBackround;
-	static public int[]location;
 	//elements valuesInTable
 	static public WebElement pricesButton;
 	static public WebElement albumimButton;
@@ -120,36 +87,6 @@ public class elementsTests {
 	//elements Links
 	static public List<WebElement>linkS;
 	static public String[] url;
-	//elements LetTalkAboutItForm
-	static public WebElement haskimButton;
-	static public WebElement letsTalkAboutIt;
-    static public WebElement POPup;
-	static public WebElement privateName;
-	static public WebElement lastNAME;
-	static public WebElement First3Numbers;
-    static public WebElement phoneNum;
-    static public WebElement Email;
-	static public WebElement sendKey;
-	static public List<WebElement>numbers;
-	static public String[] errorMessages;
-	static public List<WebElement> errorMessagesElements;
-	//elements contactMeForm
-	static public WebElement firstName;
-	static public WebElement lastName;
-	static public WebElement EMAIL;
-	static public WebElement sendButton;
-	static public List<WebElement>errmes;
-	static public String[]errorElements;
-	//elements SendEmailForm
-	static public WebElement sendEmailButton;
-	static public List<WebElement> mainPageMenu;
-	static public WebElement subjectListButton;
-	static public List <WebElement> dropList;
-	static public WebElement PrivateName;
-	static public WebElement LastName;
-	static public WebElement PhoneNUMBER;
-	static public WebElement email1;
-	static public WebElement SendMailButton;
-	static public List<WebElement>errorList;
-	static public String[]errorMess=new String[7];
+
+
 }

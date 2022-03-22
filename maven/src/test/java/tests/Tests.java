@@ -2,7 +2,7 @@ package tests;
 
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import tools.elementsTests;
+import tools.ElementsTests;
 import tools.functions;
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -19,7 +19,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
-public class Tests extends elementsTests{
+public class Tests extends ElementsTests{
 
  //@Parameters ("browser")
   @BeforeMethod
@@ -99,47 +99,6 @@ public class Tests extends elementsTests{
 		  howManyLikes=driver.findElement(By.id("number_of_likes"));
 	    functions.checkingBotiqSparim(howManyLikes, likebuttons);
 	
-  }
-  
-  @Test(priority = 3)
-  public void followOrderFailed() throws InterruptedException {
-	  customerServiceButton=driver.findElement(By.xpath("//nav[@class='top-nav']//a[@href='https://www.lupa.co.il/customer-service/']"));
-	 js.executeScript("arguments[0].click();", customerServiceButton);
-	 followOrder=driver.findElements(By.xpath("//div[@class='lupa_btn lupa_btn_blue lupa_btn_wide aos-init aos-animate']//a"));
-	 js.executeScript("arguments[0].click();", followOrder.get(0));
-	 first3Numbers=driver.findElement(By.xpath("//div[@class='form-row']//div[@class='lupa-custom-select__trigger']"));
-	 kidomet=driver.findElements(By.xpath("//div[@id='order_tracking_form']//div[@role='listbox']//span"));
-	 orderIdField=driver.findElement(By.id("order_tracking_service_form_order_id"));
-	 showDetes=driver.findElement(By.xpath("//div[@id='order_tracking_btn']//a[@role='button']"));
-	phoneField=driver.findElement(By.id("order_tracking_service_form_phone"));
-	 
-	 js.executeScript("arguments[0].click();", first3Numbers);
-	 js.executeScript("arguments[0].click();", kidomet.get(3));
-	 phoneField.sendKeys("1234567");
-	 orderIdField.sendKeys("5826954");
-	 js.executeScript("arguments[0].click();",showDetes);
-	 Thread.sleep(1500);
-	 errMesOrderId=driver.findElement(By.xpath("//div[@class='lupa-error-message ']//span"));
-	 String errmessageOrderId=(String) js.executeScript("return arguments[0].innerHTML",errMesOrderId);
-	 errmessageOrderId=errmessageOrderId.trim(); 
-	 
-	 phoneField.clear();
-	 phoneField.sendKeys("51234567");
-	 js.executeScript("arguments[0].click();",showDetes);
-	 Thread.sleep(1500);
-	 errMesphone=driver.findElement(By.xpath("//div[@class='lupa-error-message ']//span"));
-	 String errmessagePhone=(String) js.executeScript("return arguments[0].innerHTML", errMesphone);
-	 errmessagePhone=errmessagePhone.trim();
-	 
-	 phoneField.clear();
-	 phoneField.sendKeys("9335529");
-	 js.executeScript("arguments[0].click();",showDetes);
-	 Thread.sleep(2500);
-	 errMes1phone=driver.findElement(By.xpath("//div[@class='lupa-error-message ']//span"));
-	 String errmessagePhone1=(String) js.executeScript("return arguments[0].innerHTML;",errMes1phone);
-	 errmessagePhone1=errmessagePhone1.trim();
-	 
-	 functions.errMesOrderAndPhoneFields(errmessageOrderId, errmessagePhone, errmessagePhone1); 
   }
   
   @Test(priority = 4)
@@ -271,28 +230,8 @@ public class Tests extends elementsTests{
 	  js.executeScript("arguments[0].click();",saveMosahPic);
 	  functions.designCheck(harzlDesign, mosahDesign);
   }
-  @Test(priority = 7)
-  static public void uxTest() throws InterruptedException {
-	  logo=driver.findElement(By.xpath("//div[@class='tabs-logo-discount-wrapper']//a//img"));
-	  point=logo.getLocation();
-	  xLogo= point.getX();
-	  yLogo=point.getY();
-	  widthLogo=logo.getSize().getWidth();
-	  heightLogo=logo.getSize().getHeight();
-	  functions.LogoCss(xLogo, yLogo, widthLogo, heightLogo);
-	  
-  }
- 
-  @Test(priority = 8)
-  static public void UXFontColorLinks() throws InterruptedException {
-	  links=driver.findElements(By.xpath("//div[@class='lupa_main_btn_container aos-init aos-animate']//a"));
-	  fontFamliyAlbum=links.get(0).getCssValue("font-family");
-	  colorAlbum=links.get(0).getCssValue("color");
-	  fontFamliyKirTmonot=links.get(1).getCssValue("font-family");
-	  colorKirTmonot=links.get(1).getCssValue("color");
-	  FontAndColorLinks.add(fontFamliyAlbum); FontAndColorLinks.add(colorAlbum); FontAndColorLinks.add(fontFamliyKirTmonot); FontAndColorLinks.add(colorKirTmonot);
-	  functions.LinksCss(FontAndColorLinks);  
-  }
+
+
   @Test(priority = 9)
   static public void searchResults() throws InterruptedException, AWTException {
 	  chatButton=driver.findElement(By.id("services-widget-chat-icon"));
@@ -331,28 +270,6 @@ public class Tests extends elementsTests{
    }				
  }
   
-  @Test(priority = 10)
-  static public void cssValueDiscount() throws InterruptedException {
-	  //elements of the discount
-	  discountText=driver.findElement(By.xpath("//div[@class='tabs-logo-discount-wrapper']//a[@class='promotions-popup-link promotions-popup-trigger popup-trigger spu-clickable']//p"));
-	  discountBackround=driver.findElement(By.xpath("//div[@class='tabs-logo-discount-wrapper']//a[@class='promotions-popup-link promotions-popup-trigger popup-trigger spu-clickable']"));
-	  location= new int[4];
-	  
-	  //taking location and color of text discount
-	  point=discountText.getLocation();
-	  location[0]=point.getX();
-	  location[1]=point.getY();
-	  ColordisText=discountText.getCssValue("color");
-	  
-	  //taking location and color of
-	  point=discountBackround.getLocation();
-	  location[2]=point.getX();
-	  location[3]=point.getY();
-	  ColordisBackround=discountBackround.getCssValue("color");
-	  
-
-	  functions.cssValueDiscount(location, ColordisText, ColordisBackround);
-  }
   
   @Test(priority = 11)
   static public void valuesInTable() throws InterruptedException {
@@ -413,116 +330,4 @@ public class Tests extends elementsTests{
 	  functions.LinksBottomOfThePage(url);
   }
   
-  @Test(priority = 14)
-  static public void LetTalkAboutItForm() throws InterruptedException {
-	  
-	  //business page
-	  haskimButton=driver.findElement(By.xpath("//ul[@class='top-nav-items']//li[2]"));
-	  haskimButton.click();
-	  Thread.sleep(1500);
-	  
-	  //close pop up
-	 POPup=driver.findElement(By.xpath("//div[@role='button' and @aria-label]"));
-	 js.executeScript("arguments[0].click();", POPup);
-	 
-	 //open the form
-	 letsTalkAboutIt=driver.findElement(By.xpath("//div[@class='page-header__content aos-init aos-animate']//a"));
-	 js.executeScript("arguments[0].click();", letsTalkAboutIt);
-	 
-	//fill personal details on the form 
-	 privateName=driver.findElement(By.id("business_form_private_name"));
-	 lastNAME=driver.findElement(By.id("business_form_familiy_name"));
-	 phoneNum=driver.findElement(By.id("business_form_phone"));
-	 First3Numbers=driver.findElement(By.xpath("//div[@id='modular_business_service_form']//div[@class='lupa-custom-select__trigger']//span"));
-	 Email=driver.findElement(By.id("business_form_email"));
-	 sendKey=driver.findElement(By.xpath("//div[@class='contact-submit-container']//input")); 
-	 privateName.sendKeys("y");
-	 lastNAME.sendKeys("A");
-	 phoneNum.sendKeys("123456");
-	 Email.sendKeys("yakovgmail.com");
-	 Thread.sleep(500);
-	 js.executeScript("arguments[0].click();", sendKey);
-	Thread.sleep(2000);
-	
-	//take the error messages from the form
-	 errorMessagesElements=driver.findElements(By.xpath("//span[@class='wpcf7-not-valid-tip']"));
-	 errorMessages=new String[errorMessagesElements.size()];
-	 for (int i = 0; i < errorMessagesElements.size(); i++) {
-		errorMessages[i]=errorMessagesElements.get(i).getText();
-		errorMessages[i].trim();
-	}
-	 functions.LetTalkAboutItFormErrorMes(errorMessages);
-  }
-  
-  @Test(priority = 15)
-  static public void contactMeForm() throws InterruptedException {
-	  //business page
-	  haskimButton=driver.findElement(By.xpath("//ul[@class='top-nav-items']//li[2]"));
-	  haskimButton.click();
-	  Thread.sleep(1000);
-	  
-	  //close pop up
-	  POPup=driver.findElement(By.xpath("//div[@role='button' and @aria-label]"));
-	  js.executeScript("arguments[0].click();", POPup);
-	  
-	  //fill personal details on the form 
-	  firstName=driver.findElement(By.id("business-form-private-name"));
-	  lastName=driver.findElement(By.id("business-form-family-name"));
-	  EMAIL=driver.findElement(By.id("business-form-email"));
-	  sendButton=driver.findElement(By.xpath("//form[@class='business-form']//div[@class='lupa_btn form_btn register-email-btn']//a"));
-	  firstName.sendKeys("ì");
-	  lastName.sendKeys("ò");
-	  EMAIL.sendKeys("jsmhonigmail.com");
-	  js.executeScript("arguments[0].click();", sendButton);
-	  Thread.sleep(1500);
-	  
-	//take the error messages from the form
-	  errmes=driver.findElements(By.xpath("//div[@class='lupa-error-message ']//span"));
-	  errorElements=new String[errmes.size()];
-	  for (int i = 0; i < errmes.size(); i++) {
-		errorElements[i]=errmes.get(i).getText();
-		errorElements[i]=errorElements[i].trim();
-	}
-	  functions.ContactMe(errorElements);
-  }
-  @Test(priority = 16)
-  static public void SendEmailForm() throws InterruptedException {
-	  
-	  //customer service page
-	  mainPageMenu=driver.findElements(By.xpath("//nav//li[@class='top-nav-item']"));
-	  mainPageMenu.get(3).click();
-	  
-	  //open the form 
-	  sendEmailButton=driver.findElement(By.xpath("//div[@class='self-service-desktop']//a[@class='email-popup-trigger popup-trigger spu-clickable']"));
-	  js.executeScript("arguments[0].click();", sendEmailButton);
-	  
-	  //pick a subject for the email 
-	  subjectListButton=driver.findElement(By.id("modular-form-subject"));
-	  js.executeScript("arguments[0].click();", subjectListButton);
-	  dropList=driver.findElements(By.xpath("//div[@id='modular-form-subject']//div[@role='listbox']//span"));
-	  js.executeScript("arguments[0].click();", dropList.get(3));
-	  
-	  //fill personal details on the form 
-	  PrivateName=driver.findElement(By.id("sales_form_form_private_name"));
-	  LastName=driver.findElement(By.id("sales_form_form_familiy_name"));
-	  PhoneNUMBER=driver.findElement(By.id("sales_form_form_phone"));
-	  email1=driver.findElement(By.id("sales_form_form_email"));
-	  sendEmailButton=driver.findElement(By.xpath("//form[@action='/customer-service/#wpcf7-f7386-o7']//input[@type='submit']"));
-	  PrivateName.sendKeys("a");
-	  LastName.sendKeys("b");
-	  PhoneNUMBER.sendKeys("56784");
-	  email1.sendKeys("stivyslashgmail.com");
-	  js.executeScript("arguments[0].click();", sendEmailButton);
-	  
-	  
-	  //take the error messages from the form
-	  Thread.sleep(1500);
-	  errorList=driver.findElements(By.xpath("//div[@id='wpcf7-f7386-o7']//span[@class='wpcf7-not-valid-tip']"));
-	  for (int i = 0; i < errorList.size(); i++) {
-		errorMess[i]=errorList.get(i).getText();
-		errorMess[i]=errorMess[i].trim();
-	}
-	  functions.sendEmail(errorMess);
-	  
-  }
 }
