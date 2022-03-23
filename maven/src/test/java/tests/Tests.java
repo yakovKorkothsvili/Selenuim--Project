@@ -42,7 +42,7 @@ public class Tests extends ElementsTests{
   driver.get("https://www.lupa.co.il/");
   js=(JavascriptExecutor) driver;
   
-  //cookie pop up
+  ///cookie pop up
   Thread.sleep(500);
   cookie=driver.findElement(By.xpath("//*[@id='Layer_1']"));
   cookie.click();
