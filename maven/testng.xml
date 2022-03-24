@@ -5,8 +5,8 @@
   <test thread-count="2" name="TestChrome">
    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="tests.BusinessPageFormsTests"/>
-	   <class name="tests.Tests"/>
+      <class name="tests.AccountTests"/>
+	   <class name="tests.FormsTests"/>
     </classes>
   </test> 
 

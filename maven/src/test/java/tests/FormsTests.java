@@ -64,10 +64,11 @@ public class FormsTests extends ElementsTests {
 	static public String errmessagePhone;
 	static public String errmessagePhone1;
 
-  @Parameters ("browser")
+  //@Parameters ("browser")
   @BeforeMethod
-  public void beforeMethod(String browser) throws InterruptedException {
-	//String browser="chrome";
+  public void beforeMethod() throws InterruptedException {
+	  
+	String browser="chrome";
 	  
 	  try {
 		if (browser.equals("chrome")) {
@@ -85,16 +86,19 @@ public class FormsTests extends ElementsTests {
   driver.manage().window().maximize();
   driver.get("https://www.lupa.co.il/");
   Thread.sleep(1500);
-  cookie=driver.findElement(By.xpath("//*[@id='Layer_1']"));
-  cookie.click();
+  cookiePopUp=driver.findElement(By.xpath("//*[@id='Layer_1']"));
+  cookiePopUp.click();
+  gifsForPassoverPopUp=driver.findElement(By.xpath("//div[@class='adoric_element element-shape closeLightboxButton editing']//button[@aria-label='close']"));
+  gifsForPassoverPopUp.click();
   
   }
 
   @AfterMethod
   public void afterMethod() {
-	 driver.quit();
+	driver.quit();
   }
-@Test
+  
+  @Test
   public static void errorMessagesOnFormSendEmail() throws InterruptedException {
 	  
 	  FormsTests.navigateToCustomerServicePage();
@@ -120,23 +124,26 @@ public class FormsTests extends ElementsTests {
 	   sendEmailButton=driver.findElement(By.xpath("//div[@class='self-service-desktop']//a[@class='email-popup-trigger popup-trigger spu-clickable']"));
 	   js.executeScript("arguments[0].click();", sendEmailButton);	
    }
-    private static void picKaSubjectForTheEmail() {
+    private static void picKaSubjectForTheEmail() throws InterruptedException {
 	    subjectListButton=driver.findElement(By.id("modular-form-subject"));
 	    js.executeScript("arguments[0].click();", subjectListButton);
 	    dropList=driver.findElements(By.xpath("//div[@id='modular-form-subject']//div[@role='listbox']//span"));
 	    js.executeScript("arguments[0].click();", dropList.get(3));
+	    js.executeScript("arguments[0].click();", dropList.get(3));
    }
-    private static void fillPersonalDetailsOnTheFormSendEmail() {
+    private static void fillPersonalDetailsOnTheFormSendEmail() throws InterruptedException {
+    	Thread.sleep(1000);
 	     PrivateName=driver.findElement(By.id("sales_form_form_private_name"));
 	     LastName=driver.findElement(By.id("sales_form_form_familiy_name"));
 	     PhoneNUMBER=driver.findElement(By.id("sales_form_form_phone"));
 	     email1=driver.findElement(By.id("sales_form_form_email"));
-	     sendEmailButton=driver.findElement(By.xpath("//form[@action='/customer-service/#wpcf7-f7386-o7']//input[@type='submit']"));
+	     sendEmailButton=driver.findElement(By.xpath("//form[@action='/customer-service/?utm_campaign=Footer&utm_medium=Email&utm_source=Leanplum#wpcf7-f7386-o7']//input[@type='submit']"));
 	     PrivateName.sendKeys("a");
 	     LastName.sendKeys("b");
 	     PhoneNUMBER.sendKeys("56784");
 	     email1.sendKeys("stivyslashgmail.com");
-	     js.executeScript("arguments[0].click();", sendEmailButton);
+	     
+	     js.executeScript("arguments[0].click();",sendEmailButton);
      }
     private static void takeTheErrorMessagesFromTheFormSendEmail() throws InterruptedException {
 	  Thread.sleep(1500);

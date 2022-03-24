@@ -67,8 +67,10 @@ public class UXTestsMainPage extends ElementsTests {
 	  driver.manage().window().maximize();
 	  driver.get("https://www.lupa.co.il/");
 	  Thread.sleep(1500);
-	  cookie=driver.findElement(By.xpath("//*[@id='Layer_1']"));
-	  cookie.click();
+	  cookiePopUp=driver.findElement(By.xpath("//*[@id='Layer_1']"));
+	  cookiePopUp.click();
+	  gifsForPassoverPopUp=driver.findElement(By.xpath("//div[@class='adoric_element element-shape closeLightboxButton editing']//button[@aria-label='close']"));
+	  gifsForPassoverPopUp.click();
 	  
 	  }
 	  

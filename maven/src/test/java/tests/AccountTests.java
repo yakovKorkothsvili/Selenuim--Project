@@ -3,7 +3,7 @@
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import tools.ElementsTests;
-import tools.IntegrationTestFunctions;
+import tools.AccountTestFunctions;
 import tools.functions;
 import java.util.ArrayList;
 import org.openqa.selenium.By;
@@ -17,7 +17,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
-public class IntegrationTests extends ElementsTests{
+public class AccountTests extends ElementsTests{
 	//LogInwithFacebookToLupa elements
 	static public WebElement ExistingAccountButton;
 	static public WebElement connectToFacebookbutton;
@@ -66,11 +66,11 @@ public class IntegrationTests extends ElementsTests{
 	static public WebElement valueYear;
 	
 	
-	@Parameters ("browser")
+	//@Parameters ("browser")
 	  @BeforeMethod
-      public void beforeTest(String browser) throws InterruptedException {
-			 //String browser="chrome";
-			  try {
+      public void beforeTest() throws InterruptedException {
+			 String browser="chrome";
+			  
 				if (browser.equals("chrome")) {
 					WebDriverManager.chromedriver().setup();
 					  driver=new ChromeDriver();
@@ -79,13 +79,13 @@ public class IntegrationTests extends ElementsTests{
 					WebDriverManager.edgedriver().setup();
 					  driver=new EdgeDriver();
 				}
-			} catch (Exception e) {
-			}
+		
 			  
 
 		  driver.manage().window().maximize();
 		  driver.get("https://connect.lupa.co.il/v2/ui/index.aspx?channel=website&callback=https://account.lupa.co.il/track_orders.aspx");
 		  js=(JavascriptExecutor) driver;
+		  
 		  act=new Actions(driver);
 		  
 		  ExistingAccountButton=driver.findElement(By.xpath("//div[@class='ctrl_screens']//a[contains(.,'קיי')]"));
@@ -101,15 +101,15 @@ public class IntegrationTests extends ElementsTests{
   @Test
   public void LogInwithFacebookToLupa() throws InterruptedException {
 
-       IntegrationTests.clickOnButtonExistingAccount();
+       AccountTests.clickOnButtonExistingAccount();
        
-       IntegrationTests.clickOnButtonConnectToFacebookAndSwitchToTab2();
+       AccountTests.clickOnButtonConnectToFacebookAndSwitchToTab2();
        
-       IntegrationTests.fillDetailsAndClickSignIn();
+       AccountTests.fillDetailsAndClickSignIn();
        
-       IntegrationTests.switchToTab1AndTakingFirstNameOfTheAccount();
+       AccountTests.switchToTab1AndTakingFirstNameOfTheAccount();
        
-       IntegrationTestFunctions.checkingConnctionToFacebook(name);
+       AccountTestFunctions.checkingConnctionToFacebook(name);
      
   }
 private static void clickOnButtonExistingAccount() throws InterruptedException {
@@ -144,19 +144,19 @@ private static void switchToTab1AndTakingFirstNameOfTheAccount() throws Interrup
   @Test
   public static void CrudTestPersonalDetails() throws InterruptedException {
 	  
-	  IntegrationTests.clickOnButtonExistingAccount();
+	  AccountTests.clickOnButtonExistingAccount();
 	  
-	  IntegrationTests.clickOnButtonConnectToFacebookAndSwitchToTab2();
+	  AccountTests.clickOnButtonConnectToFacebookAndSwitchToTab2();
       
-      IntegrationTests.fillDetailsAndClickSignIn();
+      AccountTests.fillDetailsAndClickSignIn();
        
-      IntegrationTests. swicthToTab1AndClickOnProfile();
+      AccountTests. swicthToTab1AndClickOnProfile();
       
-      IntegrationTests.changingPersonalDetailsAndClickSave();
+      AccountTests.changingPersonalDetailsAndClickSave();
       
-      IntegrationTests.refreshAndTakingTheValuesOfDetails();
+      AccountTests.refreshAndTakingTheValuesOfDetails();
 
-      IntegrationTestFunctions.checkingValueCrudTest(Firstname, Lastname, Dateday, Datemonth, Dateyear, phoneNumber);
+      AccountTestFunctions.checkingValueCrudTest(Firstname, Lastname, Dateday, Datemonth, Dateyear, phoneNumber);
     
   }
   
@@ -209,15 +209,15 @@ private static void switchToTab1AndTakingFirstNameOfTheAccount() throws Interrup
   @Test
   public void CreatAcoountErrorMessages() throws InterruptedException {
 	 
-	  IntegrationTests.clickOnCreateNewAcoount();
+	  AccountTests.clickOnCreateNewAcoount();
 	  
-	  IntegrationTests.findElementsOnAndFillDetails();
+	  AccountTests.findElementsOnAndFillDetails();
 	 
-	  IntegrationTests.clickOnCreatAcoount();
+	  AccountTests.clickOnCreatAcoount();
 	  
-	  IntegrationTests.takingTheErrorMessages();
+	  AccountTests.takingTheErrorMessages();
 	  
-      IntegrationTestFunctions.checkingErrorMesAccount(errMes);
+      AccountTestFunctions.checkingErrorMesAccount(errMes);
 
   }
 

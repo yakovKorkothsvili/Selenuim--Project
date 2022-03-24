@@ -44,13 +44,11 @@ public class Tests extends ElementsTests{
   
   ///cookie pop up
   Thread.sleep(500);
-  cookie=driver.findElement(By.xpath("//*[@id='Layer_1']"));
-  cookie.click();
+  cookiePopUp=driver.findElement(By.xpath("//*[@id='Layer_1']"));
+  cookiePopUp.click();
 
   //menus top page
-  menuLinks=driver.findElements(By.xpath("//ul[@data-tab-content-id='801']//li"));
-  menuAlbumTmonot=driver.findElement(By.xpath("//menu[@class='desktop-menu ']//button[@data-tab-title-id='801']"));
-  albumDesgin=driver.findElement(By.xpath("//ul[@data-tab-content-id='801']//li[contains(.,'עי')]"));
+  
   }
 
   @AfterMethod
@@ -58,34 +56,12 @@ public class Tests extends ElementsTests{
  driver.quit();
   }
 
-  @Test(priority = 1)
-  public void MenuTestAlbumTmonot() throws InterruptedException {
-	  Thread.sleep(1000);
-		menuAlbumTmonot.click();	
-	  List<String> linksName = new ArrayList<String>();
-	  
-	  for (WebElement y:menuLinks) {
-		  Thread.sleep(150);
-		linksName.add(y.getText());
-	}
-	  menuAlbumTmonot.click();
-	  
-		String[] url=new String[menuLinks.size()];
-		for (int i = 0; i < menuLinks.size(); i++) {
-			menuAlbumTmonot=driver.findElement(By.xpath("//menu[@class='desktop-menu ']//button[@data-tab-title-id='801']"));
-			menuLinks=driver.findElements(By.xpath("//ul[@data-tab-content-id='801']//li"));
-			menuAlbumTmonot.click();
-			Thread.sleep(500);
-			menuLinks.get(i).click();
-			url[i]=driver.getCurrentUrl();
-			
-		}
-		functions.menuTest(url, linksName);
-  }
+
   @Test(priority = 2)
   public void LikeButtons() throws InterruptedException {
-	  
+	  menuAlbumTmonot=driver.findElement(By.xpath("//menu[@class='desktop-menu ']//button[@data-tab-title-id='801']"));
 	  menuAlbumTmonot.click();
+	  albumDesgin=driver.findElement(By.xpath("//ul[@data-tab-content-id='801']//li[contains(.,'עי')]"));
 	  Thread.sleep(500);
 	  albumDesgin.click();
 	  for (int i = 0; i < 8; i++) {	                                                   
@@ -103,7 +79,9 @@ public class Tests extends ElementsTests{
   
   @Test(priority = 4)
   static public void butiqSparimCatgorys() throws InterruptedException {
+	  menuAlbumTmonot=driver.findElement(By.xpath("//menu[@class='desktop-menu ']//button[@data-tab-title-id='801']"));
 	  menuAlbumTmonot.click();
+	  albumDesgin=driver.findElement(By.xpath("//ul[@data-tab-content-id='801']//li[contains(.,'עי')]"));
 	  Thread.sleep(500);
 	  albumDesgin.click();  
 	  Thread.sleep(1500);

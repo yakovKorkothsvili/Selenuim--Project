@@ -4,6 +4,7 @@ import java.awt.Robot;
 import java.util.ArrayList;
 import java.util.List;
 import org.openqa.selenium.Point;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,16 +18,14 @@ public class ElementsTests {
 	static public WebDriver driver=null;
     static  public Actions act; 
 	static public  JavascriptExecutor js=null;
-	static public WebElement cookie;
+	static public WebElement cookiePopUp;
 	static public Point point;
-	
-	//test MenuTestAlbumTmonot
-    static public WebElement menuAlbumTmonot;
-	static public List<WebElement> menuLinks;
-	static public WebElement albumDesgin;
+	static public WebElement gifsForPassoverPopUp;
 	//test LikeButtons
+	static public WebElement menuAlbumTmonot;
 	static public List<WebElement>likebuttons;
 	static public WebElement howManyLikes;
+	static public WebElement albumDesgin;
 	//butiqSparimCatgorys elements
 	static public WebElement noshimButton;
 	static public List <WebElement> categories;

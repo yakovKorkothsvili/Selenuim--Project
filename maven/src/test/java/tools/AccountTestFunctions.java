@@ -2,7 +2,7 @@ package tools;
 
 import java.util.ArrayList;
 
-public class IntegrationTestFunctions {
+public class AccountTestFunctions {
 	static public void checkingConnctionToFacebook(String name) throws InterruptedException {
 		System.out.println(" ");
 		System.out.println("results for connction to facebook");
