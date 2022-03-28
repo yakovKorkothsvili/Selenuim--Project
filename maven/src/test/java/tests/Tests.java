@@ -111,59 +111,7 @@ public class Tests extends ElementsTests{
    functions.botiqAmountOfBooksCategory(amountOfBooks, nameOfCategory);
   }
   
-  @Test (priority = 5)
-  static public void connectToFacebookThroughChat() throws InterruptedException{
-	  chatButton=driver.findElement(By.id("services-widget-chat-icon"));
-	  js.executeScript("arguments[0].click();", chatButton);
-	  Thread.sleep(1000);
-	  chat1Button=driver.findElements(By.xpath("//div[@id='collapse-services-content']//a"));
-	  js.executeScript("arguments[0].click();", chat1Button.get(1));
-	  Thread.sleep(1000);
-	  iframe=driver.findElements(By.tagName("iframe"));
 
-	  
-		for (int i = 0; i < iframe.size(); i++) {
-			try {
-			driver.switchTo().frame(i);
-			facebookIcon=driver.findElement(By.xpath("//button[@title='facebook']"));
-			js.executeScript("arguments[0].click();", facebookIcon);
-		
-	} catch (Exception e) {
-		driver.switchTo().parentFrame();
-	}
-}
-		
-	  driver.switchTo().parentFrame();
-		tabs = new ArrayList<String> (driver.getWindowHandles());
-		driver.switchTo().window(tabs.get(1));
-		emailField=driver.findElement(By.id("email"));
-		passwordField= driver.findElement(By.id("pass"));
-		loginbutton=driver.findElement(By.name("login"));
-		emailField.sendKeys("jsmhoni@gmail.com");
-		passwordField.sendKeys("PM:uj4yVu-!nRGw");
-		loginbutton.click();	
-		Thread.sleep(500);
-		try {
-			driver.findElement(By.xpath("//span[@class='a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7 ltmttdrg g0qnabr5 ojkyduve' and contains(.,'המשך')]")).click();
-		} catch (Exception NoSuchElementException) {
-		}	
-		
-		Thread.sleep(2500);
-		driver.switchTo().window(tabs.get(0));
-		iframe1=driver.findElements(By.tagName("iframe"));
-		for (int i = 0; i <iframe1.size(); i++) {
-			try {
-				driver.switchTo().frame(i);
-				nameEmail=driver.findElements(By.xpath("//div[@class='sc-eInJlc emAJPF']//div"));
-				 name=nameEmail.get(1).getText();
-				 email=nameEmail.get(2).getText();
-
-			} catch (Exception NotSuchElement) {
-				driver.switchTo().parentFrame();
-			}
-		}
-		functions.connectionToFacebookChat(name, email);
-  }
   @Test(priority = 6)
   static public void editPics() throws InterruptedException {
 	  howDoUDoLupa=driver.findElement(By.xpath("//button[@data-tab-title-id='810']"));
@@ -290,22 +238,6 @@ public class Tests extends ElementsTests{
 		  functions.amuontOfPages(amuont);
   }
   
-  @Test(priority = 13)
-  static public void Links() throws InterruptedException {
-	  
-	//find the elements links (bottom of the page)
-	  linkS=driver.findElements(By.xpath("//div[@class='row']//ul[@id='menu-%d7%9e%d7%95%d7%a6%d7%a8%d7%99%d7%9d']//a[@href]"));
-	  url=new String[linkS.size()];
-	  
-	  //click on one of the menu links and take the URL
-	  for (int i = 0; i < linkS.size(); i++) {
-		  linkS=driver.findElements(By.xpath("//div[@class='row']//ul[@id='menu-%d7%9e%d7%95%d7%a6%d7%a8%d7%99%d7%9d']//a[@href]"));
-		js.executeScript("arguments[0].click();", linkS.get(i));
-	    Thread.sleep(500);
-		url[i]=driver.getCurrentUrl();
-		driver.navigate().back();
-	}
-	  functions.LinksBottomOfThePage(url);
-  }
+
   
 }

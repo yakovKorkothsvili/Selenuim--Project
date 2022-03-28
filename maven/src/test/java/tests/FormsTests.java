@@ -86,6 +86,8 @@ public class FormsTests extends ElementsTests {
   driver.manage().window().maximize();
   driver.get("https://www.lupa.co.il/");
   Thread.sleep(1500);
+  
+  //closepopUps
   cookiePopUp=driver.findElement(By.xpath("//*[@id='Layer_1']"));
   cookiePopUp.click();
   gifsForPassoverPopUp=driver.findElement(By.xpath("//div[@class='adoric_element element-shape closeLightboxButton editing']//button[@aria-label='close']"));

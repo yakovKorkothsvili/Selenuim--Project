@@ -89,18 +89,7 @@ public class functions {
 			}
 		}
 	}
-	static public void connectionToFacebookChat(String name, String email) throws InterruptedException {
-		System.out.println("");
-		System.out.println("results for connectToFacebookThroughChat");
-		if (name.equals("John Smhoni")&& email.equals("jsmhoni@gmail.com")) {
-			System.out.println("the connection to facebook through chat is working");
-		}		
-		else {
-			Thread.sleep(300);
-			System.err.println("something went wrong");
-		}
-		
-	}
+
 	static public void designCheck(String harzlDesign, String mosahDesign) throws InterruptedException {
 		System.out.println("");
 		System.out.println("results for edit pics");
@@ -217,32 +206,7 @@ public class functions {
 		}
 	}
 	
-	static public void LinksBottomOfThePage(String[]Url) throws InterruptedException {
-		String[]URLS=new String[Url.length];
-		URLS[0]="https://www.lupa.co.il/products/digital-album/";
-		URLS[1]="https://www.lupa.co.il/lupa-squared/tiles/";
-		URLS[2]="https://www.lupa.co.il/themes/hagadda/";
-		URLS[3]="https://www.lupa.co.il/products/calendars/";
-		URLS[4]="https://www.lupa.co.il/platform/app-calendar-skins/";
-		URLS[5]="https://www.lupa.co.il/products/photo-books/";
-		URLS[6]="https://www.lupa.co.il/products/layflat/";
-		URLS[7]="https://www.lupa.co.il/products/woodprint/";
-		URLS[8]="https://www.lupa.co.il/products/photo-prints/";
-		URLS[9]="https://www.lupa.co.il/products/canvas/";
-		URLS[10]="https://www.lupa.co.il/platform/gift-package/";
-		URLS[11]="https://www.lupa.co.il/platform/stickers/";
-		URLS[12]="https://www.lupa.co.il/platform/familyday/";
-		URLS[13]="https://www.lupa.co.il/platform/passovergifts/";
-		for (int i = 0; i < Url.length; i++) {
-			if (Url[i].equals(URLS[i])) {
-				System.out.println("menu ' מוצרים ' Link number "+i+" is working");
-			}
-			else {
-				Thread.sleep(300);
-				System.err.println("menu ' מוצרים ' Link number "+i+"is Not working");
-			}
-		}
-	}
+
 
 
 	

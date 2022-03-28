@@ -62,4 +62,17 @@ public class AccountTestFunctions {
 			}
 		}
 	}
+	
+	static public void checkingIfTheNameEmailIsRight(String name, String email) throws InterruptedException {
+		System.out.println("");
+		System.out.println("results for connectToFacebookThroughChat");
+		if (name.equals("John Smhoni")&& email.equals("jsmhoni@gmail.com")) {
+			System.out.println("the connection to facebook through chat is working");
+		}		
+		else {
+			Thread.sleep(300);
+			System.err.println("something went wrong");
+		}
+		
+	}
 }
