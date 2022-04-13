@@ -6,6 +6,8 @@ import tools.ElementsTests;
 import tools.AccountTestFunctions;
 import tools.functions;
 import java.util.ArrayList;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -65,6 +67,15 @@ public class AccountTests extends ElementsTests{
 	static public WebElement valueDay;
 	static public WebElement valueMonth;
 	static public WebElement valueYear;
+	//elements from test connectToFacebookthroughChat
+	static public WebElement chatButton;
+	static public List <WebElement> chat1Button;
+    static public List<WebElement> iframe;
+	static public WebElement facebookIcon;
+	static public List<WebElement> iframe1;
+	static public List<WebElement>nameEmail;
+	static public WebElement loginbutton;
+	static public String email;
 	
 	
 	//@Parameters ("browser")
@@ -306,7 +317,7 @@ private static void switchToTab1AndTakingFirstNameOfTheAccount() throws Interrup
 	  
 	  AccountTests.fillDetailsToThenConnectTofacebook();
 	  
-	  AccountTests.switchBackToMainTabToTakeNameAndEmailItsInIfame();
+	  AccountTests.switchBackToMainTabToTakeNameAndEmailItsInAIfame();
 	  
 	  AccountTestFunctions.checkingIfTheNameEmailIsRight(name, email);
   }
@@ -355,7 +366,7 @@ private static void switchToTab1AndTakingFirstNameOfTheAccount() throws Interrup
 		}	
   }
   
-  private static void switchBackToMainTabToTakeNameAndEmailItsInIfame() throws InterruptedException {
+  private static void switchBackToMainTabToTakeNameAndEmailItsInAIfame() throws InterruptedException {
 		Thread.sleep(2500);
 		driver.switchTo().window(tabs.get(0));
 		iframe1=driver.findElements(By.tagName("iframe"));

@@ -21,29 +21,17 @@ public class ElementsTests {
 	static public WebElement cookiePopUp;
 	static public Point point;
 	static public WebElement gifsForPassoverPopUp;
-	//test LikeButtons
-	static public WebElement menuAlbumTmonot;
-	static public List<WebElement>likebuttons;
-	static public WebElement howManyLikes;
-	static public WebElement albumDesgin;
+
 	//butiqSparimCatgorys elements
 	static public WebElement noshimButton;
 	static public List <WebElement> categories;
 	static public WebElement allBooks;
 	static public ArrayList<String>nameOfCategory;
-	//elements from test connectToFacebookthroughChat
-	static public WebElement chatButton;
-	static public List <WebElement> chat1Button;
-    static public List<WebElement> iframe;
-	static public WebElement facebookIcon;
-	static public List<WebElement> iframe1;
-	static public List<WebElement>nameEmail;
-	static public WebElement passwordField;
-	static public WebElement emailField;
-	static public WebElement loginbutton;
-	static public String name;
-	static public String email;
-	static public ArrayList<String> tabs;
+	static public WebElement menuAlbumTmonot;
+	static public List<WebElement>likebuttons;
+	static public WebElement howManyLikes;
+	static public WebElement albumDesgin;
+
 	//elements edit pics
 	static public WebElement howDoUDoLupa;
 	static public WebElement online;
@@ -66,6 +54,9 @@ public class ElementsTests {
     static public WebElement saveMosahPic;
     static public String mosahDesign;
 	//elements search results
+	static public WebElement chatButton;
+	static public List <WebElement> chat1Button;
+    static public List<WebElement> iframe;
 	static public WebElement returnButton;
 	static public WebElement searchField;
 	static public Robot robot;
@@ -73,6 +64,7 @@ public class ElementsTests {
 	static public ArrayList<String> Results;
 	static public String b;
 	//elements valuesInTable
+	
 	static public WebElement pricesButton;
 	static public WebElement albumimButton;
 	static public List <WebElement> rowPrices;

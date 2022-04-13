@@ -41,19 +41,7 @@ public class functions {
 	
 
 
-	static public void checkingBotiqSparim(WebElement howManyLikes, List<WebElement>likeButtons) throws InterruptedException {
-		System.out.println("");
-		System.out.println("results like button butiq sparim");
-		String Likes=howManyLikes.getText();
-		int howmanyLikes=Integer.parseInt(Likes);
-		if (howmanyLikes==likeButtons.size()) {
-			System.out.println("all the like buttons r working and has been transferred to the 'like' category");
-		}
-		else {
-			Thread.sleep(300);
-			System.err.println("not all the like buttons r working");
-		}
-	}
+
 
 	static public void botiqAmountOfBooksCategory(int[]amountOfBooks, ArrayList<String>nameOfCategory) throws InterruptedException {
 		

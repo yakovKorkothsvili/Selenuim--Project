@@ -61,7 +61,7 @@ public class LinksTests extends ElementsTests {
 
   @AfterMethod
   public void afterMethod() {
-	 // driver.quit();
+	  driver.quit();
   }
   
   @Test
@@ -101,6 +101,7 @@ public class LinksTests extends ElementsTests {
 			Thread.sleep(500);
 			LinksAlbumTmonot.get(i).click();
 			url[i]=driver.getCurrentUrl();
+			driver.navigate().back();
 		}
   }
   

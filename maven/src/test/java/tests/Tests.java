@@ -46,9 +46,6 @@ public class Tests extends ElementsTests{
   Thread.sleep(500);
   cookiePopUp=driver.findElement(By.xpath("//*[@id='Layer_1']"));
   cookiePopUp.click();
-
-  //menus top page
-  
   }
 
   @AfterMethod
@@ -57,25 +54,6 @@ public class Tests extends ElementsTests{
   }
 
 
-  @Test(priority = 2)
-  public void LikeButtons() throws InterruptedException {
-	  menuAlbumTmonot=driver.findElement(By.xpath("//menu[@class='desktop-menu ']//button[@data-tab-title-id='801']"));
-	  menuAlbumTmonot.click();
-	  albumDesgin=driver.findElement(By.xpath("//ul[@data-tab-content-id='801']//li[contains(.,'עי')]"));
-	  Thread.sleep(500);
-	  albumDesgin.click();
-	  for (int i = 0; i < 8; i++) {	                                                   
-		  js.executeScript("window.scrollBy(0,8000)", "");
-		  Thread.sleep(2500); 
-	  }
-		  likebuttons=driver.findElements(By.xpath("//section[@id='lupa_boutiq']//div[@class='heart' or @class='heart ']"));
-		  for (int j = 0; j < likebuttons.size(); j++) {
-			js.executeScript("arguments[0].click();", likebuttons.get(j));
-		}
-		  howManyLikes=driver.findElement(By.id("number_of_likes"));
-	    functions.checkingBotiqSparim(howManyLikes, likebuttons);
-	
-  }
   
   @Test(priority = 4)
   static public void butiqSparimCatgorys() throws InterruptedException {
@@ -200,7 +178,7 @@ public class Tests extends ElementsTests{
   @Test(priority = 11)
   static public void valuesInTable() throws InterruptedException {
 	  
-	  //click on menu and sub menu
+	  //click on menu and sub-menu
 	 pricesButton=driver.findElement(By.xpath("//div[@class='menu-tabs']//button[@data-tab-title-id='806']"));
 	  js.executeScript("arguments[0].click();", pricesButton);
 	  albumimButton=driver.findElement(By.xpath("//nav[@class='tabs-content tabs-content--visible']//img[@alt='מחירי אלבומים ומשלוחים']"));
@@ -223,7 +201,7 @@ public class Tests extends ElementsTests{
 		  js.executeScript("arguments[0].click();", albumimButton);
 		  Thread.sleep(6500);
 		  
-		  //click out of the pop up ad
+		  //click out of the pop-up ad
 		  popupAd=driver.findElement(By.xpath("//div//div[@role='button']"));
 		  js.executeScript("arguments[0].click();", popupAd);
 		  
