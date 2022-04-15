@@ -8,6 +8,7 @@ import tools.ElementsTests;
 
 import org.testng.annotations.BeforeMethod;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -23,7 +24,13 @@ public class ButiqSparimTests extends ElementsTests {
 	static public List<WebElement>likebuttons;
 	static public WebElement howManyLikes;
 	static public WebElement albumDesgin;
-	
+	//test rightAmuontOfBooksInEachCategory
+	static public int []amountOfBooks;
+	static public WebElement noshimButton;
+	static public List <WebElement> categories;
+	static public WebElement allBooks;
+	static public ArrayList<String>nameOfCategory;
+
   @BeforeMethod
   public void beforeMethod() throws InterruptedException {
 	  
@@ -55,7 +62,7 @@ public class ButiqSparimTests extends ElementsTests {
   
   @Test
   public void checkingIfLikeButtonsAreWorking() throws InterruptedException {
-	  ButiqSparimTests.clickOnMenuAlbumTmonotAndLinkAlbumDesign();
+	  ButiqSparimTests.navigateToBotiqSparim();
 	  
 	  ButiqSparimTests.scrollDownThePage8Times();
 	  
@@ -64,7 +71,7 @@ public class ButiqSparimTests extends ElementsTests {
 	  ButiqSparimFunctions.checkingBotiqSparim(howManyLikes, likebuttons);
   }
   
-  private static void clickOnMenuAlbumTmonotAndLinkAlbumDesign() throws InterruptedException {
+  private static void navigateToBotiqSparim() throws InterruptedException {
 	  menuAlbumTmonot=driver.findElement(By.xpath("//menu[@class='desktop-menu ']//button[@data-tab-title-id='801']"));
 	  menuAlbumTmonot.click();
 	  albumDesgin=driver.findElement(By.xpath("//ul[@data-tab-content-id='801']//li[contains(.,'עי')]"));
@@ -87,5 +94,51 @@ public class ButiqSparimTests extends ElementsTests {
 	  
 	  howManyLikes=driver.findElement(By.id("number_of_likes"));
   }
+  
+  @Test
+  public static void rightAmuontOfBooksInEachCategory() throws InterruptedException {
+	  ButiqSparimTests.navigateToBotiqSparim();
+	  
+	  ButiqSparimTests.findingButtonAndCategoriesElementsAndTakingTheTitleOfEachCategories();
+	  
+	  ButiqSparimTests.takingAmountOfBooksFromEachCategory();
+	  
+	  ButiqSparimFunctions.checkingThatTheAmountOfBooksInEachCategoryIsRight(amountOfBooks, nameOfCategory);
+  }
+  
 
+  
+  private static void findingButtonAndCategoriesElementsAndTakingTheTitleOfEachCategories() throws InterruptedException {
+	  Thread.sleep(1500);
+	  noshimButton=driver.findElement(By.xpath("//div[@id='theme-books']//span[@class='lupa-custom-select__triger-text underline ']"));
+	  categories=driver.findElements(By.xpath("//div[@id='theme-books']//div[@class='custom-options']//span"));
+	  
+	  amountOfBooks=new int[categories.size()];
+	  nameOfCategory=new ArrayList<String>(categories.size());
+	  for (int i = 0; i < categories.size(); i++) {
+		  String a=(String) js.executeScript("return arguments[0].innerHTML;",categories.get(i));
+		  a=a.trim();
+		nameOfCategory.add(a);
+	}
+  }
+  
+  private static void takingAmountOfBooksFromEachCategory() throws InterruptedException {
+	  
+	  for (int i = 0; i < categories.size(); i++) {
+		  js.executeScript("arguments[0].click()", noshimButton);
+		js.executeScript("arguments[0].click();", categories.get(i));
+		
+		  for (int j = 0; j < 3; j++) {	                                                   
+			  js.executeScript("window.scrollBy(0,8000)", "");
+			  Thread.sleep(1000); 
+		  }
+		  allBooks=driver.findElement(By.xpath("//p[@id='filter-results']//span[@class='total-filter-results']"));
+		String books=allBooks.getText();
+		books=books.trim();
+		amountOfBooks[i]=Integer.parseInt(books);
+	}
+  }
+  
+  
 }
+

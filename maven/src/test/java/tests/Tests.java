@@ -50,45 +50,10 @@ public class Tests extends ElementsTests{
 
   @AfterMethod
   public void afterTest()  {
- driver.quit();
+// driver.quit();
   }
 
 
-  
-  @Test(priority = 4)
-  static public void butiqSparimCatgorys() throws InterruptedException {
-	  menuAlbumTmonot=driver.findElement(By.xpath("//menu[@class='desktop-menu ']//button[@data-tab-title-id='801']"));
-	  menuAlbumTmonot.click();
-	  albumDesgin=driver.findElement(By.xpath("//ul[@data-tab-content-id='801']//li[contains(.,'עי')]"));
-	  Thread.sleep(500);
-	  albumDesgin.click();  
-	  Thread.sleep(1500);
-	  noshimButton=driver.findElement(By.xpath("//div[@id='theme-books']//span[@class='lupa-custom-select__triger-text underline ']"));
-	  categories=driver.findElements(By.xpath("//div[@id='theme-books']//div[@class='custom-options']//span"));
-	  
-	  int []amountOfBooks=new int[categories.size()];
-	  nameOfCategory=new ArrayList<String>(categories.size());
-	  for (int i = 0; i < categories.size(); i++) {
-		  String a=(String) js.executeScript("return arguments[0].innerHTML;",categories.get(i));
-		  a=a.trim();
-		nameOfCategory.add(a);
-	}
-
-	  for (int i = 0; i < categories.size(); i++) {
-		  js.executeScript("arguments[0].click()", noshimButton);
-		js.executeScript("arguments[0].click();", categories.get(i));
-		  for (int j = 0; j < 3; j++) {	                                                   
-			  js.executeScript("window.scrollBy(0,8000)", "");
-			  Thread.sleep(1000); 
-		  }
-		  allBooks=driver.findElement(By.xpath("//p[@id='filter-results']//span[@class='total-filter-results']"));
-		String books=allBooks.getText();
-		books=books.trim();
-		amountOfBooks[i]=Integer.parseInt(books);
-	}
-   functions.botiqAmountOfBooksCategory(amountOfBooks, nameOfCategory);
-  }
-  
 
   @Test(priority = 6)
   static public void editPics() throws InterruptedException {

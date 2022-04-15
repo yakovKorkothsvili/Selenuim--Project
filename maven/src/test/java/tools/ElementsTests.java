@@ -22,15 +22,7 @@ public class ElementsTests {
 	static public Point point;
 	static public WebElement gifsForPassoverPopUp;
 
-	//butiqSparimCatgorys elements
-	static public WebElement noshimButton;
-	static public List <WebElement> categories;
-	static public WebElement allBooks;
-	static public ArrayList<String>nameOfCategory;
-	static public WebElement menuAlbumTmonot;
-	static public List<WebElement>likebuttons;
-	static public WebElement howManyLikes;
-	static public WebElement albumDesgin;
+
 
 	//elements edit pics
 	static public WebElement howDoUDoLupa;
