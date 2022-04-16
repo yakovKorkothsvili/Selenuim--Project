@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestChrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.EditStyleOfPicsTests">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="editPics"/>
+        </methods>
+      </class> <!-- tests.EditStyleOfPicsTests -->
+      <class name="tests.PriceTableTests">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="CheckingTheAmountOfPagesBasedOnAmountOfClicks"/>
+          <include name="checkingTheInfoOfTheTable"/>
+        </methods>
+      </class> <!-- tests.PriceTableTests -->
+      <class name="tests.UXTestsMainPage">
+        <methods>
+          <include name="UXTestOn2LinksFontAndColor"/>
+          <include name="afterMethod"/>
+          <include name="UXTestLupaLogo"/>
+          <include name="beforeMethod"/>
+          <include name="UXTestOnDiscountAd"/>
+        </methods>
+      </class> <!-- tests.UXTestsMainPage -->
+      <class name="tests.LinksTests">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="LinksTetsMenuBottomOfThePage"/>
+          <include name="afterMethod"/>
+          <include name="LinksTestsOnMenuAlbumTmonot"/>
+        </methods>
+      </class> <!-- tests.LinksTests -->
+      <class name="tests.FormsTests">
+        <methods>
+          <include name="errorMessagesContactMeForm"/>
+          <include name="errorMessagesLetTalkAboutItForm"/>
+          <include name="errorMessagesOnFormSendEmail"/>
+          <include name="followOrderFormErrorMessages"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- tests.FormsTests -->
+    </classes>
+  </test> <!-- TestChrome(failed) -->
+  <test thread-count="5" name="TestEdge(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="tests.FormsTests">
+        <methods>
+          <include name="errorMessagesContactMeForm"/>
+          <include name="errorMessagesLetTalkAboutItForm"/>
+          <include name="errorMessagesOnFormSendEmail"/>
+          <include name="followOrderFormErrorMessages"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- tests.FormsTests -->
+    </classes>
+  </test> <!-- TestEdge(failed) -->
+</suite> <!-- Failed suite [Suite] -->
