@@ -2,9 +2,12 @@
 
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import tools.ElementsTests;
+import tools.ElementsThatAllTestsHave;
 import tools.AccountTestFunctions;
-import tools.functions;
+import tools.EditStyleOfPicsFunctions;
+
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,7 +22,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
-public class AccountTests extends ElementsTests{
+public class AccountTests extends ElementsThatAllTestsHave{
 	//LogInwithFacebookToLupa elements
 	static public WebElement ExistingAccountButton;
 	static public WebElement connectToFacebookbutton;
@@ -76,13 +79,19 @@ public class AccountTests extends ElementsTests{
 	static public List<WebElement>nameEmail;
 	static public WebElement loginbutton;
 	static public String email;
+	//elements from test CheckingSearchResultsFromChat
+	static public WebElement returnButton;
+	static public WebElement searchField;
+	static public Robot robot;
+	static public List<WebElement> results;
+	static public ArrayList<String> Results;
+	static public String b;
 	
-	
-	//@Parameters ("browser")
+	@Parameters ("browser")
 	  @BeforeMethod
-      public void beforeTest() throws InterruptedException {
+      public void beforeTest(String browser) throws InterruptedException {
 		  
-			 String browser="chrome";
+			// String browser="chrome";
 			  
 				if (browser.equals("chrome")) {
 					WebDriverManager.chromedriver().setup();
@@ -103,8 +112,7 @@ public class AccountTests extends ElementsTests{
 		  Thread.sleep(1500);
 		  cookiePopUp=driver.findElement(By.xpath("//*[@id='Layer_1']"));
 		  cookiePopUp.click();
-		  gifsForPassoverPopUp=driver.findElement(By.xpath("//div[@class='adoric_element element-shape closeLightboxButton editing']//button[@aria-label='close']"));
-		  gifsForPassoverPopUp.click();
+
 		  
 		  
 	  }
@@ -359,7 +367,7 @@ private static void switchToTab1AndTakingFirstNameOfTheAccount() throws Interrup
 		loginbutton.click();	
 		Thread.sleep(500);
 		
-		//popUp after i click login sometimes show up sometimes not
+		//popUp 'continue as nameOfTheAccount' after i click login sometimes show up sometimes not
 		try {
 			driver.findElement(By.xpath("//span[@class='a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7 ltmttdrg g0qnabr5 ojkyduve' and contains(.,'המשך')]")).click();
 		} catch (Exception NoSuchElementException) {
@@ -381,5 +389,46 @@ private static void switchToTab1AndTakingFirstNameOfTheAccount() throws Interrup
 			}
 		}
   }
+  
+  @Test
+  public static void CheckingSearchResultsFromChat() throws InterruptedException {
+	  
+	  AccountTests.clickOnWaitingForYouInTheChatAndFromHereWeStartToChatButtons();
+	  
+	  AccountTests.typeingLupaInSearchBarAndTakingTheResults();
+	  
+	  AccountTestFunctions.CheckingTheSearchResults(Results);
+	  
+  }
+  
+  private static void typeingLupaInSearchBarAndTakingTheResults() {
+	  iframe=driver.findElements(By.tagName("iframe"));
+		for (int i = 0; i < iframe.size(); i++) {
+			try {
+			driver.switchTo().frame(i);
+			returnButton=driver.findElement(By.xpath("//div[@data-embed='chat']//button[@data-testid='Icon--back']"));
+			js.executeScript("arguments[0].click();", returnButton);
+			Thread.sleep(500);
+			searchField=driver.findElement(By.xpath("//div[@data-garden-id='forms.faux_input']//input"));
+			searchField.sendKeys("לופה");
+			Thread.sleep(500);
+			robot=new Robot();
+			robot.keyPress(KeyEvent.VK_ENTER);
+			robot.keyRelease(KeyEvent.VK_ENTER);
+			Thread.sleep(1500);
+			results=driver.findElements(By.xpath("//ol[@lang='he']//li//a"));
+			 Results=new ArrayList<String>(results.size());
+			 
+			for (int j = 0; j < results.size(); j++) {
+				b=results.get(j).getText();
+				b=b.trim();
+				Results.add(b);
+			}
+	} catch (Exception NoSuchElementException) {
+		driver.switchTo().parentFrame();
+	  }
+    }
+  }
+  
   
 }

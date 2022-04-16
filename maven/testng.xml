@@ -6,14 +6,19 @@
    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="tests.AccountTests"/>
-	   <class name="tests.FormsTests"/>
+	  <class name="tests.ButiqSparimTests"/>
+      <class name="tests.EditStyleOfPicsTests"/>
+      <class name="tests.FormsTests"/>
+      <class name="tests.LinksTests"/>
+      <class name="tests.PriceTableTests"/>
+      <class name="tests.UXTestsMainPage"/>
     </classes>
   </test> 
 
   <test thread-count="5" name="TestEdge">
    <parameter name="browser" value="Edge"/>
     <classes>
-      <class name="tests.BusinessPageFormsTests"/>
+      <class name="tests.FormsTests"/>
     </classes>
   </test> 
 </suite> 

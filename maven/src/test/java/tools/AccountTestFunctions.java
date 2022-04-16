@@ -75,4 +75,28 @@ public class AccountTestFunctions {
 		}
 		
 	}
+	
+	static public void CheckingTheSearchResults(ArrayList<String>REsults) throws InterruptedException {
+		System.out.println("");
+		System.out.println("results for test 'Search Results'");
+		String[]LinksNames=new String[9];
+		LinksNames[0]="קישור להתקנת תוכנת לופה";
+		LinksNames[1]="אבטחת המידע בלופה";
+		LinksNames[2]="הגדרת לופה כתכנית בטוחה בחומת האש";
+		LinksNames[3]="הגדרת לופה כתוכנית בטוחה בחומת האש";
+		LinksNames[4]="איך תולים לופה בריבוע";
+		LinksNames[5]="התקנת תוכנת לופה - סרטון";
+		LinksNames[6]="עיצוב ספר באפליקציה - סרטון";
+		LinksNames[7]="הזמנת ספר בתוכנת המחשב";
+		LinksNames[8]="התקנת התוכנה על מחשב במקום העבודה";
+		for (int i = 0; i < REsults.size(); i++) {
+			if (REsults.get(i).equals(LinksNames[i])) {
+				System.out.println("result number "+LinksNames[i]+" is in place");
+			}	
+			else {
+				Thread.sleep(100);
+				System.err.println("result num "+LinksNames[i]+" is not in place");
+			}
+		}
+	}
 }

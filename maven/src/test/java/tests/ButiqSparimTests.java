@@ -4,9 +4,10 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import tools.ButiqSparimFunctions;
-import tools.ElementsTests;
+import tools.ElementsThatAllTestsHave;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +19,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 
-public class ButiqSparimTests extends ElementsTests {
+public class ButiqSparimTests extends ElementsThatAllTestsHave {
 	//test LikeButtons
 	static public WebElement menuAlbumTmonot;
 	static public List<WebElement>likebuttons;
@@ -30,11 +31,12 @@ public class ButiqSparimTests extends ElementsTests {
 	static public List <WebElement> categories;
 	static public WebElement allBooks;
 	static public ArrayList<String>nameOfCategory;
-
+	
+  @Parameters ("browser")
   @BeforeMethod
-  public void beforeMethod() throws InterruptedException {
+  public void beforeMethod(String browser) throws InterruptedException {
 	  
-		 String browser="chrome";
+		// String browser="chrome";
 		  
 			if (browser.equals("chrome")) {
 				WebDriverManager.chromedriver().setup();

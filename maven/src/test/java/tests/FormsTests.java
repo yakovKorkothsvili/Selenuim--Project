@@ -3,8 +3,8 @@ package tests;
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import tools.FormsFunctions;
-import tools.ElementsTests;
-import tools.functions;
+import tools.ElementsThatAllTestsHave;
+import tools.EditStyleOfPicsFunctions;
 
 import java.util.List;
 import org.openqa.selenium.By;
@@ -16,7 +16,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
-public class FormsTests extends ElementsTests {	
+public class FormsTests extends ElementsThatAllTestsHave {	
 	//elements errorMessagesOnFormSendEmail
 	static public WebElement sendEmailButton;
 	static public List<WebElement> mainPageMenu;
@@ -64,13 +64,13 @@ public class FormsTests extends ElementsTests {
 	static public String errmessagePhone;
 	static public String errmessagePhone1;
 
-  //@Parameters ("browser")
+  @Parameters ("browser")
   @BeforeMethod
-  public void beforeMethod() throws InterruptedException {
+  public void beforeMethod(String browser) throws InterruptedException {
 	  
-	String browser="chrome";
+	//String browser="chrome";
 	  
-	  try {
+	 
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			  driver=new ChromeDriver();
@@ -79,8 +79,7 @@ public class FormsTests extends ElementsTests {
 			WebDriverManager.edgedriver().setup();
 			  driver=new EdgeDriver();
 		}
-	} catch (Exception e) {
-	}
+
 	  
   js=(JavascriptExecutor) driver;
   driver.manage().window().maximize();

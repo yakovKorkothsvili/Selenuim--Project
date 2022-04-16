@@ -3,7 +3,7 @@ package tests;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import tools.ElementsTests;
+import tools.ElementsThatAllTestsHave;
 import tools.UXFunctions;
 
 import org.testng.annotations.BeforeMethod;
@@ -20,7 +20,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 
-public class UXTestsMainPage extends ElementsTests {
+public class UXTestsMainPage extends ElementsThatAllTestsHave {
 	   //elements UXLogo
 		static public WebElement logo;
 		static public int xLogo;
@@ -51,7 +51,7 @@ public class UXTestsMainPage extends ElementsTests {
 		  
 			//String browser="chrome";
 		  
-		  try {
+	
 			if (browser.equals("chrome")) {
 				WebDriverManager.chromedriver().setup();
 				  driver=new ChromeDriver();
@@ -60,8 +60,7 @@ public class UXTestsMainPage extends ElementsTests {
 				WebDriverManager.edgedriver().setup();
 				  driver=new EdgeDriver();
 			}
-		} catch (Exception e) {
-		}
+
 		  
 	  js=(JavascriptExecutor) driver;
 	  driver.manage().window().maximize();

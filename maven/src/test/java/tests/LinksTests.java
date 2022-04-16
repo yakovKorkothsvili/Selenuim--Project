@@ -2,10 +2,11 @@ package tests;
 
 import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import tools.ElementsTests;
+import tools.ElementsThatAllTestsHave;
 import tools.LinksFunctions;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +18,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 
-public class LinksTests extends ElementsTests {
+public class LinksTests extends ElementsThatAllTestsHave {
 
 	//test MenuTestAlbumTmonot
     static public WebElement menuAlbumTmonot;
@@ -28,13 +29,13 @@ public class LinksTests extends ElementsTests {
 	//elements Links
 	static public List<WebElement>linkS;
 	
- // @Parameters ("browser")
+ @Parameters ("browser")
   @BeforeMethod
-  public void beforeMethod() throws InterruptedException {
+  public void beforeMethod(String browser) throws InterruptedException {
 	  
-		String browser="chrome";
+		//String browser="chrome";
 	  
-	  try {
+	  
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			  driver=new ChromeDriver();
@@ -43,8 +44,7 @@ public class LinksTests extends ElementsTests {
 			WebDriverManager.edgedriver().setup();
 			  driver=new EdgeDriver();
 		}
-	} catch (Exception e) {
-	}
+
 	  
   js=(JavascriptExecutor) driver;
   driver.manage().window().maximize();
