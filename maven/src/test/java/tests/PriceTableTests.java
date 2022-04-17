@@ -29,13 +29,13 @@ public class PriceTableTests extends ElementsThatAllTestsHave {
 	static public WebElement plus;
 	static public WebElement pages;
 	static public String[]amuont=new String[8];
-	static public WebElement popupAd;
+	static public WebElement popupAdHazhatMihir;
 
- @Parameters ("browser")
+@Parameters ("browser")
   @BeforeMethod
   public void beforeMethod(String browser) throws InterruptedException {
 	  
-	 // String browser= "chrome";
+	  //String browser= "chrome";
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			  driver=new ChromeDriver();
@@ -57,7 +57,7 @@ public class PriceTableTests extends ElementsThatAllTestsHave {
 
   @AfterMethod
   public void afterMethod() {
-	  driver.quit();
+	 driver.quit();
   }
 
   @Test
@@ -79,10 +79,9 @@ public class PriceTableTests extends ElementsThatAllTestsHave {
   }
   
   private static void closePopUphzahatMihir() throws InterruptedException {
-
-	  Thread.sleep(6500);
-	  popupAd=driver.findElement(By.xpath("//div//div[@role='button']"));
-	  js.executeScript("arguments[0].click();", popupAd);
+	  Thread.sleep(8500);
+	  popupAdHazhatMihir=driver.findElement(By.xpath("//div//div[@role='button']"));
+	  js.executeScript("arguments[0].click();", popupAdHazhatMihir);
   }
   
   private static void clickingOnPlusAndTakingTheAmountOfPages() throws InterruptedException {
@@ -103,7 +102,7 @@ public class PriceTableTests extends ElementsThatAllTestsHave {
 	  
 	  PriceTableTests.findingThe3RowsOfTheTable();
 	  
-	  PriceTableFunctions.checkingThe3rowsOfTheTableValues(rowPrices3, rowPrices2, rowPrices);
+	  PriceTableFunctions.checkingThe3rowsOfTheTableValues(rowPrices2, rowPrices, rowPrices3);
 	  
   }
   

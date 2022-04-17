@@ -21,7 +21,7 @@ public class PriceTableFunctions {
 		}
 	}
 	
-	static public void checkingThe3rowsOfTheTableValues(List<WebElement> row,List<WebElement>row1, List<WebElement>row2) throws InterruptedException {
+	static public void checkingThe3rowsOfTheTableValues(List<WebElement>row,List<WebElement>row1, List<WebElement>row2) throws InterruptedException {
 		System.out.println(" ");
 		System.out.println("results for test 'checkingTheInfoOfTheTable'");
 		System.out.println(" ");

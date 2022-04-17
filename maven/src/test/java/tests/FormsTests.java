@@ -89,8 +89,7 @@ public class FormsTests extends ElementsThatAllTestsHave {
   //closepopUps
   cookiePopUp=driver.findElement(By.xpath("//*[@id='Layer_1']"));
   cookiePopUp.click();
-  gifsForPassoverPopUp=driver.findElement(By.xpath("//div[@class='adoric_element element-shape closeLightboxButton editing']//button[@aria-label='close']"));
-  gifsForPassoverPopUp.click();
+
   
   }
 
@@ -138,7 +137,7 @@ public class FormsTests extends ElementsThatAllTestsHave {
 	     LastName=driver.findElement(By.id("sales_form_form_familiy_name"));
 	     PhoneNUMBER=driver.findElement(By.id("sales_form_form_phone"));
 	     email1=driver.findElement(By.id("sales_form_form_email"));
-	     sendEmailButton=driver.findElement(By.xpath("//form[@action='/customer-service/?utm_campaign=Footer&utm_medium=Email&utm_source=Leanplum#wpcf7-f7386-o7']//input[@type='submit']"));
+	     sendEmailButton=driver.findElement(By.xpath("//div[@id='sales-form']//input[@type='submit']"));
 	     PrivateName.sendKeys("a");
 	     LastName.sendKeys("b");
 	     PhoneNUMBER.sendKeys("56784");

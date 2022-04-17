@@ -52,10 +52,6 @@ public class LinksTests extends ElementsThatAllTestsHave {
   Thread.sleep(1500);
   cookiePopUp=driver.findElement(By.xpath("//*[@id='Layer_1']"));
   cookiePopUp.click();
-  Thread.sleep(500);
-  gifsForPassoverPopUp=driver.findElement(By.xpath("//div[@class='adoric_element element-shape closeLightboxButton editing']//button[@aria-label='close']"));
-  gifsForPassoverPopUp.click();
-  
   }
   
 

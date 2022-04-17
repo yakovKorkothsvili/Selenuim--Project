@@ -41,10 +41,10 @@ public class EditStyleOfPicsTests extends ElementsThatAllTestsHave{
 	static public WebElement typeOfdesign;
     static public WebElement saveMosahPic;
     static public String mosahDesign;
- @Parameters ("browser")
+ //@Parameters ("browser")
   @BeforeMethod
-  public static void beforeTest(String browser) throws InterruptedException {
-	// String browser="chrome";
+  public static void beforeTest() throws InterruptedException {
+	 String browser="chrome";
 	 
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -69,7 +69,7 @@ public class EditStyleOfPicsTests extends ElementsThatAllTestsHave{
 
   @AfterMethod
   public void afterTest()  {
-  driver.quit();
+ // driver.quit();
   }
 
 
@@ -85,38 +85,7 @@ public class EditStyleOfPicsTests extends ElementsThatAllTestsHave{
 	  toUploadButton.click();
 	  tabs1=new ArrayList<String>(driver.getWindowHandles());
 	  driver.switchTo().window(tabs1.get(1));
-	  pickPics=driver.findElement(By.id("lupaSelectBtn"));
-	  js.executeScript("arguments[0].click();", pickPics);
-	  hipstory=driver.findElement(By.xpath("//div[@id='divIDGallery']//div[@class='btnSource']"));
-	  js.executeScript("arguments[0].click();", hipstory);
-	  Thread.sleep(1000);
-	  showAll=driver.findElements(By.xpath("//div[@class='txtCategoryDesign']"));
-	  js.executeScript("arguments[0].click();", showAll.get(0));
-	  harzlPic=driver.findElement(By.id("img967"));
-	  mosahPic=driver.findElement(By.id("img959"));
-	  next=driver.findElement(By.xpath("//div[@id='page_gallery_category']//input"));
-	  js.executeScript("arguments[0].click();",harzlPic);
-	  Thread.sleep(500);
-	  js.executeScript("arguments[0].click();",mosahPic);
-	  Thread.sleep(500);
-	  js.executeScript("arguments[0].click();",next);
-	  editHarzlPic=driver.findElement(By.xpath("//div[@id='divEditDeleteSummaryimg967']//div[@class='divEditSummary']"));
-	  js.executeScript("arguments[0].click();",editHarzlPic);
-	  blackFrameHarzl=driver.findElement(By.id("imgBlackFrame"));
-	  js.executeScript("arguments[0].click();",blackFrameHarzl);
-	  saveHarzlPic=driver.findElement(By.xpath("//div[@id='allImagesSizeIdKappaPas']//input[@type='button']"));
-	  typeOfDesign=driver.findElement(By.id("divImgOptionMain"));
-	  harzlDesign=typeOfDesign.getAttribute("class");
-	  js.executeScript("arguments[0].click();",saveHarzlPic);
-	  editMosahPic=driver.findElement(By.xpath("//div[@id='divEditDeleteSummaryimg959']//div[@class='divEditSummary']"));
-	  js.executeScript("arguments[0].click();",editMosahPic);
-	  kapaDesign=driver.findElement(By.id("imgColor"));
-	  saveMosahPic=driver.findElement(By.xpath("//div[@id='allImagesSizeIdKappaPas']//input[@type='button']"));
-	  typeOfdesign=driver.findElement(By.id("divImgOptionMain"));
-	  js.executeScript("arguments[0].click();",kapaDesign);
-	  mosahDesign=typeOfdesign.getAttribute("style");
-	  js.executeScript("arguments[0].click();",saveMosahPic);
-	  EditStyleOfPicsFunctions.designCheck(harzlDesign, mosahDesign);
+
   }
 
 
