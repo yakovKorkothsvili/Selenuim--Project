@@ -24,7 +24,7 @@ public class ButiqSparimFunctions {
 	static public void checkingThatTheAmountOfBooksInEachCategoryIsRight(int[]amountOfBooks, ArrayList<String>nameOfCategory) throws InterruptedException {
 		
 		System.out.println(" ");
-		System.out.println("results for butiq sparim");
+		System.out.println("results for rightAmuontOfBooksInEachCategory");
 		int[]amountOfBooks1=new int[amountOfBooks.length];
 		amountOfBooks1[0]=14;
 		amountOfBooks1[1]=8;

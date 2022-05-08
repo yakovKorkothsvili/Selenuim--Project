@@ -21,22 +21,22 @@ import org.testng.annotations.AfterMethod;
 
 public class ButiqSparimTests extends ElementsThatAllTestsHave {
 	//test LikeButtons
-	static public WebElement menuAlbumTmonot;
-	static public List<WebElement>likebuttons;
-	static public WebElement howManyLikes;
-	static public WebElement albumDesgin;
+	static  WebElement menuAlbumTmonot;
+	static  List<WebElement>likebuttons;
+	static  WebElement howManyLikes;
+	static  WebElement albumDesgin;
 	//test rightAmuontOfBooksInEachCategory
-	static public int []amountOfBooks;
-	static public WebElement noshimButton;
-	static public List <WebElement> categories;
-	static public WebElement allBooks;
-	static public ArrayList<String>nameOfCategory;
+	static  int []amountOfBooks;
+	static  WebElement noshimButton;
+	static  List <WebElement> categories;
+	static  WebElement allBooks;
+	static  ArrayList<String>nameOfCategory;
 	
-  @Parameters ("browser")
+ // @Parameters ("browser")
   @BeforeMethod
-  public void beforeMethod(String browser) throws InterruptedException {
+  public void beforeMethod() throws InterruptedException {
 	  
-		// String browser="chrome";
+		 String browser="chrome";
 		  
 			if (browser.equals("chrome")) {
 				WebDriverManager.chromedriver().setup();
@@ -62,7 +62,7 @@ public class ButiqSparimTests extends ElementsThatAllTestsHave {
 	  driver.quit();
   }
   
-  @Test
+  @Test(priority = 1)
   public void checkingIfLikeButtonsAreWorking() throws InterruptedException {
 	  ButiqSparimTests.navigateToBotiqSparim();
 	  
@@ -97,7 +97,7 @@ public class ButiqSparimTests extends ElementsThatAllTestsHave {
 	  howManyLikes=driver.findElement(By.id("number_of_likes"));
   }
   
-  @Test
+  @Test(priority = 1)
   public static void rightAmuontOfBooksInEachCategory() throws InterruptedException {
 	  ButiqSparimTests.navigateToBotiqSparim();
 	  
