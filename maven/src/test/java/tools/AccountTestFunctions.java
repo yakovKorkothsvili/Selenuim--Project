@@ -44,7 +44,7 @@ public class AccountTestFunctions {
 	static public void checkingErrorMesAccount(ArrayList<String>errMes) throws InterruptedException {
 		System.out.println(" ");
 		System.out.println("results for error message creating account");
-		String []errorMes= new String[6];
+		String []errorMes= new String[errMes.size()];
 		errorMes[0]="שם פרטי לא יכול להכיל ספרות";
 		errorMes[1]="זה שם ממאדים. כאן יש מינימום של 2 אותיות לשם";
 		errorMes[2]="hopa@lupa.co.il דוגמה לכתובת מייל נכונה";
@@ -80,22 +80,22 @@ public class AccountTestFunctions {
 		System.out.println("");
 		System.out.println("results for test 'Search Results'");
 		String[]LinksNames=new String[9];
-		LinksNames[0]="קישור להתקנת תוכנת לופה";
-		LinksNames[1]="אבטחת המידע בלופה";
+		LinksNames[1]="קישור להתקנת תוכנת לופה";
+		LinksNames[0]="אבטחת המידע בלופה";
 		LinksNames[2]="הגדרת לופה כתכנית בטוחה בחומת האש";
 		LinksNames[3]="הגדרת לופה כתוכנית בטוחה בחומת האש";
 		LinksNames[4]="איך תולים לופה בריבוע";
-		LinksNames[5]="התקנת תוכנת לופה - סרטון";
-		LinksNames[6]="עיצוב ספר באפליקציה - סרטון";
+		LinksNames[5]="עיצוב ספר באפליקציה - סרטון";
+		LinksNames[6]="התקנת תוכנת לופה - סרטון";
 		LinksNames[7]="הזמנת ספר בתוכנת המחשב";
 		LinksNames[8]="התקנת התוכנה על מחשב במקום העבודה";
 		for (int i = 0; i < REsults.size(); i++) {
 			if (REsults.get(i).equals(LinksNames[i])) {
-				System.out.println("result number "+LinksNames[i]+" is in place");
+				System.out.println("result "+LinksNames[i]+" is in place");
 			}	
 			else {
 				Thread.sleep(100);
-				System.err.println("result num "+LinksNames[i]+" is not in place");
+				System.err.println("result "+LinksNames[i]+" is not in place");
 			}
 		}
 	}

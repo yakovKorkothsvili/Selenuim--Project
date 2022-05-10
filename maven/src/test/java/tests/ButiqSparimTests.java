@@ -11,6 +11,7 @@ import org.testng.annotations.Parameters;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -32,11 +33,11 @@ public class ButiqSparimTests extends ElementsThatAllTestsHave {
 	static  WebElement allBooks;
 	static  ArrayList<String>nameOfCategory;
 	
- // @Parameters ("browser")
+  @Parameters ("browser")
   @BeforeMethod
-  public void beforeMethod() throws InterruptedException {
+  public void beforeMethod(String browser) throws InterruptedException {
 	  
-		 String browser="chrome";
+		// String browser="chrome";
 		  
 			if (browser.equals("chrome")) {
 				WebDriverManager.chromedriver().setup();
@@ -52,14 +53,14 @@ public class ButiqSparimTests extends ElementsThatAllTestsHave {
 	  js=(JavascriptExecutor) driver;
 	  
 	  //closepopUps
-	  Thread.sleep(1500);
+	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	  cookiePopUp=driver.findElement(By.xpath("//*[@id='Layer_1']"));
 	  cookiePopUp.click();
   }
 
   @AfterMethod
   public void afterMethod() {
-	  driver.quit();
+	 // driver.quit();
   }
   
   @Test(priority = 1)

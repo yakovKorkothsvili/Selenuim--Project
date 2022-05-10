@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.netty.util.Timeout;
 import tools.ElementsThatAllTestsHave;
-import tools.EditStyleOfPicsFunctions;
+import tools.E2EFunctions;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;

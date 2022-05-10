@@ -4,12 +4,13 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import tools.ElementsThatAllTestsHave;
 import tools.AccountTestFunctions;
-import tools.EditStyleOfPicsFunctions;
+import tools.E2EFunctions;
 
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -119,7 +120,7 @@ public class AccountTests extends ElementsThatAllTestsHave{
 
 	  @AfterMethod
 	  public void afterTest() {
-		  driver.quit();
+		 driver.quit();
 	  }
 	
   @Test
@@ -375,15 +376,16 @@ private static void switchToTab1AndTakingFirstNameOfTheAccount() throws Interrup
   }
   
   private static void switchBackToMainTabToTakeNameAndEmailItsInAIfame() throws InterruptedException {
-		Thread.sleep(2500);
+		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		driver.switchTo().window(tabs.get(0));
 		iframe1=driver.findElements(By.tagName("iframe"));
 		for (int i = 0; i <iframe1.size(); i++) {
 			try {
 				driver.switchTo().frame(i);
-				nameEmail=driver.findElements(By.xpath("//div[@class='sc-eInJlc emAJPF']//div"));
-				 name=nameEmail.get(1).getText();
-				 email=nameEmail.get(2).getText();
+				nameEmail=driver.findElements(By.xpath("//div[@class='styles__UserProfileDetailsContainer-sc-1jj4i2k-0 kSRUDj']//div"));
+				 name=nameEmail.get(0).getText();
+				 email=nameEmail.get(1).getText();
+				
 			} catch (Exception NotSuchElement) {
 				driver.switchTo().parentFrame();
 			}

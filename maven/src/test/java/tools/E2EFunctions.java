@@ -1,6 +1,6 @@
 package tools;
 
-public class EditStyleOfPicsFunctions {
+public class E2EFunctions {
 
 
 

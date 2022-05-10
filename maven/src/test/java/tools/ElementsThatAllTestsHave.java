@@ -1,10 +1,8 @@
 package tools;
 
-import java.awt.Robot;
-import java.util.ArrayList;
-import java.util.List;
+
+
 import org.openqa.selenium.Point;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,7 +18,7 @@ public class ElementsThatAllTestsHave {
 	static public  JavascriptExecutor js=null;
 	static public WebElement cookiePopUp;
 	static public Point point;
-	static public WebElement gifsForPassoverPopUp;
+	
 
 
 

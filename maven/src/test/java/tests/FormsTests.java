@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import tools.FormsFunctions;
 import tools.ElementsThatAllTestsHave;
-import tools.EditStyleOfPicsFunctions;
+import tools.E2EFunctions;
 
 import java.util.List;
 import org.openqa.selenium.By;
