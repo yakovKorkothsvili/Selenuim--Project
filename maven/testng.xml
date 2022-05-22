@@ -5,11 +5,11 @@
     <test thread-count="2" name="TestChrome">
    <parameter name="browser" value="chrome"/>
     <classes>
-   <!--  <class name="tests.AccountTests"/> -->
-	 <class name="tests.ButiqSparimTests"/>
-  <!--   <class name="tests.EditStyleOfPicsTests"/>
+   <!--  <class name="tests.AccountTests"/>
+	 <class name="tests.ButiqSparimTests"/> 
+    <class name="tests.EditStyleOfPicsTests"/>-->
      <class name="tests.FormsTests"/>
-      <class name="tests.LinksTests"/>
+    <!--   <class name="tests.LinksTests"/>
        <class name="tests.PriceTableTests"/>
      <class name="tests.UXTestsMainPage"/> -->
     </classes>

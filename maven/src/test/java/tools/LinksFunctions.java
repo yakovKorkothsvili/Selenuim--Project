@@ -46,15 +46,16 @@ public class LinksFunctions {
 		URLS[9]="https://www.lupa.co.il/products/canvas/";
 		URLS[10]="https://www.lupa.co.il/platform/gift-package/";
 		URLS[11]="https://www.lupa.co.il/platform/stickers/";
-		URLS[12]="https://www.lupa.co.il/platform/familyday/";
-		URLS[13]="https://www.lupa.co.il/platform/passovergifts/";
+		URLS[12]="https://www.lupa.co.il/platform/army-collection/";
+		URLS[13]="https://www.lupa.co.il/platform/familyday/";
+		URLS[14]="https://www.lupa.co.il/platform/passovergifts/";
 		for (int i = 0; i < Url.length; i++) {
 			if (Url[i].equals(URLS[i])) {
 				System.out.println("menu ' מוצרים ' Link number "+i+" is working");
 			}
 			else {
 				Thread.sleep(300);
-				System.err.println("menu ' מוצרים ' Link number "+i+"is Not working");
+				System.err.println("menu ' מוצרים ' Link number "+i+" is Not working");
 			}
 		}
 	}

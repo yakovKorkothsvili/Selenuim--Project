@@ -10,6 +10,7 @@ import org.testng.annotations.Parameters;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -49,15 +50,19 @@ public class LinksTests extends ElementsThatAllTestsHave {
   js=(JavascriptExecutor) driver;
   driver.manage().window().maximize();
   driver.get("https://www.lupa.co.il/");
-  Thread.sleep(1500);
+ driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+  
+  //closepopUps
   cookiePopUp=driver.findElement(By.xpath("//*[@id='Layer_1']"));
   cookiePopUp.click();
+  popUpBackToSchool=driver.findElement(By.xpath("//div[@class='element-shape closeLightboxButton adoric_element']"));
+  popUpBackToSchool.click();
   }
   
 
   @AfterMethod
   public void afterMethod() {
-	  driver.quit();
+//driver.quit();
   }
   
   @Test
@@ -92,12 +97,17 @@ public class LinksTests extends ElementsThatAllTestsHave {
 		  for (int i = 0; i < LinksAlbumTmonot.size(); i++) {
 			//need to find those elements again cuz the test is moving between pages
 			menuAlbumTmonot=driver.findElement(By.xpath("//menu[@class='desktop-menu ']//button[@data-tab-title-id='801']"));
-			LinksAlbumTmonot=driver.findElements(By.xpath("//ul[@data-tab-content-id='801']//li"));
+			LinksAlbumTmonot=driver.findElements(By.xpath("//ul[@data-tab-content-id='801']//li"));		 
 			menuAlbumTmonot.click();
-			Thread.sleep(500);
+			Thread.sleep(1500);
 			LinksAlbumTmonot.get(i).click();
 			url[i]=driver.getCurrentUrl();
 			driver.navigate().back();
+ 
+		   popUpBackToSchool=driver.findElement(By.xpath("//div[@class='element-shape closeLightboxButton adoric_element']"));
+		   driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+           js.executeScript("arguments[0].click();", popUpBackToSchool);
+
 		}
   }
   

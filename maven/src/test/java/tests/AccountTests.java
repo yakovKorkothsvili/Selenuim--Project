@@ -108,11 +108,12 @@ public class AccountTests extends ElementsThatAllTestsHave{
 		  driver.manage().window().maximize();
 		  driver.get("https://www.lupa.co.il/");
 		  js=(JavascriptExecutor) driver;
+		  driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		  
 		  //closepopUps
-		  Thread.sleep(1500);
 		  cookiePopUp=driver.findElement(By.xpath("//*[@id='Layer_1']"));
 		  cookiePopUp.click();
+		   driver.findElement(By.xpath("//div[@class='element-shape closeLightboxButton adoric_element']")).click();
 
 		  
 		  

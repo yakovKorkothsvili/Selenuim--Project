@@ -69,11 +69,12 @@ public class E2ETests extends ElementsThatAllTestsHave{
   driver.manage().window().maximize();
   driver.get("https://www.lupa.co.il/");
   js=(JavascriptExecutor) driver;
+ driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
   
-  ///cookie pop up
-  Thread.sleep(1500);
+  //closepopUps
   cookiePopUp=driver.findElement(By.xpath("//*[@id='Layer_1']"));
   cookiePopUp.click();
+   driver.findElement(By.xpath("//div[@class='element-shape closeLightboxButton adoric_element']")).click();
   }
 
   @AfterMethod

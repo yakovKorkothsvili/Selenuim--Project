@@ -17,6 +17,7 @@ public class ElementsThatAllTestsHave {
     static  public Actions act; 
 	static public  JavascriptExecutor js=null;
 	static public WebElement cookiePopUp;
+	static public WebElement popUpBackToSchool;
 	static public Point point;
 	
 

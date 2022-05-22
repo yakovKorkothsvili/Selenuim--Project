@@ -7,6 +7,8 @@ import tools.ElementsThatAllTestsHave;
 import tools.E2EFunctions;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -51,7 +53,7 @@ public class FormsTests extends ElementsThatAllTestsHave {
 	static public List<WebElement> errorMessagesElements;
 	//followOrderFailed
 	static public WebElement customerServiceButton;
-	static public List<WebElement>followOrder;
+	static public WebElement followOrder;
 	static public WebElement first3Numbers;
 	static public List<WebElement>kidomet;
 	static public WebElement phoneField;
@@ -68,7 +70,7 @@ public class FormsTests extends ElementsThatAllTestsHave {
   @BeforeMethod
   public void beforeMethod(String browser) throws InterruptedException {
 	  
-	//String browser="chrome";
+//	String browser="chrome";
 	  
 	 
 		if (browser.equals("chrome")) {
@@ -84,12 +86,12 @@ public class FormsTests extends ElementsThatAllTestsHave {
   js=(JavascriptExecutor) driver;
   driver.manage().window().maximize();
   driver.get("https://www.lupa.co.il/");
-  Thread.sleep(1500);
+  driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
   
   //closepopUps
   cookiePopUp=driver.findElement(By.xpath("//*[@id='Layer_1']"));
   cookiePopUp.click();
-
+   driver.findElement(By.xpath("//div[@class='element-shape closeLightboxButton adoric_element']")).click();
   
   }
 
@@ -101,15 +103,17 @@ public class FormsTests extends ElementsThatAllTestsHave {
   @Test
   public static void errorMessagesOnFormSendEmail() throws InterruptedException {
 	  
-	  FormsTests.navigateToCustomerServicePage();
+	  navigateToCustomerServicePage();
 	  
-	  FormsTests.openTheSendEmailForm();
+	  scrollInToView();
+	  
+	  openTheSendEmailForm();
 	 
-	  FormsTests.picKaSubjectForTheEmail();
+	  picKaSubjectForTheEmail();
 	 
-      FormsTests.fillPersonalDetailsOnTheFormSendEmail();
+     fillPersonalDetailsOnTheFormSendEmail();
       
-      FormsTests.takeTheErrorMessagesFromTheFormSendEmail();
+     takeTheErrorMessagesFromTheFormSendEmail();
 	  
 	  FormsFunctions.checkTheErrorMessagesSendEmailForm(errorMess); 
 	  
@@ -120,8 +124,12 @@ public class FormsTests extends ElementsThatAllTestsHave {
 	    mainPageMenu.get(3).click();
    }
 
+    private static void scrollInToView() throws InterruptedException {
+    	Thread.sleep(1000);
+    	js.executeScript("window.scrollBy(0,4000)", "");
+    }
     private static void openTheSendEmailForm() {
-	   sendEmailButton=driver.findElement(By.xpath("//div[@class='self-service-desktop']//a[@class='email-popup-trigger popup-trigger spu-clickable']"));
+	   sendEmailButton=driver.findElement(By.linkText("יאללה למייל"));
 	   js.executeScript("arguments[0].click();", sendEmailButton);	
    }
     private static void picKaSubjectForTheEmail() throws InterruptedException {
@@ -157,13 +165,13 @@ public class FormsTests extends ElementsThatAllTestsHave {
     @Test
     private static void errorMessagesContactMeForm() throws InterruptedException {
     	
-    	FormsTests.navigateToBusinessPage();
+    	navigateToBusinessPage();
     	
-    	FormsTests.closePopUpHagadaAsAgift();
+//    	FormsTests.closePopUpHagadaAsAgift();
     	
-    	FormsTests.fillPersonalDetailsOnFormContactMeForm();
+    	fillPersonalDetailsOnFormContactMeForm();
     	
-    	FormsTests.takeTheErrorMessagesFromContactMeForm();
+    	takeTheErrorMessagesFromContactMeForm();
     	
     	FormsFunctions.checkingTheErrorMessagesContatMeForm(errorElements);
     }
@@ -174,10 +182,10 @@ public class FormsTests extends ElementsThatAllTestsHave {
    	  Thread.sleep(1000);
     }
     
-    private static void closePopUpHagadaAsAgift() {
-    	 POPup=driver.findElement(By.xpath("//div[@role='button' and @aria-label]"));
-   	  js.executeScript("arguments[0].click();", POPup);
-    }
+//    private static void closePopUpHagadaAsAgift() {
+//    	 POPup=driver.findElement(By.xpath("//div[@role='button' and @aria-label]"));
+//   	  js.executeScript("arguments[0].click();", POPup);
+//    }
     
     private static void fillPersonalDetailsOnFormContactMeForm() throws InterruptedException {
   	  firstName=driver.findElement(By.id("business-form-private-name"));
@@ -203,15 +211,15 @@ public class FormsTests extends ElementsThatAllTestsHave {
     
     @Test
     private static void errorMessagesLetTalkAboutItForm() throws InterruptedException {
-    	FormsTests.navigateToBusinessPage();
+    	navigateToBusinessPage();
     	
-    	FormsTests.closePopUpHagadaAsAgift();
+//    	closePopUpHagadaAsAgift();
     	
-    	FormsTests.openTheLetTalkAboutItForm();
+    	openTheLetTalkAboutItForm();
     	
-    	FormsTests.fillPersonalDetailsOnTheFormLetTalkAboutItForm();
+    	fillPersonalDetailsOnTheFormLetTalkAboutItForm();
     	
-    	FormsTests.takeTheErrorMessagesFromLetTalkAboutItForm();
+    	takeTheErrorMessagesFromLetTalkAboutItForm();
     	
     	FormsFunctions.checkingErrorMessagesFormLetTalkAboutIt(errorMessages);
     }
@@ -248,24 +256,24 @@ public class FormsTests extends ElementsThatAllTestsHave {
     
     @Test
     private static void followOrderFormErrorMessages() throws InterruptedException {
-    	FormsTests.navigateToCustomerServicePage();
+    	navigateToCustomerServicePage();
     	
-    	FormsTests.openFollowOrderForm();
+    	openFollowOrderForm();
     	
-    	FormsTests.findElementsInTheFollowOrderForm();
+    	findElementsInTheFollowOrderForm();
     	
-    	FormsTests.fillDetailsForFollowOrderFormAndTakeErrorMessageOrderID();
+    	fillDetailsForFollowOrderFormAndTakeErrorMessageOrderID();
     	
-    	FormsTests.fillDetailsForFollowOrderFormAndTakeErrorMessagePhone1();
+    	fillDetailsForFollowOrderFormAndTakeErrorMessagePhone1();
     	
-    	FormsTests.fillDetailsForFollowOrderFormAndTakeErrorMessagePhone2();
+    	fillDetailsForFollowOrderFormAndTakeErrorMessagePhone2();
     	
     	FormsFunctions.checkingErrorMessagesFormFollowOrder(errmessageOrderId, errmessagePhone, errmessagePhone1);
     }
     
     private static void openFollowOrderForm() {
-    	 followOrder=driver.findElements(By.xpath("//div[@class='lupa_btn lupa_btn_blue lupa_btn_wide aos-init aos-animate']//a"));
-    	 js.executeScript("arguments[0].click();", followOrder.get(0));
+    	 followOrder=driver.findElement(By.linkText("למעקב אחר התקדמות ההזמנה"));
+    	 js.executeScript("arguments[0].click();", followOrder);
     }
     
     private static void findElementsInTheFollowOrderForm() {
