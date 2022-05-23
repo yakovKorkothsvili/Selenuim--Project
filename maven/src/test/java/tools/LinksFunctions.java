@@ -33,7 +33,7 @@ public class LinksFunctions {
 	static public void LinksBottomOfThePageCheckingTheUrls(String[]Url) throws InterruptedException {
 		String[]URLS=new String[Url.length];
 		System.out.println("");
-		System.out.println("results for test Links Tests Menu Bottom Of The Page");
+		System.out.println("results for test 'menu links' on the bottom of the main page");
 		URLS[0]="https://www.lupa.co.il/products/digital-album/";
 		URLS[1]="https://www.lupa.co.il/lupa-squared/tiles/";
 		URLS[2]="https://www.lupa.co.il/themes/hagadda/";

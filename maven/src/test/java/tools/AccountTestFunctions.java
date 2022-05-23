@@ -89,14 +89,21 @@ public class AccountTestFunctions {
 		LinksNames[6]="התקנת תוכנת לופה - סרטון";
 		LinksNames[7]="הזמנת ספר בתוכנת המחשב";
 		LinksNames[8]="התקנת התוכנה על מחשב במקום העבודה";
-		for (int i = 0; i < REsults.size(); i++) {
-			if (REsults.get(i).equals(LinksNames[i])) {
-				System.out.println("result "+LinksNames[i]+" is in place");
-			}	
-			else {
-				Thread.sleep(100);
-				System.err.println("result "+LinksNames[i]+" is not in place");
+		outerloop:
+		for (int j = 0; j < REsults.size();) {
+			for (int i = 0; i < REsults.size();) {
+			if (REsults.get(j).equals(LinksNames[i])) {
+				System.out.println("Link "+LinksNames[i]+" is in the results ");
+				j++;
+				if (j>8) {
+					break outerloop;
+				}	
 			}
+			else {
+				i++;
+			}
+
+		  }
 		}
 	}
 }

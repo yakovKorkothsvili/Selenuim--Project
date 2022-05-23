@@ -92,7 +92,7 @@ public class AccountTests extends ElementsThatAllTestsHave{
 	  @BeforeMethod
       public void beforeTest(String browser) throws InterruptedException {
 		  
-			// String browser="chrome";
+		//	String browser="chrome";
 			  
 				if (browser.equals("chrome")) {
 					WebDriverManager.chromedriver().setup();
@@ -108,7 +108,7 @@ public class AccountTests extends ElementsThatAllTestsHave{
 		  driver.manage().window().maximize();
 		  driver.get("https://www.lupa.co.il/");
 		  js=(JavascriptExecutor) driver;
-		  driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		  
 		  //closepopUps
 		  cookiePopUp=driver.findElement(By.xpath("//*[@id='Layer_1']"));
@@ -121,7 +121,7 @@ public class AccountTests extends ElementsThatAllTestsHave{
 
 	  @AfterMethod
 	  public void afterTest() {
-		 driver.quit();
+		driver.quit();
 	  }
 	
   @Test

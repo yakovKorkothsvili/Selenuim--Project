@@ -33,8 +33,6 @@ public class E2ETests extends ElementsThatAllTestsHave{
 	static public WebElement acceptButton;
 	static public WebElement uploadPicsFromComputer;
 	
-	
-	
 	static public List <WebElement> showAll;
 	static public  ArrayList<String> tabs1;
 	
@@ -50,10 +48,10 @@ public class E2ETests extends ElementsThatAllTestsHave{
 	static public WebElement typeOfdesign;
     static public WebElement saveMosahPic;
     static public String mosahDesign;
- //@Parameters ("browser")
+ @Parameters ("browser")
   @BeforeMethod
-  public static void beforeTest() throws InterruptedException {
-	 String browser="Edge";
+  public static void beforeTest(String browser) throws InterruptedException {
+	 //String browser="Edge";
 	 
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -69,7 +67,7 @@ public class E2ETests extends ElementsThatAllTestsHave{
   driver.manage().window().maximize();
   driver.get("https://www.lupa.co.il/");
   js=(JavascriptExecutor) driver;
- driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+ driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
   
   //closepopUps
   cookiePopUp=driver.findElement(By.xpath("//*[@id='Layer_1']"));
@@ -79,7 +77,7 @@ public class E2ETests extends ElementsThatAllTestsHave{
 
   @AfterMethod
   public void afterTest()  {
- // driver.quit();
+  driver.quit();
   }
 
 

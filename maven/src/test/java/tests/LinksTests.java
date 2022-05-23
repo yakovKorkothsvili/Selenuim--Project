@@ -14,6 +14,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -38,19 +39,21 @@ public class LinksTests extends ElementsThatAllTestsHave {
 	  
 	  
 		if (browser.equals("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			  driver=new ChromeDriver();
+	   WebDriverManager.chromedriver().setup();
+	   driver=new ChromeDriver();
+			  
 		}
 		else if (browser.equals("Edge")) {
 			WebDriverManager.edgedriver().setup();
-			  driver=new EdgeDriver();
+			 driver=new EdgeDriver();
+			
 		}
 
 	  
   js=(JavascriptExecutor) driver;
   driver.manage().window().maximize();
   driver.get("https://www.lupa.co.il/");
- driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+ driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
   
   //closepopUps
   cookiePopUp=driver.findElement(By.xpath("//*[@id='Layer_1']"));
@@ -62,7 +65,7 @@ public class LinksTests extends ElementsThatAllTestsHave {
 
   @AfterMethod
   public void afterMethod() {
-//driver.quit();
+ driver.quit();
   }
   
   @Test
@@ -98,7 +101,7 @@ public class LinksTests extends ElementsThatAllTestsHave {
 			//need to find those elements again cuz the test is moving between pages
 			menuAlbumTmonot=driver.findElement(By.xpath("//menu[@class='desktop-menu ']//button[@data-tab-title-id='801']"));
 			LinksAlbumTmonot=driver.findElements(By.xpath("//ul[@data-tab-content-id='801']//li"));		 
-			menuAlbumTmonot.click();
+			js.executeScript("arguments[0].click();", menuAlbumTmonot);
 			Thread.sleep(1500);
 			LinksAlbumTmonot.get(i).click();
 			url[i]=driver.getCurrentUrl();
