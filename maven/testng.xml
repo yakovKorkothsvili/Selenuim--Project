@@ -10,8 +10,8 @@
     <class name="tests.E2ETests"/>
      <class name="tests.FormsTests"/>
      <class name="tests.LinksTests"/>
-  <!--<class name="tests.PriceTableTests"/>
-     <class name="tests.UXTestsMainPage"/> -->
+  <class name="tests.PriceTableTests"/>
+     <class name="tests.UXTestsMainPage"/> 
     </classes>
   </test> 
 
@@ -23,8 +23,8 @@
    <class name="tests.E2ETests"/> 
      <class name="tests.FormsTests"/>
      <class name="tests.LinksTests"/>
- <!--<class name="tests.PriceTableTests"/>
-     <class name="tests.UXTestsMainPage"/>-->
+    <class name="tests.PriceTableTests"/>
+     <class name="tests.UXTestsMainPage"/>
     </classes>
   </test>
 </suite> 

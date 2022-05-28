@@ -51,12 +51,11 @@ public class ButiqSparimTests extends ElementsThatAllTestsHave {
 	  driver.manage().window().maximize();
 	  driver.get("https://www.lupa.co.il/");
 	  js=(JavascriptExecutor) driver;
-	  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-	  
 	  //closepopUps
-	  cookiePopUp=driver.findElement(By.xpath("//*[@id='Layer_1']"));
+	  Thread.sleep(1500);
+	  cookiePopUp=driver.findElement(By.id("XMLID_54_"));
 	  cookiePopUp.click();
-	   driver.findElement(By.xpath("//div[@class='element-shape closeLightboxButton adoric_element']")).click();
+	  driver.findElement(By.xpath("//div[@class='element-shape closeLightboxButton adoric_element']")).click();	  
   }
 
   @AfterMethod

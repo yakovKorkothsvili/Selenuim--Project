@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\yakov\git\SeleniumProject\maven\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">38 methods, 6 failed,   32 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LinksTests" class="method navigator-link" hash-for-method="LinksTestsOnMenuAlbumTmonot">LinksTestsOnMenuAlbumTmonot</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.UXTestsMainPage" class="method navigator-link" hash-for-method="UXTestOn2LinksFontAndColor">UXTestOn2LinksFontAndColor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.AccountTests" class="method navigator-link" hash-for-method="connectToFacebookThroughChat">connectToFacebookThroughChat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.AccountTests" class="method navigator-link" hash-for-method="connectToFacebookThroughChat">connectToFacebookThroughChat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.FormsTests" class="method navigator-link" hash-for-method="errorMessagesOnFormSendEmail">errorMessagesOnFormSendEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.FormsTests" class="method navigator-link" hash-for-method="errorMessagesOnFormSendEmail">errorMessagesOnFormSendEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.AccountTests" class="method navigator-link" hash-for-method="CheckingSearchResultsFromChat">CheckingSearchResultsFromChat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.AccountTests" class="method navigator-link" hash-for-method="CheckingSearchResultsFromChat">CheckingSearchResultsFromChat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.PriceTableTests" class="method navigator-link" hash-for-method="CheckingTheAmountOfPagesBasedOnAmountOfClicks">CheckingTheAmountOfPagesBasedOnAmountOfClicks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.PriceTableTests" class="method navigator-link" hash-for-method="CheckingTheAmountOfPagesBasedOnAmountOfClicks">CheckingTheAmountOfPagesBasedOnAmountOfClicks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.AccountTests" class="method navigator-link" hash-for-method="CreatAcoountErrorMessages">CreatAcoountErrorMessages</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.AccountTests" class="method navigator-link" hash-for-method="CreatAcoountErrorMessages">CreatAcoountErrorMessages</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.AccountTests" class="method navigator-link" hash-for-method="CrudTestPersonalDetails">CrudTestPersonalDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.AccountTests" class="method navigator-link" hash-for-method="CrudTestPersonalDetails">CrudTestPersonalDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LinksTests" class="method navigator-link" hash-for-method="LinksTestsOnMenuAlbumTmonot">LinksTestsOnMenuAlbumTmonot</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LinksTests" class="method navigator-link" hash-for-method="LinksTetsMenuBottomOfThePage">LinksTetsMenuBottomOfThePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.LinksTests" class="method navigator-link" hash-for-method="LinksTetsMenuBottomOfThePage">LinksTetsMenuBottomOfThePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.AccountTests" class="method navigator-link" hash-for-method="LogInwithFacebookToLupa">LogInwithFacebookToLupa</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.AccountTests" class="method navigator-link" hash-for-method="LogInwithFacebookToLupa">LogInwithFacebookToLupa</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.UXTestsMainPage" class="method navigator-link" hash-for-method="UXTestLupaLogo">UXTestLupaLogo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.UXTestsMainPage" class="method navigator-link" hash-for-method="UXTestLupaLogo">UXTestLupaLogo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.UXTestsMainPage" class="method navigator-link" hash-for-method="UXTestOn2LinksFontAndColor">UXTestOn2LinksFontAndColor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.UXTestsMainPage" class="method navigator-link" hash-for-method="UXTestOnDiscountAd">UXTestOnDiscountAd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.UXTestsMainPage" class="method navigator-link" hash-for-method="UXTestOnDiscountAd">UXTestOnDiscountAd</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ButiqSparimTests" class="method navigator-link" hash-for-method="checkingIfLikeButtonsAreWorking">checkingIfLikeButtonsAreWorking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ButiqSparimTests" class="method navigator-link" hash-for-method="checkingIfLikeButtonsAreWorking">checkingIfLikeButtonsAreWorking</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.PriceTableTests" class="method navigator-link" hash-for-method="checkingTheInfoOfTheTable">checkingTheInfoOfTheTable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.PriceTableTests" class="method navigator-link" hash-for-method="checkingTheInfoOfTheTable">checkingTheInfoOfTheTable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.E2ETests" class="method navigator-link" hash-for-method="editPics">editPics</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.E2ETests" class="method navigator-link" hash-for-method="editPics">editPics</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.FormsTests" class="method navigator-link" hash-for-method="errorMessagesContactMeForm">errorMessagesContactMeForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.FormsTests" class="method navigator-link" hash-for-method="errorMessagesContactMeForm">errorMessagesContactMeForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.FormsTests" class="method navigator-link" hash-for-method="errorMessagesLetTalkAboutItForm">errorMessagesLetTalkAboutItForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.FormsTests" class="method navigator-link" hash-for-method="errorMessagesLetTalkAboutItForm">errorMessagesLetTalkAboutItForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.FormsTests" class="method navigator-link" hash-for-method="followOrderFormErrorMessages">followOrderFormErrorMessages</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.FormsTests" class="method navigator-link" hash-for-method="followOrderFormErrorMessages">followOrderFormErrorMessages</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ButiqSparimTests" class="method navigator-link" hash-for-method="rightAmuontOfBooksInEachCategory">rightAmuontOfBooksInEachCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ButiqSparimTests" class="method navigator-link" hash-for-method="rightAmuontOfBooksInEachCategory">rightAmuontOfBooksInEachCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.LinksTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LinksTestsOnMenuAlbumTmonot">
+                  </a> <!-- LinksTestsOnMenuAlbumTmonot -->
+                  <span class="method-name">LinksTestsOnMenuAlbumTmonot</span>
+                  <div class="stack-trace">java.lang.ArrayIndexOutOfBoundsException: Index 11 out of bounds for length 11
+	at tools.LinksFunctions.CheckingIfTheTestGotToTheRightURLs(LinksFunctions.java:23)
+	at tests.LinksTests.LinksTestsOnMenuAlbumTmonot(LinksTests.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.UXTestsMainPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="UXTestOn2LinksFontAndColor">
+                  </a> <!-- UXTestOn2LinksFontAndColor -->
+                  <span class="method-name">UXTestOn2LinksFontAndColor</span>
+                  <div class="stack-trace">java.lang.ArrayIndexOutOfBoundsException: Index 4 out of bounds for length 4
+	at tools.UXFunctions.checkingFontAndColorOf2Links(UXFunctions.java:40)
+	at tests.UXTestsMainPage.UXTestOn2LinksFontAndColor(UXTestsMainPage.java:112)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.FormsTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="errorMessagesOnFormSendEmail">
+                  </a> <!-- errorMessagesOnFormSendEmail -->
+                  <span class="method-name">errorMessagesOnFormSendEmail</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;יאללה למייל&quot;}
+  (Session info: chrome=102.0.5005.62)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-JIL93TC&apos;, ip: &apos;192.168.1.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dfcadcf2c9c13af40c7c16b4f04f7652, findElement {using=link text, value=יאללה למייל}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.62, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\yakov\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57524}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57524/devtoo..., se:cdpVersion: 102.0.5005.62, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dfcadcf2c9c13af40c7c16b4f04f7652
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at tests.FormsTests.openTheSendEmailForm(FormsTests.java:131)
+	at tests.FormsTests.errorMessagesOnFormSendEmail(FormsTests.java:109)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="errorMessagesOnFormSendEmail">
+                  </a> <!-- errorMessagesOnFormSendEmail -->
+                  <span class="method-name">errorMessagesOnFormSendEmail</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;יאללה למייל&quot;}
+  (Session info: MicrosoftEdge=101.0.1210.53)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;DESKTOP-JIL93TC&apos;, ip: &apos;192.168.1.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [ab16ff69085ae30d8afb2abd41765964, findElement {using=link text, value=יאללה למייל}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 101.0.1210.53, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:58881}, msedge: {msedgedriverVersion: 101.0.1210.53 (019dbf6dd738..., userDataDir: C:\Users\yakov\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58881/devtoo..., se:cdpVersion: 101.0.1210.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ab16ff69085ae30d8afb2abd41765964
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at tests.FormsTests.openTheSendEmailForm(FormsTests.java:131)
+	at tests.FormsTests.errorMessagesOnFormSendEmail(FormsTests.java:109)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.AccountTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="connectToFacebookThroughChat">
+                  </a> <!-- connectToFacebookThroughChat -->
+                  <span class="method-name">connectToFacebookThroughChat</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:458)
+	at tests.AccountTests.switchToTheMainFrameAndswitchToTabNub2(AccountTests.java:358)
+	at tests.AccountTests.connectToFacebookThroughChat(AccountTests.java:324)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="connectToFacebookThroughChat">
+                  </a> <!-- connectToFacebookThroughChat -->
+                  <span class="method-name">connectToFacebookThroughChat</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
+	at java.base/java.util.Objects.checkIndex(Objects.java:372)
+	at java.base/java.util.ArrayList.get(ArrayList.java:458)
+	at tests.AccountTests.switchToTheMainFrameAndswitchToTabNub2(AccountTests.java:358)
+	at tests.AccountTests.connectToFacebookThroughChat(AccountTests.java:324)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LinksTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LinksTestsOnMenuAlbumTmonot">
+                  </a> <!-- LinksTestsOnMenuAlbumTmonot -->
+                  <span class="method-name">LinksTestsOnMenuAlbumTmonot</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LinksTetsMenuBottomOfThePage">
+                  </a> <!-- LinksTetsMenuBottomOfThePage -->
+                  <span class="method-name">LinksTetsMenuBottomOfThePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LinksTetsMenuBottomOfThePage">
+                  </a> <!-- LinksTetsMenuBottomOfThePage -->
+                  <span class="method-name">LinksTetsMenuBottomOfThePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.UXTestsMainPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="UXTestLupaLogo">
+                  </a> <!-- UXTestLupaLogo -->
+                  <span class="method-name">UXTestLupaLogo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UXTestLupaLogo">
+                  </a> <!-- UXTestLupaLogo -->
+                  <span class="method-name">UXTestLupaLogo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UXTestOn2LinksFontAndColor">
+                  </a> <!-- UXTestOn2LinksFontAndColor -->
+                  <span class="method-name">UXTestOn2LinksFontAndColor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UXTestOnDiscountAd">
+                  </a> <!-- UXTestOnDiscountAd -->
+                  <span class="method-name">UXTestOnDiscountAd</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UXTestOnDiscountAd">
+                  </a> <!-- UXTestOnDiscountAd -->
+                  <span class="method-name">UXTestOnDiscountAd</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.E2ETests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editPics">
+                  </a> <!-- editPics -->
+                  <span class="method-name">editPics</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editPics">
+                  </a> <!-- editPics -->
+                  <span class="method-name">editPics</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.FormsTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="errorMessagesContactMeForm">
+                  </a> <!-- errorMessagesContactMeForm -->
+                  <span class="method-name">errorMessagesContactMeForm</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="errorMessagesContactMeForm">
+                  </a> <!-- errorMessagesContactMeForm -->
+                  <span class="method-name">errorMessagesContactMeForm</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="errorMessagesLetTalkAboutItForm">
+                  </a> <!-- errorMessagesLetTalkAboutItForm -->
+                  <span class="method-name">errorMessagesLetTalkAboutItForm</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="errorMessagesLetTalkAboutItForm">
+                  </a> <!-- errorMessagesLetTalkAboutItForm -->
+                  <span class="method-name">errorMessagesLetTalkAboutItForm</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="followOrderFormErrorMessages">
+                  </a> <!-- followOrderFormErrorMessages -->
+                  <span class="method-name">followOrderFormErrorMessages</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="followOrderFormErrorMessages">
+                  </a> <!-- followOrderFormErrorMessages -->
+                  <span class="method-name">followOrderFormErrorMessages</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.AccountTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckingSearchResultsFromChat">
+                  </a> <!-- CheckingSearchResultsFromChat -->
+                  <span class="method-name">CheckingSearchResultsFromChat</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckingSearchResultsFromChat">
+                  </a> <!-- CheckingSearchResultsFromChat -->
+                  <span class="method-name">CheckingSearchResultsFromChat</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreatAcoountErrorMessages">
+                  </a> <!-- CreatAcoountErrorMessages -->
+                  <span class="method-name">CreatAcoountErrorMessages</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreatAcoountErrorMessages">
+                  </a> <!-- CreatAcoountErrorMessages -->
+                  <span class="method-name">CreatAcoountErrorMessages</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CrudTestPersonalDetails">
+                  </a> <!-- CrudTestPersonalDetails -->
+                  <span class="method-name">CrudTestPersonalDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CrudTestPersonalDetails">
+                  </a> <!-- CrudTestPersonalDetails -->
+                  <span class="method-name">CrudTestPersonalDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LogInwithFacebookToLupa">
+                  </a> <!-- LogInwithFacebookToLupa -->
+                  <span class="method-name">LogInwithFacebookToLupa</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LogInwithFacebookToLupa">
+                  </a> <!-- LogInwithFacebookToLupa -->
+                  <span class="method-name">LogInwithFacebookToLupa</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ButiqSparimTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkingIfLikeButtonsAreWorking">
+                  </a> <!-- checkingIfLikeButtonsAreWorking -->
+                  <span class="method-name">checkingIfLikeButtonsAreWorking</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkingIfLikeButtonsAreWorking">
+                  </a> <!-- checkingIfLikeButtonsAreWorking -->
+                  <span class="method-name">checkingIfLikeButtonsAreWorking</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rightAmuontOfBooksInEachCategory">
+                  </a> <!-- rightAmuontOfBooksInEachCategory -->
+                  <span class="method-name">rightAmuontOfBooksInEachCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rightAmuontOfBooksInEachCategory">
+                  </a> <!-- rightAmuontOfBooksInEachCategory -->
+                  <span class="method-name">rightAmuontOfBooksInEachCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.PriceTableTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckingTheAmountOfPagesBasedOnAmountOfClicks">
+                  </a> <!-- CheckingTheAmountOfPagesBasedOnAmountOfClicks -->
+                  <span class="method-name">CheckingTheAmountOfPagesBasedOnAmountOfClicks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckingTheAmountOfPagesBasedOnAmountOfClicks">
+                  </a> <!-- CheckingTheAmountOfPagesBasedOnAmountOfClicks -->
+                  <span class="method-name">CheckingTheAmountOfPagesBasedOnAmountOfClicks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkingTheInfoOfTheTable">
+                  </a> <!-- checkingTheInfoOfTheTable -->
+                  <span class="method-name">checkingTheInfoOfTheTable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkingTheInfoOfTheTable">
+                  </a> <!-- checkingTheInfoOfTheTable -->
+                  <span class="method-name">checkingTheInfoOfTheTable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\yakov\git\SeleniumProject\maven\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;TestChrome&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.AccountTests&quot;/&gt;
+      &lt;class name=&quot;tests.ButiqSparimTests&quot;/&gt;
+      &lt;class name=&quot;tests.E2ETests&quot;/&gt;
+      &lt;class name=&quot;tests.FormsTests&quot;/&gt;
+      &lt;class name=&quot;tests.LinksTests&quot;/&gt;
+      &lt;class name=&quot;tests.PriceTableTests&quot;/&gt;
+      &lt;class name=&quot;tests.UXTestsMainPage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestChrome --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;TestEdge&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.AccountTests&quot;/&gt;
+      &lt;class name=&quot;tests.ButiqSparimTests&quot;/&gt;
+      &lt;class name=&quot;tests.E2ETests&quot;/&gt;
+      &lt;class name=&quot;tests.FormsTests&quot;/&gt;
+      &lt;class name=&quot;tests.LinksTests&quot;/&gt;
+      &lt;class name=&quot;tests.PriceTableTests&quot;/&gt;
+      &lt;class name=&quot;tests.UXTestsMainPage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestEdge --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TestChrome (7 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">TestEdge (7 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(38);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'rightAmuontOfBooksInEachCategory')
+data.setCell(0, 2, 'tests.ButiqSparimTests')
+data.setCell(0, 3, 60039);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'LinksTetsMenuBottomOfThePage')
+data.setCell(1, 2, 'tests.LinksTests')
+data.setCell(1, 3, 60014);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'rightAmuontOfBooksInEachCategory')
+data.setCell(2, 2, 'tests.ButiqSparimTests')
+data.setCell(2, 3, 59723);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'LinksTetsMenuBottomOfThePage')
+data.setCell(3, 2, 'tests.LinksTests')
+data.setCell(3, 3, 54284);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'LinksTestsOnMenuAlbumTmonot')
+data.setCell(4, 2, 'tests.LinksTests')
+data.setCell(4, 3, 38885);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'LinksTestsOnMenuAlbumTmonot')
+data.setCell(5, 2, 'tests.LinksTests')
+data.setCell(5, 3, 37894);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'checkingIfLikeButtonsAreWorking')
+data.setCell(6, 2, 'tests.ButiqSparimTests')
+data.setCell(6, 3, 26506);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'checkingIfLikeButtonsAreWorking')
+data.setCell(7, 2, 'tests.ButiqSparimTests')
+data.setCell(7, 3, 26476);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'LogInwithFacebookToLupa')
+data.setCell(8, 2, 'tests.AccountTests')
+data.setCell(8, 3, 16482);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'LogInwithFacebookToLupa')
+data.setCell(9, 2, 'tests.AccountTests')
+data.setCell(9, 3, 15982);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'CheckingTheAmountOfPagesBasedOnAmountOfClicks')
+data.setCell(10, 2, 'tests.PriceTableTests')
+data.setCell(10, 3, 15853);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'CheckingTheAmountOfPagesBasedOnAmountOfClicks')
+data.setCell(11, 2, 'tests.PriceTableTests')
+data.setCell(11, 3, 15636);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'CrudTestPersonalDetails')
+data.setCell(12, 2, 'tests.AccountTests')
+data.setCell(12, 3, 14664);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'CrudTestPersonalDetails')
+data.setCell(13, 2, 'tests.AccountTests')
+data.setCell(13, 3, 14603);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'CheckingSearchResultsFromChat')
+data.setCell(14, 2, 'tests.AccountTests')
+data.setCell(14, 3, 14528);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'checkingTheInfoOfTheTable')
+data.setCell(15, 2, 'tests.PriceTableTests')
+data.setCell(15, 3, 12369);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'checkingTheInfoOfTheTable')
+data.setCell(16, 2, 'tests.PriceTableTests')
+data.setCell(16, 3, 12279);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'CheckingSearchResultsFromChat')
+data.setCell(17, 2, 'tests.AccountTests')
+data.setCell(17, 3, 11644);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'followOrderFormErrorMessages')
+data.setCell(18, 2, 'tests.FormsTests')
+data.setCell(18, 3, 8206);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'followOrderFormErrorMessages')
+data.setCell(19, 2, 'tests.FormsTests')
+data.setCell(19, 3, 8109);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'CreatAcoountErrorMessages')
+data.setCell(20, 2, 'tests.AccountTests')
+data.setCell(20, 3, 7794);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'errorMessagesLetTalkAboutItForm')
+data.setCell(21, 2, 'tests.FormsTests')
+data.setCell(21, 3, 6998);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'errorMessagesLetTalkAboutItForm')
+data.setCell(22, 2, 'tests.FormsTests')
+data.setCell(22, 3, 6982);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'editPics')
+data.setCell(23, 2, 'tests.E2ETests')
+data.setCell(23, 3, 6031);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'CreatAcoountErrorMessages')
+data.setCell(24, 2, 'tests.AccountTests')
+data.setCell(24, 3, 5991);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'editPics')
+data.setCell(25, 2, 'tests.E2ETests')
+data.setCell(25, 3, 5947);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'errorMessagesContactMeForm')
+data.setCell(26, 2, 'tests.FormsTests')
+data.setCell(26, 3, 5833);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'errorMessagesContactMeForm')
+data.setCell(27, 2, 'tests.FormsTests')
+data.setCell(27, 3, 5613);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'errorMessagesOnFormSendEmail')
+data.setCell(28, 2, 'tests.FormsTests')
+data.setCell(28, 3, 3101);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'errorMessagesOnFormSendEmail')
+data.setCell(29, 2, 'tests.FormsTests')
+data.setCell(29, 3, 3029);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'connectToFacebookThroughChat')
+data.setCell(30, 2, 'tests.AccountTests')
+data.setCell(30, 3, 2283);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'connectToFacebookThroughChat')
+data.setCell(31, 2, 'tests.AccountTests')
+data.setCell(31, 3, 2238);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'UXTestOn2LinksFontAndColor')
+data.setCell(32, 2, 'tests.UXTestsMainPage')
+data.setCell(32, 3, 692);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'UXTestOn2LinksFontAndColor')
+data.setCell(33, 2, 'tests.UXTestsMainPage')
+data.setCell(33, 3, 688);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'UXTestLupaLogo')
+data.setCell(34, 2, 'tests.UXTestsMainPage')
+data.setCell(34, 3, 579);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'UXTestLupaLogo')
+data.setCell(35, 2, 'tests.UXTestsMainPage')
+data.setCell(35, 3, 574);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'UXTestOnDiscountAd')
+data.setCell(36, 2, 'tests.UXTestsMainPage')
+data.setCell(36, 3, 94);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'UXTestOnDiscountAd')
+data.setCell(37, 2, 'tests.UXTestsMainPage')
+data.setCell(37, 3, 73);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 9 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AccountTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CheckingSearchResultsFromChat</span>
+                <span class="method-start">5934 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">17580 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest(chrome)</span>
+                <span class="method-start">18200 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CreatAcoountErrorMessages</span>
+                <span class="method-start">23044 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">29037 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest(chrome)</span>
+                <span class="method-start">29659 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CrudTestPersonalDetails</span>
+                <span class="method-start">34195 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">48860 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest(chrome)</span>
+                <span class="method-start">49484 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LogInwithFacebookToLupa</span>
+                <span class="method-start">54438 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">70421 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest(chrome)</span>
+                <span class="method-start">71049 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">connectToFacebookThroughChat</span>
+                <span class="method-start">75902 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">78188 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ButiqSparimTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">78803 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkingIfLikeButtonsAreWorking</span>
+                <span class="method-start">83697 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">110204 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">110204 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">rightAmuontOfBooksInEachCategory</span>
+                <span class="method-start">115115 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">175155 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.E2ETests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest(chrome)</span>
+                <span class="method-start">175155 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editPics</span>
+                <span class="method-start">179920 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">185952 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.FormsTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">187062 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">errorMessagesContactMeForm</span>
+                <span class="method-start">192428 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">198041 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">198821 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">errorMessagesLetTalkAboutItForm</span>
+                <span class="method-start">203720 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">210719 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">211498 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">errorMessagesOnFormSendEmail</span>
+                <span class="method-start">216404 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">219507 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">220157 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">followOrderFormErrorMessages</span>
+                <span class="method-start">225010 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">233217 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LinksTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">233836 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LinksTestsOnMenuAlbumTmonot</span>
+                <span class="method-start">238644 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">276539 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">277180 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LinksTetsMenuBottomOfThePage</span>
+                <span class="method-start">282051 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">336336 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.PriceTableTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">337010 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CheckingTheAmountOfPagesBasedOnAmountOfClicks</span>
+                <span class="method-start">341506 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">357143 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">357773 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkingTheInfoOfTheTable</span>
+                <span class="method-start">362491 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">374771 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UXTestsMainPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">375384 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UXTestLupaLogo</span>
+                <span class="method-start">380082 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">380662 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">381284 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UXTestOn2LinksFontAndColor</span>
+                <span class="method-start">386128 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">386820 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(chrome)</span>
+                <span class="method-start">387433 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UXTestOnDiscountAd</span>
+                <span class="method-start">392227 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">392322 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AccountTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest(Edge)</span>
+                <span class="method-start">392953 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CheckingSearchResultsFromChat</span>
+                <span class="method-start">398918 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">413446 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest(Edge)</span>
+                <span class="method-start">414135 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CreatAcoountErrorMessages</span>
+                <span class="method-start">418857 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">426653 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest(Edge)</span>
+                <span class="method-start">427366 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CrudTestPersonalDetails</span>
+                <span class="method-start">432175 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">446778 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest(Edge)</span>
+                <span class="method-start">447522 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LogInwithFacebookToLupa</span>
+                <span class="method-start">452418 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">468901 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest(Edge)</span>
+                <span class="method-start">469623 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">connectToFacebookThroughChat</span>
+                <span class="method-start">474570 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">476809 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ButiqSparimTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">477464 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkingIfLikeButtonsAreWorking</span>
+                <span class="method-start">482535 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">509011 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">509011 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">rightAmuontOfBooksInEachCategory</span>
+                <span class="method-start">515543 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">575266 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.E2ETests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest(Edge)</span>
+                <span class="method-start">575267 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editPics</span>
+                <span class="method-start">581288 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">587235 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.FormsTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">587931 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">errorMessagesContactMeForm</span>
+                <span class="method-start">594355 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">600189 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">600861 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">errorMessagesLetTalkAboutItForm</span>
+                <span class="method-start">607391 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">614373 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">615095 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">errorMessagesOnFormSendEmail</span>
+                <span class="method-start">621646 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">624676 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">625369 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">followOrderFormErrorMessages</span>
+                <span class="method-start">631428 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">639537 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LinksTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">640230 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LinksTestsOnMenuAlbumTmonot</span>
+                <span class="method-start">646226 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">685112 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">685891 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LinksTetsMenuBottomOfThePage</span>
+                <span class="method-start">692472 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">752487 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.PriceTableTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">753285 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CheckingTheAmountOfPagesBasedOnAmountOfClicks</span>
+                <span class="method-start">759398 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">775251 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">775982 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkingTheInfoOfTheTable</span>
+                <span class="method-start">782610 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">794980 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UXTestsMainPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">795709 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UXTestLupaLogo</span>
+                <span class="method-start">801470 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">802044 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">802732 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">UXTestOn2LinksFontAndColor</span>
+                <span class="method-start">809164 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">809852 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">810520 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">UXTestOnDiscountAd</span>
+                <span class="method-start">817147 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">817220 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

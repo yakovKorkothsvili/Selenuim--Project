@@ -55,11 +55,11 @@ public class LinksTests extends ElementsThatAllTestsHave {
   driver.get("https://www.lupa.co.il/");
  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
   
-  //closepopUps
-  cookiePopUp=driver.findElement(By.xpath("//*[@id='Layer_1']"));
-  cookiePopUp.click();
-  popUpBackToSchool=driver.findElement(By.xpath("//div[@class='element-shape closeLightboxButton adoric_element']"));
-  popUpBackToSchool.click();
+ //closepopUps
+ Thread.sleep(1500);
+ cookiePopUp=driver.findElement(By.id("XMLID_54_"));
+ cookiePopUp.click();
+ driver.findElement(By.xpath("//div[@class='element-shape closeLightboxButton adoric_element']")).click();	 
   }
   
 
@@ -107,8 +107,8 @@ public class LinksTests extends ElementsThatAllTestsHave {
 			url[i]=driver.getCurrentUrl();
 			driver.navigate().back();
  
-		   popUpBackToSchool=driver.findElement(By.xpath("//div[@class='element-shape closeLightboxButton adoric_element']"));
 		   driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		   popUpBackToSchool=driver.findElement(By.xpath("//div[@class='element-shape closeLightboxButton adoric_element']"));
            js.executeScript("arguments[0].click();", popUpBackToSchool);
 
 		}

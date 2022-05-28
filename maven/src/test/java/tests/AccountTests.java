@@ -92,7 +92,7 @@ public class AccountTests extends ElementsThatAllTestsHave{
 	  @BeforeMethod
       public void beforeTest(String browser) throws InterruptedException {
 		  
-		//	String browser="chrome";
+			//String browser="chrome";
 			  
 				if (browser.equals("chrome")) {
 					WebDriverManager.chromedriver().setup();
@@ -108,14 +108,12 @@ public class AccountTests extends ElementsThatAllTestsHave{
 		  driver.manage().window().maximize();
 		  driver.get("https://www.lupa.co.il/");
 		  js=(JavascriptExecutor) driver;
-		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		  
 		  //closepopUps
-		  cookiePopUp=driver.findElement(By.xpath("//*[@id='Layer_1']"));
+		  Thread.sleep(1500);
+		  cookiePopUp=driver.findElement(By.id("XMLID_54_"));
 		  cookiePopUp.click();
-		   driver.findElement(By.xpath("//div[@class='element-shape closeLightboxButton adoric_element']")).click();
-
-		  
+		  driver.findElement(By.xpath("//div[@class='element-shape closeLightboxButton adoric_element']")).click();	  
 		  
 	  }
 
@@ -201,7 +199,7 @@ private static void switchToTab1AndTakingFirstNameOfTheAccount() throws Interrup
   
   private static void swicthToTab1AndClickOnProfile() throws InterruptedException {
       driver.switchTo().window(tabs.get(1));
-      Thread.sleep(10000);
+      driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
       profile=driver.findElement(By.id("profile"));
       js.executeScript("arguments[0].click();", profile);
   }
@@ -404,26 +402,27 @@ private static void switchToTab1AndTakingFirstNameOfTheAccount() throws Interrup
 	  
   }
   
-  private static void typeingLupaInSearchBarAndTakingTheResults() {
+  private static void typeingLupaInSearchBarAndTakingTheResults() throws InterruptedException {
 	  iframe=driver.findElements(By.tagName("iframe"));
+	  
+	  
 		for (int i = 0; i < iframe.size(); i++) {
-			try {
+			
+		try {
 			driver.switchTo().frame(i);
-			returnButton=driver.findElement(By.xpath("//div[@data-embed='chat']//button[@data-testid='Icon--back']"));
-			js.executeScript("arguments[0].click();", returnButton);
-			Thread.sleep(500);
-			searchField=driver.findElement(By.xpath("//div[@data-garden-id='forms.faux_input']//input"));
+		   driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+	   	  	searchField=driver.findElement(By.xpath("//div[@data-garden-id='forms.faux_input']//input"));
 			searchField.sendKeys("לופה");
-			Thread.sleep(500);
-			robot=new Robot();
+			Thread.sleep(1500);
+		    robot=new Robot();
 			robot.keyPress(KeyEvent.VK_ENTER);
-			robot.keyRelease(KeyEvent.VK_ENTER);
+		     robot.keyRelease(KeyEvent.VK_ENTER);
 			Thread.sleep(1500);
 			results=driver.findElements(By.xpath("//ol[@lang='he']//li//a"));
-			 Results=new ArrayList<String>(results.size());
+		    Results=new ArrayList<String>(results.size());
 			 
-			for (int j = 0; j < results.size(); j++) {
-				b=results.get(j).getText();
+		for (int j = 0; j < results.size(); j++) {
+			b=results.get(j).getText();
 				b=b.trim();
 				Results.add(b);
 			}

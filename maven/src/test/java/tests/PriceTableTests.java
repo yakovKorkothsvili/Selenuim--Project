@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -35,7 +36,8 @@ public class PriceTableTests extends ElementsThatAllTestsHave {
   @BeforeMethod
   public void beforeMethod(String browser) throws InterruptedException {
 	  
-	  //String browser= "chrome";
+	 // String browser= "chrome";
+	
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			  driver=new ChromeDriver();
@@ -48,11 +50,13 @@ public class PriceTableTests extends ElementsThatAllTestsHave {
 		  driver.manage().window().maximize();
 		  driver.get("https://www.lupa.co.il/");
 		  js=(JavascriptExecutor) driver;
+		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		  
-		  ///cookie pop up
+		  //closepopUps
 		  Thread.sleep(1500);
-		  cookiePopUp=driver.findElement(By.xpath("//*[@id='Layer_1']"));
+		  cookiePopUp=driver.findElement(By.id("XMLID_54_"));
 		  cookiePopUp.click();
+		  driver.findElement(By.xpath("//div[@class='element-shape closeLightboxButton adoric_element']")).click();	
   }
 
   @AfterMethod

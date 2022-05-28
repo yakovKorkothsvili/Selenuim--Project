@@ -11,6 +11,7 @@ import org.testng.annotations.Parameters;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -65,9 +66,11 @@ public class UXTestsMainPage extends ElementsThatAllTestsHave {
 	  js=(JavascriptExecutor) driver;
 	  driver.manage().window().maximize();
 	  driver.get("https://www.lupa.co.il/");
+	  //closepopUps
 	  Thread.sleep(1500);
-	  cookiePopUp=driver.findElement(By.xpath("//*[@id='Layer_1']"));
+	  cookiePopUp=driver.findElement(By.id("XMLID_54_"));
 	  cookiePopUp.click();
+	  driver.findElement(By.xpath("//div[@class='element-shape closeLightboxButton adoric_element']")).click();	
 	  
 	  }
 	  

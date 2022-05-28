@@ -55,7 +55,7 @@ public class UXFunctions {
 	static public void checkingCssValueOfTextAndBackroundDiscount(int[]location, String ColorText, String ColorBackround) throws InterruptedException {
 		System.out.println(" ");
 		System.out.println("the results for test cssValueDiscound");
-		int []locationOf=new int[]{71,127,45,116};
+		int []locationOf=new int[]{71,77,45,66};
 		String []name= {"Xtext","Ytext"};
 		String []name1= {"Xbackround","Ybackround"};
 		String textColor="rgba(0, 0, 0, 1)";
