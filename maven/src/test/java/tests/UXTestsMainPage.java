@@ -50,9 +50,8 @@ public class UXTestsMainPage extends ElementsThatAllTestsHave {
 	  @BeforeMethod
 	  public void beforeMethod(String browser) throws InterruptedException {
 		  
-			//String browser="chrome";
+			//String browser="Edge";
 		  
-	
 			if (browser.equals("chrome")) {
 				WebDriverManager.chromedriver().setup();
 				  driver=new ChromeDriver();

@@ -35,8 +35,7 @@ public class LinksTests extends ElementsThatAllTestsHave {
   @BeforeMethod
   public void beforeMethod(String browser) throws InterruptedException {
 	  
-		//String browser="chrome";
-	  
+		//String browser="Edge";
 	  
 		if (browser.equals("chrome")) {
 	   WebDriverManager.chromedriver().setup();
@@ -89,7 +88,7 @@ public class LinksTests extends ElementsThatAllTestsHave {
   
   private static void TakingTheTitlesOfTheLinksAndClickOnAlbumTmonotMenu() throws InterruptedException {
 	  for (WebElement y:LinksAlbumTmonot) {
-		  Thread.sleep(150);
+		  Thread.sleep(550);
 		linksName.add(y.getText());
 	}  
 	  menuAlbumTmonot.click();

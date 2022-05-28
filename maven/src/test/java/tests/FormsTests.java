@@ -70,7 +70,7 @@ public class FormsTests extends ElementsThatAllTestsHave {
   @BeforeMethod
   public void beforeMethod(String browser) throws InterruptedException {
 	  
-//	String browser="chrome";
+	//String browser="chrome";
 	  
 	 
 		if (browser.equals("chrome")) {
@@ -128,7 +128,7 @@ public class FormsTests extends ElementsThatAllTestsHave {
     	js.executeScript("window.scrollBy(0,4000)", "");
     }
     private static void openTheSendEmailForm() {
-	   sendEmailButton=driver.findElement(By.linkText("יאללה למייל"));
+	   sendEmailButton=driver.findElement(By.xpath("//div[@class='lupa_btn']//a[@class='email-popup-trigger popup-trigger spu-clickable']"));
 	   js.executeScript("arguments[0].click();", sendEmailButton);	
    }
     private static void picKaSubjectForTheEmail() throws InterruptedException {

@@ -92,7 +92,7 @@ public class AccountTests extends ElementsThatAllTestsHave{
 	  @BeforeMethod
       public void beforeTest(String browser) throws InterruptedException {
 		  
-			//String browser="chrome";
+			//String browser="Edge";
 			  
 				if (browser.equals("chrome")) {
 					WebDriverManager.chromedriver().setup();
@@ -336,8 +336,8 @@ private static void switchToTab1AndTakingFirstNameOfTheAccount() throws Interrup
 	  Thread.sleep(1000);
 	  chat1Button=driver.findElements(By.xpath("//div[@id='collapse-services-content']//a"));
 	  js.executeScript("arguments[0].click();", chat1Button.get(1));
-	  Thread.sleep(1000);
-  }
+    Thread.sleep(1000);
+   }
   
   private static void  clickTheFacebookIconItsInIfarme(){
 	  iframe=driver.findElements(By.tagName("iframe"));
@@ -394,9 +394,9 @@ private static void switchToTab1AndTakingFirstNameOfTheAccount() throws Interrup
   @Test
   public static void CheckingSearchResultsFromChat() throws InterruptedException {
 	  
-	  AccountTests.clickOnWaitingForYouInTheChatAndFromHereWeStartToChatButtons();
+	 clickOnWaitingForYouInTheChatAndFromHereWeStartToChatButtons();
 	  
-	  AccountTests.typeingLupaInSearchBarAndTakingTheResults();
+	typeingLupaInSearchBarAndTakingTheResults();
 	  
 	  AccountTestFunctions.CheckingTheSearchResults(Results);
 	  
@@ -404,19 +404,21 @@ private static void switchToTab1AndTakingFirstNameOfTheAccount() throws Interrup
   
   private static void typeingLupaInSearchBarAndTakingTheResults() throws InterruptedException {
 	  iframe=driver.findElements(By.tagName("iframe"));
-	  
+	 
 	  
 		for (int i = 0; i < iframe.size(); i++) {
 			
 		try {
 			driver.switchTo().frame(i);
+			 returnButton=driver.findElement(By.xpath("//header//button[@aria-label='הקודם']"));
+			 js.executeScript("arguments[0].click();", returnButton);
 		   driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 	   	  	searchField=driver.findElement(By.xpath("//div[@data-garden-id='forms.faux_input']//input"));
 			searchField.sendKeys("לופה");
 			Thread.sleep(1500);
 		    robot=new Robot();
 			robot.keyPress(KeyEvent.VK_ENTER);
-		     robot.keyRelease(KeyEvent.VK_ENTER);
+		    robot.keyRelease(KeyEvent.VK_ENTER);
 			Thread.sleep(1500);
 			results=driver.findElements(By.xpath("//ol[@lang='he']//li//a"));
 		    Results=new ArrayList<String>(results.size());

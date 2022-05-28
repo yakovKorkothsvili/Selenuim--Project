@@ -37,7 +37,7 @@ public class ButiqSparimTests extends ElementsThatAllTestsHave {
   @BeforeMethod
   public void beforeMethod(String browser) throws InterruptedException {
 	  
-		// String browser="chrome";
+		//String browser="chrome";
 		  
 			if (browser.equals("chrome")) {
 				WebDriverManager.chromedriver().setup();
@@ -60,7 +60,7 @@ public class ButiqSparimTests extends ElementsThatAllTestsHave {
 
   @AfterMethod
   public void afterMethod() {
-	 // driver.quit();
+	 driver.quit();
   }
   
   @Test(priority = 1)
@@ -98,7 +98,7 @@ public class ButiqSparimTests extends ElementsThatAllTestsHave {
 	  howManyLikes=driver.findElement(By.id("number_of_likes"));
   }
   
-  @Test(priority = 1)
+  @Test(priority = 2)
   public static void rightAmuontOfBooksInEachCategory() throws InterruptedException {
 	  ButiqSparimTests.navigateToBotiqSparim();
 	  
