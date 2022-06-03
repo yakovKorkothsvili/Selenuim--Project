@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">38 methods, 3 failed,   35 passed</span>
+                    <span class="method-stats">36 methods, 2 failed,   34 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -108,11 +108,6 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.UXTestsMainPage" class="method navigator-link" hash-for-method="UXTestOn2LinksFontAndColor">UXTestOn2LinksFontAndColor</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.E2ETests" class="method navigator-link" hash-for-method="editPics">editPics</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -236,12 +231,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.AccountTests" class="method navigator-link" hash-for-method="connectToFacebookThroughChat">connectToFacebookThroughChat</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.AccountTests" class="method navigator-link" hash-for-method="connectToFacebookThroughChat">connectToFacebookThroughChat</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.E2ETests" class="method navigator-link" hash-for-method="editPics">editPics</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -353,45 +343,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.E2ETests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="editPics">
-                  </a> <!-- editPics -->
-                  <span class="method-name">editPics</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#mat\-checkbox\-1\-input&quot;}
-  (Session info: MicrosoftEdge=101.0.1210.53)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-JIL93TC&apos;, ip: &apos;192.168.1.15&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.3&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [632bb84763905e0c46b6c57e1bc75678, findElement {using=id, value=mat-checkbox-1-input}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 101.0.1210.53, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:50389}, msedge: {msedgedriverVersion: 101.0.1210.53 (019dbf6dd738..., userDataDir: C:\Users\yakov\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50389/devtoo..., se:cdpVersion: 101.0.1210.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 632bb84763905e0c46b6c57e1bc75678
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at tests.E2ETests.editPics(E2ETests.java:103)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -470,6 +421,13 @@ Session ID: 632bb84763905e0c46b6c57e1bc75678
               <span class="class-name">tests.E2ETests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editPics">
+                  </a> <!-- editPics -->
+                  <span class="method-name">editPics</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="editPics">
@@ -605,18 +563,40 @@ Session ID: 632bb84763905e0c46b6c57e1bc75678
                   <span class="method-name">LogInwithFacebookToLupa</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ButiqSparimTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="connectToFacebookThroughChat">
-                  </a> <!-- connectToFacebookThroughChat -->
-                  <span class="method-name">connectToFacebookThroughChat</span>
+                  <a name="checkingIfLikeButtonsAreWorking">
+                  </a> <!-- checkingIfLikeButtonsAreWorking -->
+                  <span class="method-name">checkingIfLikeButtonsAreWorking</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="connectToFacebookThroughChat">
-                  </a> <!-- connectToFacebookThroughChat -->
-                  <span class="method-name">connectToFacebookThroughChat</span>
+                  <a name="checkingIfLikeButtonsAreWorking">
+                  </a> <!-- checkingIfLikeButtonsAreWorking -->
+                  <span class="method-name">checkingIfLikeButtonsAreWorking</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rightAmuontOfBooksInEachCategory">
+                  </a> <!-- rightAmuontOfBooksInEachCategory -->
+                  <span class="method-name">rightAmuontOfBooksInEachCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="rightAmuontOfBooksInEachCategory">
+                  </a> <!-- rightAmuontOfBooksInEachCategory -->
+                  <span class="method-name">rightAmuontOfBooksInEachCategory</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -657,42 +637,6 @@ Session ID: 632bb84763905e0c46b6c57e1bc75678
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.ButiqSparimTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkingIfLikeButtonsAreWorking">
-                  </a> <!-- checkingIfLikeButtonsAreWorking -->
-                  <span class="method-name">checkingIfLikeButtonsAreWorking</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkingIfLikeButtonsAreWorking">
-                  </a> <!-- checkingIfLikeButtonsAreWorking -->
-                  <span class="method-name">checkingIfLikeButtonsAreWorking</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="rightAmuontOfBooksInEachCategory">
-                  </a> <!-- rightAmuontOfBooksInEachCategory -->
-                  <span class="method-name">rightAmuontOfBooksInEachCategory</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="rightAmuontOfBooksInEachCategory">
-                  </a> <!-- rightAmuontOfBooksInEachCategory -->
-                  <span class="method-name">rightAmuontOfBooksInEachCategory</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -703,7 +647,7 @@ Session ID: 632bb84763905e0c46b6c57e1bc75678
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;2&quot; name=&quot;TestChrome&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;TestsOnChrome&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.AccountTests&quot;/&gt;
@@ -714,19 +658,29 @@ Session ID: 632bb84763905e0c46b6c57e1bc75678
       &lt;class name=&quot;tests.PriceTableTests&quot;/&gt;
       &lt;class name=&quot;tests.UXTestsMainPage&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestChrome --&gt;
-  &lt;test thread-count=&quot;2&quot; name=&quot;TestEdge&quot;&gt;
+  &lt;/test&gt; &lt;!-- TestsOnChrome --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;TestsOnEdge1&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Edge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.ButiqSparimTests&quot;/&gt;
+      &lt;class name=&quot;tests.FormsTests&quot;/&gt;
+      &lt;class name=&quot;tests.PriceTableTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestsOnEdge1 --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;TestsOnEdge2&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Edge&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tests.AccountTests&quot;/&gt;
-      &lt;class name=&quot;tests.ButiqSparimTests&quot;/&gt;
       &lt;class name=&quot;tests.E2ETests&quot;/&gt;
-      &lt;class name=&quot;tests.FormsTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestsOnEdge2 --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;TestsOnEdge3&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Edge&quot;/&gt;
+    &lt;classes&gt;
       &lt;class name=&quot;tests.LinksTests&quot;/&gt;
-      &lt;class name=&quot;tests.PriceTableTests&quot;/&gt;
       &lt;class name=&quot;tests.UXTestsMainPage&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestEdge --&gt;
+  &lt;/test&gt; &lt;!-- TestsOnEdge3 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -738,10 +692,16 @@ Session ID: 632bb84763905e0c46b6c57e1bc75678
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TestChrome (7 classes)</span>
+                <span class="test-name">TestsOnChrome (7 classes)</span>
               </li>
               <li>
-                <span class="test-name">TestEdge (7 classes)</span>
+                <span class="test-name">TestsOnEdge1 (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">TestsOnEdge2 (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">TestsOnEdge3 (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -767,164 +727,156 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(38);
+data.addRows(36);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LinksTetsMenuBottomOfThePage')
 data.setCell(0, 2, 'tests.LinksTests')
-data.setCell(0, 3, 60994);
+data.setCell(0, 3, 61973);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'rightAmuontOfBooksInEachCategory')
-data.setCell(1, 2, 'tests.ButiqSparimTests')
-data.setCell(1, 3, 59948);
+data.setCell(1, 1, 'LinksTetsMenuBottomOfThePage')
+data.setCell(1, 2, 'tests.LinksTests')
+data.setCell(1, 3, 61567);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'rightAmuontOfBooksInEachCategory')
 data.setCell(2, 2, 'tests.ButiqSparimTests')
-data.setCell(2, 3, 59553);
+data.setCell(2, 3, 59979);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'LinksTetsMenuBottomOfThePage')
-data.setCell(3, 2, 'tests.LinksTests')
-data.setCell(3, 3, 53983);
+data.setCell(3, 1, 'rightAmuontOfBooksInEachCategory')
+data.setCell(3, 2, 'tests.ButiqSparimTests')
+data.setCell(3, 3, 59873);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'LinksTestsOnMenuAlbumTmonot')
 data.setCell(4, 2, 'tests.LinksTests')
-data.setCell(4, 3, 46188);
+data.setCell(4, 3, 52224);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'LinksTestsOnMenuAlbumTmonot')
 data.setCell(5, 2, 'tests.LinksTests')
-data.setCell(5, 3, 42515);
+data.setCell(5, 3, 51515);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'checkingIfLikeButtonsAreWorking')
-data.setCell(6, 2, 'tests.ButiqSparimTests')
-data.setCell(6, 3, 26514);
+data.setCell(6, 1, 'followOrderFormErrorMessages')
+data.setCell(6, 2, 'tests.FormsTests')
+data.setCell(6, 3, 34240);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'checkingIfLikeButtonsAreWorking')
 data.setCell(7, 2, 'tests.ButiqSparimTests')
-data.setCell(7, 3, 26418);
+data.setCell(7, 3, 26650);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'LogInwithFacebookToLupa')
-data.setCell(8, 2, 'tests.AccountTests')
-data.setCell(8, 3, 16734);
+data.setCell(8, 1, 'checkingIfLikeButtonsAreWorking')
+data.setCell(8, 2, 'tests.ButiqSparimTests')
+data.setCell(8, 3, 26459);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'CrudTestPersonalDetails')
 data.setCell(9, 2, 'tests.AccountTests')
-data.setCell(9, 3, 16052);
+data.setCell(9, 3, 16017);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'LogInwithFacebookToLupa')
 data.setCell(10, 2, 'tests.AccountTests')
-data.setCell(10, 3, 15909);
+data.setCell(10, 3, 15960);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'CheckingTheAmountOfPagesBasedOnAmountOfClicks')
 data.setCell(11, 2, 'tests.PriceTableTests')
-data.setCell(11, 3, 15875);
+data.setCell(11, 3, 15904);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'CheckingTheAmountOfPagesBasedOnAmountOfClicks')
-data.setCell(12, 2, 'tests.PriceTableTests')
-data.setCell(12, 3, 15659);
+data.setCell(12, 1, 'LogInwithFacebookToLupa')
+data.setCell(12, 2, 'tests.AccountTests')
+data.setCell(12, 3, 15831);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'editPics')
-data.setCell(13, 2, 'tests.E2ETests')
-data.setCell(13, 3, 15637);
+data.setCell(13, 1, 'CheckingTheAmountOfPagesBasedOnAmountOfClicks')
+data.setCell(13, 2, 'tests.PriceTableTests')
+data.setCell(13, 3, 15673);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'CrudTestPersonalDetails')
 data.setCell(14, 2, 'tests.AccountTests')
-data.setCell(14, 3, 15365);
+data.setCell(14, 3, 15599);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'connectToFacebookThroughChat')
+data.setCell(15, 1, 'CheckingSearchResultsFromChat')
 data.setCell(15, 2, 'tests.AccountTests')
-data.setCell(15, 3, 13358);
+data.setCell(15, 3, 14545);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'checkingTheInfoOfTheTable')
 data.setCell(16, 2, 'tests.PriceTableTests')
-data.setCell(16, 3, 12298);
+data.setCell(16, 3, 13240);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'checkingTheInfoOfTheTable')
 data.setCell(17, 2, 'tests.PriceTableTests')
-data.setCell(17, 3, 12046);
+data.setCell(17, 3, 12142);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'connectToFacebookThroughChat')
+data.setCell(18, 1, 'CheckingSearchResultsFromChat')
 data.setCell(18, 2, 'tests.AccountTests')
-data.setCell(18, 3, 10859);
+data.setCell(18, 3, 11701);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'followOrderFormErrorMessages')
-data.setCell(19, 2, 'tests.FormsTests')
-data.setCell(19, 3, 9315);
+data.setCell(19, 1, 'editPics')
+data.setCell(19, 2, 'tests.E2ETests')
+data.setCell(19, 3, 10610);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'followOrderFormErrorMessages')
 data.setCell(20, 2, 'tests.FormsTests')
-data.setCell(20, 3, 9027);
+data.setCell(20, 3, 8172);
 data.setCell(21, 0, 21)
 data.setCell(21, 1, 'CreatAcoountErrorMessages')
 data.setCell(21, 2, 'tests.AccountTests')
-data.setCell(21, 3, 7813);
+data.setCell(21, 3, 7798);
 data.setCell(22, 0, 22)
 data.setCell(22, 1, 'errorMessagesLetTalkAboutItForm')
 data.setCell(22, 2, 'tests.FormsTests')
-data.setCell(22, 3, 6994);
+data.setCell(22, 3, 7096);
 data.setCell(23, 0, 23)
 data.setCell(23, 1, 'errorMessagesLetTalkAboutItForm')
 data.setCell(23, 2, 'tests.FormsTests')
-data.setCell(23, 3, 6967);
+data.setCell(23, 3, 6982);
 data.setCell(24, 0, 24)
 data.setCell(24, 1, 'errorMessagesOnFormSendEmail')
 data.setCell(24, 2, 'tests.FormsTests')
-data.setCell(24, 3, 6384);
+data.setCell(24, 3, 6363);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'errorMessagesOnFormSendEmail')
-data.setCell(25, 2, 'tests.FormsTests')
-data.setCell(25, 3, 6041);
+data.setCell(25, 1, 'editPics')
+data.setCell(25, 2, 'tests.E2ETests')
+data.setCell(25, 3, 6310);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'CreatAcoountErrorMessages')
-data.setCell(26, 2, 'tests.AccountTests')
-data.setCell(26, 3, 5976);
+data.setCell(26, 1, 'errorMessagesOnFormSendEmail')
+data.setCell(26, 2, 'tests.FormsTests')
+data.setCell(26, 3, 6080);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'editPics')
-data.setCell(27, 2, 'tests.E2ETests')
-data.setCell(27, 3, 5913);
+data.setCell(27, 1, 'CreatAcoountErrorMessages')
+data.setCell(27, 2, 'tests.AccountTests')
+data.setCell(27, 3, 5992);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'CheckingSearchResultsFromChat')
-data.setCell(28, 2, 'tests.AccountTests')
-data.setCell(28, 3, 5863);
+data.setCell(28, 1, 'errorMessagesContactMeForm')
+data.setCell(28, 2, 'tests.FormsTests')
+data.setCell(28, 3, 5749);
 data.setCell(29, 0, 29)
 data.setCell(29, 1, 'errorMessagesContactMeForm')
 data.setCell(29, 2, 'tests.FormsTests')
-data.setCell(29, 3, 5663);
+data.setCell(29, 3, 5638);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'errorMessagesContactMeForm')
-data.setCell(30, 2, 'tests.FormsTests')
-data.setCell(30, 3, 5640);
+data.setCell(30, 1, 'UXTestOn2LinksFontAndColor')
+data.setCell(30, 2, 'tests.UXTestsMainPage')
+data.setCell(30, 3, 700);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'CheckingSearchResultsFromChat')
-data.setCell(31, 2, 'tests.AccountTests')
-data.setCell(31, 3, 5611);
+data.setCell(31, 1, 'UXTestOn2LinksFontAndColor')
+data.setCell(31, 2, 'tests.UXTestsMainPage')
+data.setCell(31, 3, 697);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'UXTestOn2LinksFontAndColor')
+data.setCell(32, 1, 'UXTestLupaLogo')
 data.setCell(32, 2, 'tests.UXTestsMainPage')
-data.setCell(32, 3, 707);
+data.setCell(32, 3, 578);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'UXTestOn2LinksFontAndColor')
+data.setCell(33, 1, 'UXTestLupaLogo')
 data.setCell(33, 2, 'tests.UXTestsMainPage')
-data.setCell(33, 3, 703);
+data.setCell(33, 3, 570);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'UXTestLupaLogo')
+data.setCell(34, 1, 'UXTestOnDiscountAd')
 data.setCell(34, 2, 'tests.UXTestsMainPage')
-data.setCell(34, 3, 583);
+data.setCell(34, 3, 83);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'UXTestLupaLogo')
+data.setCell(35, 1, 'UXTestOnDiscountAd')
 data.setCell(35, 2, 'tests.UXTestsMainPage')
-data.setCell(35, 3, 566);
-data.setCell(36, 0, 36)
-data.setCell(36, 1, 'UXTestOnDiscountAd')
-data.setCell(36, 2, 'tests.UXTestsMainPage')
-data.setCell(36, 3, 93);
-data.setCell(37, 0, 37)
-data.setCell(37, 1, 'UXTestOnDiscountAd')
-data.setCell(37, 2, 'tests.UXTestsMainPage')
-data.setCell(37, 3, 71);
+data.setCell(35, 3, 69);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 minutes</span>
+              <span class="suite-total-time">Total running time: 11 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -957,500 +909,474 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CheckingSearchResultsFromChat</span>
-                <span class="method-start">6189 ms</span>
+                <span class="method-start">6005 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">12055 ms</span>
+                <span class="method-start">17709 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest(chrome)</span>
-                <span class="method-start">12674 ms</span>
+                <span class="method-start">18340 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CreatAcoountErrorMessages</span>
-                <span class="method-start">17523 ms</span>
+                <span class="method-start">23289 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">23503 ms</span>
+                <span class="method-start">29284 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest(chrome)</span>
-                <span class="method-start">24136 ms</span>
+                <span class="method-start">29894 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CrudTestPersonalDetails</span>
-                <span class="method-start">28994 ms</span>
+                <span class="method-start">34653 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">45046 ms</span>
+                <span class="method-start">50254 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest(chrome)</span>
-                <span class="method-start">45661 ms</span>
+                <span class="method-start">50894 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LogInwithFacebookToLupa</span>
-                <span class="method-start">50395 ms</span>
+                <span class="method-start">55506 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">66305 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeTest(chrome)</span>
-                <span class="method-start">66935 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">connectToFacebookThroughChat</span>
-                <span class="method-start">71814 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">82674 ms</span>
+                <span class="method-start">71467 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.ButiqSparimTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">83282 ms</span>
+                <span class="method-start">72091 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkingIfLikeButtonsAreWorking</span>
-                <span class="method-start">87985 ms</span>
+                <span class="method-start">76959 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">114403 ms</span>
+                <span class="method-start">103610 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">115054 ms</span>
+                <span class="method-start">104239 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">rightAmuontOfBooksInEachCategory</span>
-                <span class="method-start">119871 ms</span>
+                <span class="method-start">108924 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">179425 ms</span>
+                <span class="method-start">168904 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.E2ETests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest(chrome)</span>
-                <span class="method-start">180067 ms</span>
+                <span class="method-start">169524 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">editPics</span>
-                <span class="method-start">184798 ms</span>
+                <span class="method-start">174283 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">190712 ms</span>
+                <span class="method-start">184894 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.FormsTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">191815 ms</span>
+                <span class="method-start">185989 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">errorMessagesContactMeForm</span>
-                <span class="method-start">196650 ms</span>
+                <span class="method-start">190712 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">202314 ms</span>
+                <span class="method-start">196462 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">203088 ms</span>
+                <span class="method-start">197244 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">errorMessagesLetTalkAboutItForm</span>
-                <span class="method-start">208012 ms</span>
+                <span class="method-start">202190 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">215013 ms</span>
+                <span class="method-start">209287 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">215784 ms</span>
+                <span class="method-start">210052 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">errorMessagesOnFormSendEmail</span>
-                <span class="method-start">220615 ms</span>
+                <span class="method-start">214781 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">226657 ms</span>
+                <span class="method-start">220862 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">227272 ms</span>
+                <span class="method-start">221478 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">followOrderFormErrorMessages</span>
-                <span class="method-start">231982 ms</span>
+                <span class="method-start">226211 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">241010 ms</span>
+                <span class="method-start">234384 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LinksTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">241623 ms</span>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">235000 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LinksTestsOnMenuAlbumTmonot</span>
-                <span class="method-start">246417 ms</span>
+                <span class="method-start">241594 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">288932 ms</span>
+                <span class="method-start">293109 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">289578 ms</span>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">293892 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LinksTetsMenuBottomOfThePage</span>
-                <span class="method-start">294245 ms</span>
+                <span class="method-start">299967 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">348229 ms</span>
+                <span class="method-start">361535 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.PriceTableTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">348893 ms</span>
+                <span class="method-start">362315 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CheckingTheAmountOfPagesBasedOnAmountOfClicks</span>
-                <span class="method-start">353812 ms</span>
+                <span class="method-start">367181 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">369472 ms</span>
+                <span class="method-start">382855 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">370092 ms</span>
+                <span class="method-start">383457 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkingTheInfoOfTheTable</span>
-                <span class="method-start">374982 ms</span>
+                <span class="method-start">388410 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">387029 ms</span>
+                <span class="method-start">400552 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.UXTestsMainPage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">387658 ms</span>
+                <span class="method-start">401155 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">UXTestLupaLogo</span>
-                <span class="method-start">392536 ms</span>
+                <span class="method-start">405707 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">393121 ms</span>
+                <span class="method-start">406286 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">393723 ms</span>
+                <span class="method-start">406895 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">UXTestOn2LinksFontAndColor</span>
-                <span class="method-start">398468 ms</span>
+                <span class="method-start">411771 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">399175 ms</span>
+                <span class="method-start">412472 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome)</span>
-                <span class="method-start">399772 ms</span>
+                <span class="method-start">413563 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">UXTestOnDiscountAd</span>
-                <span class="method-start">404602 ms</span>
+                <span class="method-start">418526 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">404695 ms</span>
+                <span class="method-start">418610 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ButiqSparimTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">419247 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkingIfLikeButtonsAreWorking</span>
+                <span class="method-start">425221 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">451681 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">452419 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">rightAmuontOfBooksInEachCategory</span>
+                <span class="method-start">459233 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">519106 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.FormsTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">519847 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">errorMessagesContactMeForm</span>
+                <span class="method-start">526421 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">532060 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">532746 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">errorMessagesLetTalkAboutItForm</span>
+                <span class="method-start">538661 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">545644 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">546332 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">errorMessagesOnFormSendEmail</span>
+                <span class="method-start">552331 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">558694 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">559391 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">followOrderFormErrorMessages</span>
+                <span class="method-start">565932 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">600172 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.PriceTableTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">600914 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CheckingTheAmountOfPagesBasedOnAmountOfClicks</span>
+                <span class="method-start">607530 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">623436 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Edge)</span>
+                <span class="method-start">624143 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkingTheInfoOfTheTable</span>
+                <span class="method-start">630875 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">644116 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.AccountTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest(Edge)</span>
-                <span class="method-start">405819 ms</span>
+                <span class="method-start">644827 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CheckingSearchResultsFromChat</span>
-                <span class="method-start">411866 ms</span>
+                <span class="method-start">650795 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">417477 ms</span>
+                <span class="method-start">665341 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest(Edge)</span>
-                <span class="method-start">418172 ms</span>
+                <span class="method-start">666037 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CreatAcoountErrorMessages</span>
-                <span class="method-start">424719 ms</span>
+                <span class="method-start">672674 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">432532 ms</span>
+                <span class="method-start">680473 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest(Edge)</span>
-                <span class="method-start">433233 ms</span>
+                <span class="method-start">681159 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">CrudTestPersonalDetails</span>
-                <span class="method-start">439741 ms</span>
+                <span class="method-start">687755 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">455107 ms</span>
+                <span class="method-start">703773 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest(Edge)</span>
-                <span class="method-start">455832 ms</span>
+                <span class="method-start">704505 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LogInwithFacebookToLupa</span>
-                <span class="method-start">461982 ms</span>
+                <span class="method-start">711146 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">478716 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeTest(Edge)</span>
-                <span class="method-start">479462 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">connectToFacebookThroughChat</span>
-                <span class="method-start">485904 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">499262 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.ButiqSparimTests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(Edge)</span>
-                <span class="method-start">499984 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">checkingIfLikeButtonsAreWorking</span>
-                <span class="method-start">505965 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">532480 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(Edge)</span>
-                <span class="method-start">533232 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">rightAmuontOfBooksInEachCategory</span>
-                <span class="method-start">540023 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">599971 ms</span>
+                <span class="method-start">726977 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.E2ETests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest(Edge)</span>
-                <span class="method-start">600733 ms</span>
+                <span class="method-start">727700 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">editPics</span>
-                <span class="method-start">607274 ms</span>
+                <span class="method-start">733787 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">622913 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.FormsTests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(Edge)</span>
-                <span class="method-start">623626 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">errorMessagesContactMeForm</span>
-                <span class="method-start">630334 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">635974 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(Edge)</span>
-                <span class="method-start">636678 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">errorMessagesLetTalkAboutItForm</span>
-                <span class="method-start">642778 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">649745 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(Edge)</span>
-                <span class="method-start">650435 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">errorMessagesOnFormSendEmail</span>
-                <span class="method-start">657193 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">663577 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(Edge)</span>
-                <span class="method-start">664283 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">followOrderFormErrorMessages</span>
-                <span class="method-start">670149 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">679465 ms</span>
+                <span class="method-start">740097 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.LinksTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(Edge)</span>
-                <span class="method-start">680184 ms</span>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">740806 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">LinksTestsOnMenuAlbumTmonot</span>
-                <span class="method-start">686074 ms</span>
+                <span class="method-start">747458 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">732262 ms</span>
+                <span class="method-start">799683 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(Edge)</span>
-                <span class="method-start">733037 ms</span>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">800510 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LinksTetsMenuBottomOfThePage</span>
-                <span class="method-start">739125 ms</span>
+                <span class="method-start">807091 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">800120 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.PriceTableTests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(Edge)</span>
-                <span class="method-start">800916 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">CheckingTheAmountOfPagesBasedOnAmountOfClicks</span>
-                <span class="method-start">807044 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">822919 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(Edge)</span>
-                <span class="method-start">823631 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">checkingTheInfoOfTheTable</span>
-                <span class="method-start">829642 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">841940 ms</span>
+                <span class="method-start">869064 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.UXTestsMainPage</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(Edge)</span>
-                <span class="method-start">842635 ms</span>
+                <span class="method-start">869851 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">UXTestLupaLogo</span>
-                <span class="method-start">849252 ms</span>
+                <span class="method-start">876539 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">849818 ms</span>
+                <span class="method-start">877109 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(Edge)</span>
-                <span class="method-start">850485 ms</span>
+                <span class="method-start">877796 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">UXTestOn2LinksFontAndColor</span>
-                <span class="method-start">856945 ms</span>
+                <span class="method-start">884482 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">857648 ms</span>
+                <span class="method-start">885179 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(Edge)</span>
-                <span class="method-start">858327 ms</span>
+                <span class="method-start">885848 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">UXTestOnDiscountAd</span>
-                <span class="method-start">864845 ms</span>
+                <span class="method-start">892571 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">864917 ms</span>
+                <span class="method-start">892640 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

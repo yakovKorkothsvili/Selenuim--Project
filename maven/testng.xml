@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="Suite">
-    <test thread-count="2" name="TestChrome">
+  <test thread-count="2" name="TestsOnChrome">
    <parameter name="browser" value="chrome"/>
     <classes>
      <class name="tests.AccountTests"/>
@@ -13,17 +13,29 @@
   <class name="tests.PriceTableTests"/>
      <class name="tests.UXTestsMainPage"/> 
     </classes>
-  </test> 
+  </test>  
 
- <test thread-count="2" name="TestEdge">
+ <test thread-count="2" name="TestsOnEdge1">
+   <parameter name="browser" value="Edge"/>
+    <classes>
+	 <class name="tests.ButiqSparimTests"/>
+     <class name="tests.FormsTests"/>
+    <class name="tests.PriceTableTests"/>
+    </classes>
+  </test>
+
+ <test thread-count="2" name="TestsOnEdge2">
    <parameter name="browser" value="Edge"/>
     <classes>
      <class name="tests.AccountTests"/>
-	 <class name="tests.ButiqSparimTests"/>
-   <class name="tests.E2ETests"/> 
-     <class name="tests.FormsTests"/>
-     <class name="tests.LinksTests"/>
-    <class name="tests.PriceTableTests"/>
+      <class name="tests.E2ETests"/>
+    </classes>
+  </test>
+
+ <test thread-count="2" name="TestsOnEdge3">
+   <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="tests.LinksTests"/>
      <class name="tests.UXTestsMainPage"/>
     </classes>
   </test>

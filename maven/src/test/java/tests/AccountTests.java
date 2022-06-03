@@ -92,7 +92,7 @@ public class AccountTests extends ElementsThatAllTestsHave{
 	  @BeforeMethod
       public void beforeTest(String browser) throws InterruptedException {
 		  
-			//String browser="Edge";
+//			String browser="Edge";
 			  
 				if (browser.equals("chrome")) {
 					WebDriverManager.chromedriver().setup();
@@ -125,15 +125,15 @@ public class AccountTests extends ElementsThatAllTestsHave{
   @Test
   public void LogInwithFacebookToLupa() throws InterruptedException {
 	  
-	  AccountTests.navigateToHasbonHisi();
+	    navigateToHasbonHisi();
 
-       AccountTests.clickOnButtonExistingAccount();
+       clickOnButtonExistingAccount();
        
-       AccountTests.clickOnButtonConnectToFacebookAndSwitchToTab2();
+       clickOnButtonConnectToFacebookAndSwitchToTab2();
        
-       AccountTests.fillDetailsAndClickSignIn();
+       fillDetailsAndClickSignIn();
        
-       AccountTests.switchToTab1AndTakingFirstNameOfTheAccount();
+       switchToTab1AndTakingFirstNameOfTheAccount();
        
        AccountTestFunctions.checkingConnctionToFacebook(name);
      
@@ -179,19 +179,19 @@ private static void switchToTab1AndTakingFirstNameOfTheAccount() throws Interrup
   @Test
   public static void CrudTestPersonalDetails() throws InterruptedException {
 	  
-	  AccountTests.navigateToHasbonHisi();
+	 navigateToHasbonHisi();
 	  
-	  AccountTests.clickOnButtonExistingAccount();
+	 clickOnButtonExistingAccount();
 	  
-	  AccountTests.clickOnButtonConnectToFacebookAndSwitchToTab2();
+	 clickOnButtonConnectToFacebookAndSwitchToTab2();
       
-      AccountTests.fillDetailsAndClickSignIn();
+     fillDetailsAndClickSignIn();
        
-      AccountTests. swicthToTab1AndClickOnProfile();
+      swicthToTab1AndClickOnProfile();
       
-      AccountTests.changingPersonalDetailsAndClickSave();
+    changingPersonalDetailsAndClickSave();
       
-      AccountTests.refreshAndTakingTheValuesOfDetails();
+     refreshAndTakingTheValuesOfDetails();
 
       AccountTestFunctions.checkingValueCrudTest(Firstname, Lastname, Dateday, Datemonth, Dateyear, phoneNumber);
     
@@ -246,15 +246,15 @@ private static void switchToTab1AndTakingFirstNameOfTheAccount() throws Interrup
   @Test
   public void CreatAcoountErrorMessages() throws InterruptedException {
 	  
-	  AccountTests.navigateToHasbonHisi();
+	  navigateToHasbonHisi();
 	 
-	  AccountTests.clickOnCreateNewAcoount();
+	  clickOnCreateNewAcoount();
 	  
-	  AccountTests.findElementsOnAndFillDetails();
+	  findElementsOnAndFillDetails();
 	 
-	  AccountTests.clickOnCreatAcoount();
+	  clickOnCreatAcoount();
 	  
-	  AccountTests.takingTheErrorMessages();
+	  takingTheErrorMessages();
 	  
       AccountTestFunctions.checkingErrorMesAccount(errMes);
 
@@ -315,21 +315,21 @@ private static void switchToTab1AndTakingFirstNameOfTheAccount() throws Interrup
 		errMes.add(ErrorMesTaknon);
   }
   
-  @Test
-  public static void  connectToFacebookThroughChat() throws InterruptedException {
-	  AccountTests.clickOnWaitingForYouInTheChatAndFromHereWeStartToChatButtons();
-	  
-	  AccountTests.clickTheFacebookIconItsInIfarme();
-	  
-	  AccountTests.switchToTheMainFrameAndswitchToTabNub2();
-	  
-	  AccountTests.fillDetailsToThenConnectTofacebook();
-	  
-	  AccountTests.switchBackToMainTabToTakeNameAndEmailItsInAIfame();
-	  
-	  AccountTestFunctions.checkingIfTheNameEmailIsRight(name, email);
-  }
-  
+//  @Test
+//  public static void  connectToFacebookThroughChat() throws InterruptedException {
+//	  clickOnWaitingForYouInTheChatAndFromHereWeStartToChatButtons();
+//	  
+//	  clickTheFacebookIconItsInIfarme();
+//	  
+//	  switchToTheMainFrameAndswitchToTabNub2();
+//	  
+//	  fillDetailsToThenConnectTofacebook();
+//	  
+//	  switchBackToMainTabToTakeNameAndEmailItsInAIfame();
+//	  
+//	  AccountTestFunctions.checkingIfTheNameEmailIsRight(name, email);
+//  }
+
   private static void clickOnWaitingForYouInTheChatAndFromHereWeStartToChatButtons() throws InterruptedException {
 	  chatButton=driver.findElement(By.id("services-widget-chat-icon"));
 	  js.executeScript("arguments[0].click();", chatButton);
@@ -338,7 +338,7 @@ private static void switchToTab1AndTakingFirstNameOfTheAccount() throws Interrup
 	  js.executeScript("arguments[0].click();", chat1Button.get(1));
     Thread.sleep(1000);
    }
-  
+
   private static void  clickTheFacebookIconItsInIfarme(){
 	  iframe=driver.findElements(By.tagName("iframe"));
 		for (int i = 0; i < iframe.size(); i++) {
@@ -410,8 +410,8 @@ private static void switchToTab1AndTakingFirstNameOfTheAccount() throws Interrup
 			
 		try {
 			driver.switchTo().frame(i);
-			 returnButton=driver.findElement(By.xpath("//header//button[@aria-label='הקודם']"));
-			 js.executeScript("arguments[0].click();", returnButton);
+//			 returnButton=driver.findElement(By.xpath("//header//button[@aria-label='הקודם']"));
+//			 js.executeScript("arguments[0].click();", returnButton);
 		   driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 	   	  	searchField=driver.findElement(By.xpath("//div[@data-garden-id='forms.faux_input']//input"));
 			searchField.sendKeys("לופה");

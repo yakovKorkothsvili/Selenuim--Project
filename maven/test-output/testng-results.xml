@@ -1,53 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="38" passed="35" failed="3" skipped="0">
+<testng-results ignored="0" total="36" passed="34" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-28T21:36:33 IDT" name="Suite" finished-at="2022-05-28T21:50:59 IDT" duration-ms="865616">
+  <suite started-at="2022-06-03T18:31:31 IDT" name="Suite" finished-at="2022-06-03T18:46:24 IDT" duration-ms="893327">
     <groups>
     </groups>
-    <test started-at="2022-05-28T21:36:33 IDT" name="TestChrome" finished-at="2022-05-28T21:43:19 IDT" duration-ms="405829">
+    <test started-at="2022-06-03T18:31:31 IDT" name="TestsOnChrome" finished-at="2022-06-03T18:38:30 IDT" duration-ms="419244">
       <class name="tests.LinksTests">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.LinksTests@3d6f0054]" started-at="2022-05-28T21:40:35 IDT" name="beforeMethod" finished-at="2022-05-28T21:40:40 IDT" duration-ms="4794" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.LinksTests@16a0ee18]" started-at="2022-06-03T18:35:26 IDT" name="beforeMethod" finished-at="2022-06-03T18:35:33 IDT" duration-ms="6594" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="LinksTestsOnMenuAlbumTmonot()[pri:0, instance:tests.LinksTests@3d6f0054]" started-at="2022-05-28T21:40:40 IDT" name="LinksTestsOnMenuAlbumTmonot" finished-at="2022-05-28T21:41:22 IDT" duration-ms="42515" status="PASS">
+        <test-method signature="LinksTestsOnMenuAlbumTmonot()[pri:0, instance:tests.LinksTests@16a0ee18]" started-at="2022-06-03T18:35:33 IDT" name="LinksTestsOnMenuAlbumTmonot" finished-at="2022-06-03T18:36:24 IDT" duration-ms="51515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LinksTestsOnMenuAlbumTmonot -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.LinksTests@3d6f0054]" started-at="2022-05-28T21:41:22 IDT" name="afterMethod" finished-at="2022-05-28T21:41:23 IDT" duration-ms="646" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.LinksTests@16a0ee18]" started-at="2022-06-03T18:36:24 IDT" name="afterMethod" finished-at="2022-06-03T18:36:25 IDT" duration-ms="783" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.LinksTests@3d6f0054]" started-at="2022-05-28T21:41:23 IDT" name="beforeMethod" finished-at="2022-05-28T21:41:28 IDT" duration-ms="4667" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.LinksTests@16a0ee18]" started-at="2022-06-03T18:36:25 IDT" name="beforeMethod" finished-at="2022-06-03T18:36:31 IDT" duration-ms="6075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="LinksTetsMenuBottomOfThePage()[pri:0, instance:tests.LinksTests@3d6f0054]" started-at="2022-05-28T21:41:28 IDT" name="LinksTetsMenuBottomOfThePage" finished-at="2022-05-28T21:42:22 IDT" duration-ms="53983" status="PASS">
+        <test-method signature="LinksTetsMenuBottomOfThePage()[pri:0, instance:tests.LinksTests@16a0ee18]" started-at="2022-06-03T18:36:31 IDT" name="LinksTetsMenuBottomOfThePage" finished-at="2022-06-03T18:37:32 IDT" duration-ms="61567" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LinksTetsMenuBottomOfThePage -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.LinksTests@3d6f0054]" started-at="2022-05-28T21:42:22 IDT" name="afterMethod" finished-at="2022-05-28T21:42:22 IDT" duration-ms="660" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.LinksTests@16a0ee18]" started-at="2022-06-03T18:37:32 IDT" name="afterMethod" finished-at="2022-06-03T18:37:33 IDT" duration-ms="779" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- tests.LinksTests -->
       <class name="tests.FormsTests">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FormsTests@16a0ee18]" started-at="2022-05-28T21:39:45 IDT" name="beforeMethod" finished-at="2022-05-28T21:39:50 IDT" duration-ms="4835" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FormsTests@2a54a73f]" started-at="2022-06-03T18:34:37 IDT" name="beforeMethod" finished-at="2022-06-03T18:34:42 IDT" duration-ms="4723" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -58,15 +44,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="errorMessagesContactMeForm()[pri:0, instance:tests.FormsTests@16a0ee18]" started-at="2022-05-28T21:39:50 IDT" name="errorMessagesContactMeForm" finished-at="2022-05-28T21:39:56 IDT" duration-ms="5663" status="PASS">
+        <test-method signature="errorMessagesContactMeForm()[pri:0, instance:tests.FormsTests@2a54a73f]" started-at="2022-06-03T18:34:42 IDT" name="errorMessagesContactMeForm" finished-at="2022-06-03T18:34:47 IDT" duration-ms="5749" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- errorMessagesContactMeForm -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.FormsTests@16a0ee18]" started-at="2022-05-28T21:39:56 IDT" name="afterMethod" finished-at="2022-05-28T21:39:57 IDT" duration-ms="774" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.FormsTests@2a54a73f]" started-at="2022-06-03T18:34:47 IDT" name="afterMethod" finished-at="2022-06-03T18:34:48 IDT" duration-ms="779" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FormsTests@16a0ee18]" started-at="2022-05-28T21:39:57 IDT" name="beforeMethod" finished-at="2022-05-28T21:40:01 IDT" duration-ms="4924" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FormsTests@2a54a73f]" started-at="2022-06-03T18:34:48 IDT" name="beforeMethod" finished-at="2022-06-03T18:34:53 IDT" duration-ms="4946" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -77,15 +63,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="errorMessagesLetTalkAboutItForm()[pri:0, instance:tests.FormsTests@16a0ee18]" started-at="2022-05-28T21:40:01 IDT" name="errorMessagesLetTalkAboutItForm" finished-at="2022-05-28T21:40:08 IDT" duration-ms="6994" status="PASS">
+        <test-method signature="errorMessagesLetTalkAboutItForm()[pri:0, instance:tests.FormsTests@2a54a73f]" started-at="2022-06-03T18:34:53 IDT" name="errorMessagesLetTalkAboutItForm" finished-at="2022-06-03T18:35:00 IDT" duration-ms="7096" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- errorMessagesLetTalkAboutItForm -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.FormsTests@16a0ee18]" started-at="2022-05-28T21:40:08 IDT" name="afterMethod" finished-at="2022-05-28T21:40:09 IDT" duration-ms="770" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.FormsTests@2a54a73f]" started-at="2022-06-03T18:35:00 IDT" name="afterMethod" finished-at="2022-06-03T18:35:01 IDT" duration-ms="764" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FormsTests@16a0ee18]" started-at="2022-05-28T21:40:09 IDT" name="beforeMethod" finished-at="2022-05-28T21:40:14 IDT" duration-ms="4831" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FormsTests@2a54a73f]" started-at="2022-06-03T18:35:01 IDT" name="beforeMethod" finished-at="2022-06-03T18:35:06 IDT" duration-ms="4729" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,15 +82,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="errorMessagesOnFormSendEmail()[pri:0, instance:tests.FormsTests@16a0ee18]" started-at="2022-05-28T21:40:14 IDT" name="errorMessagesOnFormSendEmail" finished-at="2022-05-28T21:40:20 IDT" duration-ms="6041" status="PASS">
+        <test-method signature="errorMessagesOnFormSendEmail()[pri:0, instance:tests.FormsTests@2a54a73f]" started-at="2022-06-03T18:35:06 IDT" name="errorMessagesOnFormSendEmail" finished-at="2022-06-03T18:35:12 IDT" duration-ms="6080" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- errorMessagesOnFormSendEmail -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.FormsTests@16a0ee18]" started-at="2022-05-28T21:40:20 IDT" name="afterMethod" finished-at="2022-05-28T21:40:21 IDT" duration-ms="614" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.FormsTests@2a54a73f]" started-at="2022-06-03T18:35:12 IDT" name="afterMethod" finished-at="2022-06-03T18:35:12 IDT" duration-ms="616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FormsTests@16a0ee18]" started-at="2022-05-28T21:40:21 IDT" name="beforeMethod" finished-at="2022-05-28T21:40:25 IDT" duration-ms="4710" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FormsTests@2a54a73f]" started-at="2022-06-03T18:35:12 IDT" name="beforeMethod" finished-at="2022-06-03T18:35:17 IDT" duration-ms="4733" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -115,17 +101,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="followOrderFormErrorMessages()[pri:0, instance:tests.FormsTests@16a0ee18]" started-at="2022-05-28T21:40:25 IDT" name="followOrderFormErrorMessages" finished-at="2022-05-28T21:40:34 IDT" duration-ms="9027" status="PASS">
+        <test-method signature="followOrderFormErrorMessages()[pri:0, instance:tests.FormsTests@2a54a73f]" started-at="2022-06-03T18:35:17 IDT" name="followOrderFormErrorMessages" finished-at="2022-06-03T18:35:25 IDT" duration-ms="8172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- followOrderFormErrorMessages -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.FormsTests@16a0ee18]" started-at="2022-05-28T21:40:34 IDT" name="afterMethod" finished-at="2022-05-28T21:40:35 IDT" duration-ms="612" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.FormsTests@2a54a73f]" started-at="2022-06-03T18:35:25 IDT" name="afterMethod" finished-at="2022-06-03T18:35:26 IDT" duration-ms="616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- tests.FormsTests -->
       <class name="tests.AccountTests">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.AccountTests@fa49800]" started-at="2022-05-28T21:36:33 IDT" name="beforeTest" finished-at="2022-05-28T21:36:40 IDT" duration-ms="6188" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.AccountTests@662b4c69]" started-at="2022-06-03T18:31:31 IDT" name="beforeTest" finished-at="2022-06-03T18:31:37 IDT" duration-ms="6005" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -136,15 +122,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="CheckingSearchResultsFromChat()[pri:0, instance:tests.AccountTests@fa49800]" started-at="2022-05-28T21:36:40 IDT" name="CheckingSearchResultsFromChat" finished-at="2022-05-28T21:36:45 IDT" duration-ms="5863" status="PASS">
+        <test-method signature="CheckingSearchResultsFromChat()[pri:0, instance:tests.AccountTests@662b4c69]" started-at="2022-06-03T18:31:37 IDT" name="CheckingSearchResultsFromChat" finished-at="2022-06-03T18:31:49 IDT" duration-ms="11701" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CheckingSearchResultsFromChat -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.AccountTests@fa49800]" started-at="2022-05-28T21:36:45 IDT" name="afterTest" finished-at="2022-05-28T21:36:46 IDT" duration-ms="617" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.AccountTests@662b4c69]" started-at="2022-06-03T18:31:49 IDT" name="afterTest" finished-at="2022-06-03T18:31:49 IDT" duration-ms="629" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.AccountTests@fa49800]" started-at="2022-05-28T21:36:46 IDT" name="beforeTest" finished-at="2022-05-28T21:36:51 IDT" duration-ms="4849" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.AccountTests@662b4c69]" started-at="2022-06-03T18:31:49 IDT" name="beforeTest" finished-at="2022-06-03T18:31:54 IDT" duration-ms="4949" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -155,15 +141,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="CreatAcoountErrorMessages()[pri:0, instance:tests.AccountTests@fa49800]" started-at="2022-05-28T21:36:51 IDT" name="CreatAcoountErrorMessages" finished-at="2022-05-28T21:36:57 IDT" duration-ms="5976" status="PASS">
+        <test-method signature="CreatAcoountErrorMessages()[pri:0, instance:tests.AccountTests@662b4c69]" started-at="2022-06-03T18:31:54 IDT" name="CreatAcoountErrorMessages" finished-at="2022-06-03T18:32:00 IDT" duration-ms="5992" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreatAcoountErrorMessages -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.AccountTests@fa49800]" started-at="2022-05-28T21:36:57 IDT" name="afterTest" finished-at="2022-05-28T21:36:58 IDT" duration-ms="632" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.AccountTests@662b4c69]" started-at="2022-06-03T18:32:00 IDT" name="afterTest" finished-at="2022-06-03T18:32:01 IDT" duration-ms="608" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.AccountTests@fa49800]" started-at="2022-05-28T21:36:58 IDT" name="beforeTest" finished-at="2022-05-28T21:37:02 IDT" duration-ms="4858" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.AccountTests@662b4c69]" started-at="2022-06-03T18:32:01 IDT" name="beforeTest" finished-at="2022-06-03T18:32:06 IDT" duration-ms="4759" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -174,15 +160,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="CrudTestPersonalDetails()[pri:0, instance:tests.AccountTests@fa49800]" started-at="2022-05-28T21:37:02 IDT" name="CrudTestPersonalDetails" finished-at="2022-05-28T21:37:18 IDT" duration-ms="16052" status="PASS">
+        <test-method signature="CrudTestPersonalDetails()[pri:0, instance:tests.AccountTests@662b4c69]" started-at="2022-06-03T18:32:06 IDT" name="CrudTestPersonalDetails" finished-at="2022-06-03T18:32:21 IDT" duration-ms="15599" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CrudTestPersonalDetails -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.AccountTests@fa49800]" started-at="2022-05-28T21:37:18 IDT" name="afterTest" finished-at="2022-05-28T21:37:19 IDT" duration-ms="614" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.AccountTests@662b4c69]" started-at="2022-06-03T18:32:21 IDT" name="afterTest" finished-at="2022-06-03T18:32:22 IDT" duration-ms="637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.AccountTests@fa49800]" started-at="2022-05-28T21:37:19 IDT" name="beforeTest" finished-at="2022-05-28T21:37:24 IDT" duration-ms="4733" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.AccountTests@662b4c69]" started-at="2022-06-03T18:32:22 IDT" name="beforeTest" finished-at="2022-06-03T18:32:26 IDT" duration-ms="4612" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -193,76 +179,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="LogInwithFacebookToLupa()[pri:0, instance:tests.AccountTests@fa49800]" started-at="2022-05-28T21:37:24 IDT" name="LogInwithFacebookToLupa" finished-at="2022-05-28T21:37:40 IDT" duration-ms="15909" status="PASS">
+        <test-method signature="LogInwithFacebookToLupa()[pri:0, instance:tests.AccountTests@662b4c69]" started-at="2022-06-03T18:32:26 IDT" name="LogInwithFacebookToLupa" finished-at="2022-06-03T18:32:42 IDT" duration-ms="15960" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogInwithFacebookToLupa -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.AccountTests@fa49800]" started-at="2022-05-28T21:37:40 IDT" name="afterTest" finished-at="2022-05-28T21:37:40 IDT" duration-ms="629" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.AccountTests@fa49800]" started-at="2022-05-28T21:37:40 IDT" name="beforeTest" finished-at="2022-05-28T21:37:45 IDT" duration-ms="4879" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="connectToFacebookThroughChat()[pri:0, instance:tests.AccountTests@fa49800]" started-at="2022-05-28T21:37:45 IDT" name="connectToFacebookThroughChat" finished-at="2022-05-28T21:37:56 IDT" duration-ms="10859" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- connectToFacebookThroughChat -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.AccountTests@fa49800]" started-at="2022-05-28T21:37:56 IDT" name="afterTest" finished-at="2022-05-28T21:37:57 IDT" duration-ms="607" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.AccountTests@662b4c69]" started-at="2022-06-03T18:32:42 IDT" name="afterTest" finished-at="2022-06-03T18:32:43 IDT" duration-ms="623" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- tests.AccountTests -->
-      <class name="tests.PriceTableTests">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.PriceTableTests@505fc5a4]" started-at="2022-05-28T21:42:22 IDT" name="beforeMethod" finished-at="2022-05-28T21:42:27 IDT" duration-ms="4919" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="CheckingTheAmountOfPagesBasedOnAmountOfClicks()[pri:0, instance:tests.PriceTableTests@505fc5a4]" started-at="2022-05-28T21:42:27 IDT" name="CheckingTheAmountOfPagesBasedOnAmountOfClicks" finished-at="2022-05-28T21:42:43 IDT" duration-ms="15659" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckingTheAmountOfPagesBasedOnAmountOfClicks -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.PriceTableTests@505fc5a4]" started-at="2022-05-28T21:42:43 IDT" name="afterMethod" finished-at="2022-05-28T21:42:44 IDT" duration-ms="619" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.PriceTableTests@505fc5a4]" started-at="2022-05-28T21:42:44 IDT" name="beforeMethod" finished-at="2022-05-28T21:42:48 IDT" duration-ms="4890" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="checkingTheInfoOfTheTable()[pri:0, instance:tests.PriceTableTests@505fc5a4]" started-at="2022-05-28T21:42:48 IDT" name="checkingTheInfoOfTheTable" finished-at="2022-05-28T21:43:00 IDT" duration-ms="12046" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkingTheInfoOfTheTable -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.PriceTableTests@505fc5a4]" started-at="2022-05-28T21:43:00 IDT" name="afterMethod" finished-at="2022-05-28T21:43:01 IDT" duration-ms="628" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- tests.PriceTableTests -->
       <class name="tests.ButiqSparimTests">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.ButiqSparimTests@71238fc2]" started-at="2022-05-28T21:37:57 IDT" name="beforeMethod" finished-at="2022-05-28T21:38:01 IDT" duration-ms="4703" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.ButiqSparimTests@fa49800]" started-at="2022-06-03T18:32:43 IDT" name="beforeMethod" finished-at="2022-06-03T18:32:48 IDT" duration-ms="4868" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -273,15 +200,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="checkingIfLikeButtonsAreWorking()[pri:1, instance:tests.ButiqSparimTests@71238fc2]" started-at="2022-05-28T21:38:01 IDT" name="checkingIfLikeButtonsAreWorking" finished-at="2022-05-28T21:38:28 IDT" duration-ms="26418" status="PASS">
+        <test-method signature="checkingIfLikeButtonsAreWorking()[pri:1, instance:tests.ButiqSparimTests@fa49800]" started-at="2022-06-03T18:32:48 IDT" name="checkingIfLikeButtonsAreWorking" finished-at="2022-06-03T18:33:15 IDT" duration-ms="26650" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkingIfLikeButtonsAreWorking -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.ButiqSparimTests@71238fc2]" started-at="2022-05-28T21:38:28 IDT" name="afterMethod" finished-at="2022-05-28T21:38:28 IDT" duration-ms="650" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.ButiqSparimTests@fa49800]" started-at="2022-06-03T18:33:15 IDT" name="afterMethod" finished-at="2022-06-03T18:33:15 IDT" duration-ms="628" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.ButiqSparimTests@71238fc2]" started-at="2022-05-28T21:38:28 IDT" name="beforeMethod" finished-at="2022-05-28T21:38:33 IDT" duration-ms="4817" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.ButiqSparimTests@fa49800]" started-at="2022-06-03T18:33:15 IDT" name="beforeMethod" finished-at="2022-06-03T18:33:20 IDT" duration-ms="4685" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -292,17 +219,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="rightAmuontOfBooksInEachCategory()[pri:2, instance:tests.ButiqSparimTests@71238fc2]" started-at="2022-05-28T21:38:33 IDT" name="rightAmuontOfBooksInEachCategory" finished-at="2022-05-28T21:39:33 IDT" duration-ms="59553" status="PASS">
+        <test-method signature="rightAmuontOfBooksInEachCategory()[pri:2, instance:tests.ButiqSparimTests@fa49800]" started-at="2022-06-03T18:33:20 IDT" name="rightAmuontOfBooksInEachCategory" finished-at="2022-06-03T18:34:20 IDT" duration-ms="59979" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- rightAmuontOfBooksInEachCategory -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.ButiqSparimTests@71238fc2]" started-at="2022-05-28T21:39:33 IDT" name="afterMethod" finished-at="2022-05-28T21:39:34 IDT" duration-ms="640" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.ButiqSparimTests@fa49800]" started-at="2022-06-03T18:34:20 IDT" name="afterMethod" finished-at="2022-06-03T18:34:20 IDT" duration-ms="619" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- tests.ButiqSparimTests -->
       <class name="tests.E2ETests">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.E2ETests@2a54a73f]" started-at="2022-05-28T21:39:34 IDT" name="beforeTest" finished-at="2022-05-28T21:39:38 IDT" duration-ms="4731" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.E2ETests@71238fc2]" started-at="2022-06-03T18:34:20 IDT" name="beforeTest" finished-at="2022-06-03T18:34:25 IDT" duration-ms="4759" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -313,17 +240,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="editPics()[pri:6, instance:tests.E2ETests@2a54a73f]" started-at="2022-05-28T21:39:38 IDT" name="editPics" finished-at="2022-05-28T21:39:44 IDT" duration-ms="5913" status="PASS">
+        <test-method signature="editPics()[pri:6, instance:tests.E2ETests@71238fc2]" started-at="2022-06-03T18:34:25 IDT" name="editPics" finished-at="2022-06-03T18:34:36 IDT" duration-ms="10610" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editPics -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.E2ETests@2a54a73f]" started-at="2022-05-28T21:39:44 IDT" name="afterTest" finished-at="2022-05-28T21:39:45 IDT" duration-ms="1102" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.E2ETests@71238fc2]" started-at="2022-06-03T18:34:36 IDT" name="afterTest" finished-at="2022-06-03T18:34:37 IDT" duration-ms="1094" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- tests.E2ETests -->
-      <class name="tests.UXTestsMainPage">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.UXTestsMainPage@5fbdfdcf]" started-at="2022-05-28T21:43:01 IDT" name="beforeMethod" finished-at="2022-05-28T21:43:06 IDT" duration-ms="4878" status="PASS">
+      <class name="tests.PriceTableTests">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.PriceTableTests@3d6f0054]" started-at="2022-06-03T18:37:33 IDT" name="beforeMethod" finished-at="2022-06-03T18:37:38 IDT" duration-ms="4866" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -334,15 +261,55 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="UXTestLupaLogo()[pri:0, instance:tests.UXTestsMainPage@5fbdfdcf]" started-at="2022-05-28T21:43:06 IDT" name="UXTestLupaLogo" finished-at="2022-05-28T21:43:07 IDT" duration-ms="583" status="PASS">
+        <test-method signature="CheckingTheAmountOfPagesBasedOnAmountOfClicks()[pri:0, instance:tests.PriceTableTests@3d6f0054]" started-at="2022-06-03T18:37:38 IDT" name="CheckingTheAmountOfPagesBasedOnAmountOfClicks" finished-at="2022-06-03T18:37:54 IDT" duration-ms="15673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckingTheAmountOfPagesBasedOnAmountOfClicks -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.PriceTableTests@3d6f0054]" started-at="2022-06-03T18:37:54 IDT" name="afterMethod" finished-at="2022-06-03T18:37:54 IDT" duration-ms="601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.PriceTableTests@3d6f0054]" started-at="2022-06-03T18:37:54 IDT" name="beforeMethod" finished-at="2022-06-03T18:37:59 IDT" duration-ms="4953" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="checkingTheInfoOfTheTable()[pri:0, instance:tests.PriceTableTests@3d6f0054]" started-at="2022-06-03T18:37:59 IDT" name="checkingTheInfoOfTheTable" finished-at="2022-06-03T18:38:11 IDT" duration-ms="12142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingTheInfoOfTheTable -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.PriceTableTests@3d6f0054]" started-at="2022-06-03T18:38:11 IDT" name="afterMethod" finished-at="2022-06-03T18:38:12 IDT" duration-ms="602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- tests.PriceTableTests -->
+      <class name="tests.UXTestsMainPage">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.UXTestsMainPage@505fc5a4]" started-at="2022-06-03T18:38:12 IDT" name="beforeMethod" finished-at="2022-06-03T18:38:17 IDT" duration-ms="4551" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="UXTestLupaLogo()[pri:0, instance:tests.UXTestsMainPage@505fc5a4]" started-at="2022-06-03T18:38:17 IDT" name="UXTestLupaLogo" finished-at="2022-06-03T18:38:17 IDT" duration-ms="578" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UXTestLupaLogo -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.UXTestsMainPage@5fbdfdcf]" started-at="2022-05-28T21:43:07 IDT" name="afterMethod" finished-at="2022-05-28T21:43:07 IDT" duration-ms="601" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.UXTestsMainPage@505fc5a4]" started-at="2022-06-03T18:38:17 IDT" name="afterMethod" finished-at="2022-06-03T18:38:18 IDT" duration-ms="608" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.UXTestsMainPage@5fbdfdcf]" started-at="2022-05-28T21:43:07 IDT" name="beforeMethod" finished-at="2022-05-28T21:43:12 IDT" duration-ms="4745" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.UXTestsMainPage@505fc5a4]" started-at="2022-06-03T18:38:18 IDT" name="beforeMethod" finished-at="2022-06-03T18:38:23 IDT" duration-ms="4876" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -353,15 +320,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="UXTestOn2LinksFontAndColor()[pri:0, instance:tests.UXTestsMainPage@5fbdfdcf]" started-at="2022-05-28T21:43:12 IDT" name="UXTestOn2LinksFontAndColor" finished-at="2022-05-28T21:43:13 IDT" duration-ms="707" status="PASS">
+        <test-method signature="UXTestOn2LinksFontAndColor()[pri:0, instance:tests.UXTestsMainPage@505fc5a4]" started-at="2022-06-03T18:38:23 IDT" name="UXTestOn2LinksFontAndColor" finished-at="2022-06-03T18:38:23 IDT" duration-ms="700" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UXTestOn2LinksFontAndColor -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.UXTestsMainPage@5fbdfdcf]" started-at="2022-05-28T21:43:13 IDT" name="afterMethod" finished-at="2022-05-28T21:43:13 IDT" duration-ms="595" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.UXTestsMainPage@505fc5a4]" started-at="2022-06-03T18:38:23 IDT" name="afterMethod" finished-at="2022-06-03T18:38:24 IDT" duration-ms="1090" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.UXTestsMainPage@5fbdfdcf]" started-at="2022-05-28T21:43:13 IDT" name="beforeMethod" finished-at="2022-05-28T21:43:18 IDT" duration-ms="4829" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.UXTestsMainPage@505fc5a4]" started-at="2022-06-03T18:38:24 IDT" name="beforeMethod" finished-at="2022-06-03T18:38:29 IDT" duration-ms="4963" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -372,19 +339,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="UXTestOnDiscountAd()[pri:0, instance:tests.UXTestsMainPage@5fbdfdcf]" started-at="2022-05-28T21:43:18 IDT" name="UXTestOnDiscountAd" finished-at="2022-05-28T21:43:18 IDT" duration-ms="93" status="PASS">
+        <test-method signature="UXTestOnDiscountAd()[pri:0, instance:tests.UXTestsMainPage@505fc5a4]" started-at="2022-06-03T18:38:29 IDT" name="UXTestOnDiscountAd" finished-at="2022-06-03T18:38:30 IDT" duration-ms="83" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UXTestOnDiscountAd -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.UXTestsMainPage@5fbdfdcf]" started-at="2022-05-28T21:43:18 IDT" name="afterMethod" finished-at="2022-05-28T21:43:19 IDT" duration-ms="1109" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.UXTestsMainPage@505fc5a4]" started-at="2022-06-03T18:38:30 IDT" name="afterMethod" finished-at="2022-06-03T18:38:30 IDT" duration-ms="611" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- tests.UXTestsMainPage -->
-    </test> <!-- TestChrome -->
-    <test started-at="2022-05-28T21:43:19 IDT" name="TestEdge" finished-at="2022-05-28T21:50:59 IDT" duration-ms="459773">
-      <class name="tests.LinksTests">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.LinksTests@4fb3ee4e]" started-at="2022-05-28T21:47:54 IDT" name="beforeMethod" finished-at="2022-05-28T21:48:00 IDT" duration-ms="5890" status="PASS">
+    </test> <!-- TestsOnChrome -->
+    <test started-at="2022-06-03T18:38:30 IDT" name="TestsOnEdge1" finished-at="2022-06-03T18:42:16 IDT" duration-ms="225569">
+      <class name="tests.FormsTests">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FormsTests@618425b5]" started-at="2022-06-03T18:40:11 IDT" name="beforeMethod" finished-at="2022-06-03T18:40:17 IDT" duration-ms="6574" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -395,7 +362,261 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="LinksTestsOnMenuAlbumTmonot()[pri:0, instance:tests.LinksTests@4fb3ee4e]" started-at="2022-05-28T21:48:00 IDT" name="LinksTestsOnMenuAlbumTmonot" finished-at="2022-05-28T21:48:46 IDT" duration-ms="46188" status="FAIL">
+        <test-method signature="errorMessagesContactMeForm()[pri:0, instance:tests.FormsTests@618425b5]" started-at="2022-06-03T18:40:17 IDT" name="errorMessagesContactMeForm" finished-at="2022-06-03T18:40:23 IDT" duration-ms="5638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorMessagesContactMeForm -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.FormsTests@618425b5]" started-at="2022-06-03T18:40:23 IDT" name="afterMethod" finished-at="2022-06-03T18:40:24 IDT" duration-ms="686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FormsTests@618425b5]" started-at="2022-06-03T18:40:24 IDT" name="beforeMethod" finished-at="2022-06-03T18:40:30 IDT" duration-ms="5915" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="errorMessagesLetTalkAboutItForm()[pri:0, instance:tests.FormsTests@618425b5]" started-at="2022-06-03T18:40:30 IDT" name="errorMessagesLetTalkAboutItForm" finished-at="2022-06-03T18:40:37 IDT" duration-ms="6982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorMessagesLetTalkAboutItForm -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.FormsTests@618425b5]" started-at="2022-06-03T18:40:37 IDT" name="afterMethod" finished-at="2022-06-03T18:40:37 IDT" duration-ms="688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FormsTests@618425b5]" started-at="2022-06-03T18:40:37 IDT" name="beforeMethod" finished-at="2022-06-03T18:40:43 IDT" duration-ms="5999" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="errorMessagesOnFormSendEmail()[pri:0, instance:tests.FormsTests@618425b5]" started-at="2022-06-03T18:40:43 IDT" name="errorMessagesOnFormSendEmail" finished-at="2022-06-03T18:40:50 IDT" duration-ms="6363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorMessagesOnFormSendEmail -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.FormsTests@618425b5]" started-at="2022-06-03T18:40:50 IDT" name="afterMethod" finished-at="2022-06-03T18:40:50 IDT" duration-ms="697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FormsTests@618425b5]" started-at="2022-06-03T18:40:50 IDT" name="beforeMethod" finished-at="2022-06-03T18:40:57 IDT" duration-ms="6541" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="followOrderFormErrorMessages()[pri:0, instance:tests.FormsTests@618425b5]" started-at="2022-06-03T18:40:57 IDT" name="followOrderFormErrorMessages" finished-at="2022-06-03T18:41:31 IDT" duration-ms="34240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- followOrderFormErrorMessages -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.FormsTests@618425b5]" started-at="2022-06-03T18:41:31 IDT" name="afterMethod" finished-at="2022-06-03T18:41:32 IDT" duration-ms="742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- tests.FormsTests -->
+      <class name="tests.PriceTableTests">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.PriceTableTests@58695725]" started-at="2022-06-03T18:41:32 IDT" name="beforeMethod" finished-at="2022-06-03T18:41:38 IDT" duration-ms="6616" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="CheckingTheAmountOfPagesBasedOnAmountOfClicks()[pri:0, instance:tests.PriceTableTests@58695725]" started-at="2022-06-03T18:41:38 IDT" name="CheckingTheAmountOfPagesBasedOnAmountOfClicks" finished-at="2022-06-03T18:41:54 IDT" duration-ms="15904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckingTheAmountOfPagesBasedOnAmountOfClicks -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.PriceTableTests@58695725]" started-at="2022-06-03T18:41:54 IDT" name="afterMethod" finished-at="2022-06-03T18:41:55 IDT" duration-ms="706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.PriceTableTests@58695725]" started-at="2022-06-03T18:41:55 IDT" name="beforeMethod" finished-at="2022-06-03T18:42:02 IDT" duration-ms="6731" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="checkingTheInfoOfTheTable()[pri:0, instance:tests.PriceTableTests@58695725]" started-at="2022-06-03T18:42:02 IDT" name="checkingTheInfoOfTheTable" finished-at="2022-06-03T18:42:15 IDT" duration-ms="13240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingTheInfoOfTheTable -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.PriceTableTests@58695725]" started-at="2022-06-03T18:42:15 IDT" name="afterMethod" finished-at="2022-06-03T18:42:16 IDT" duration-ms="699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- tests.PriceTableTests -->
+      <class name="tests.ButiqSparimTests">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.ButiqSparimTests@18d87d80]" started-at="2022-06-03T18:38:30 IDT" name="beforeMethod" finished-at="2022-06-03T18:38:36 IDT" duration-ms="5974" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="checkingIfLikeButtonsAreWorking()[pri:1, instance:tests.ButiqSparimTests@18d87d80]" started-at="2022-06-03T18:38:36 IDT" name="checkingIfLikeButtonsAreWorking" finished-at="2022-06-03T18:39:03 IDT" duration-ms="26459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingIfLikeButtonsAreWorking -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.ButiqSparimTests@18d87d80]" started-at="2022-06-03T18:39:03 IDT" name="afterMethod" finished-at="2022-06-03T18:39:03 IDT" duration-ms="738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.ButiqSparimTests@18d87d80]" started-at="2022-06-03T18:39:03 IDT" name="beforeMethod" finished-at="2022-06-03T18:39:10 IDT" duration-ms="6814" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="rightAmuontOfBooksInEachCategory()[pri:2, instance:tests.ButiqSparimTests@18d87d80]" started-at="2022-06-03T18:39:10 IDT" name="rightAmuontOfBooksInEachCategory" finished-at="2022-06-03T18:40:10 IDT" duration-ms="59873" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rightAmuontOfBooksInEachCategory -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.ButiqSparimTests@18d87d80]" started-at="2022-06-03T18:40:10 IDT" name="afterMethod" finished-at="2022-06-03T18:40:11 IDT" duration-ms="741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- tests.ButiqSparimTests -->
+    </test> <!-- TestsOnEdge1 -->
+    <test started-at="2022-06-03T18:42:16 IDT" name="TestsOnEdge2" finished-at="2022-06-03T18:43:52 IDT" duration-ms="95975">
+      <class name="tests.AccountTests">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.AccountTests@2c35e847]" started-at="2022-06-03T18:42:16 IDT" name="beforeTest" finished-at="2022-06-03T18:42:22 IDT" duration-ms="5968" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="CheckingSearchResultsFromChat()[pri:0, instance:tests.AccountTests@2c35e847]" started-at="2022-06-03T18:42:22 IDT" name="CheckingSearchResultsFromChat" finished-at="2022-06-03T18:42:36 IDT" duration-ms="14545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckingSearchResultsFromChat -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.AccountTests@2c35e847]" started-at="2022-06-03T18:42:36 IDT" name="afterTest" finished-at="2022-06-03T18:42:37 IDT" duration-ms="696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.AccountTests@2c35e847]" started-at="2022-06-03T18:42:37 IDT" name="beforeTest" finished-at="2022-06-03T18:42:44 IDT" duration-ms="6637" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="CreatAcoountErrorMessages()[pri:0, instance:tests.AccountTests@2c35e847]" started-at="2022-06-03T18:42:44 IDT" name="CreatAcoountErrorMessages" finished-at="2022-06-03T18:42:51 IDT" duration-ms="7798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreatAcoountErrorMessages -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.AccountTests@2c35e847]" started-at="2022-06-03T18:42:51 IDT" name="afterTest" finished-at="2022-06-03T18:42:52 IDT" duration-ms="686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.AccountTests@2c35e847]" started-at="2022-06-03T18:42:52 IDT" name="beforeTest" finished-at="2022-06-03T18:42:59 IDT" duration-ms="6596" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="CrudTestPersonalDetails()[pri:0, instance:tests.AccountTests@2c35e847]" started-at="2022-06-03T18:42:59 IDT" name="CrudTestPersonalDetails" finished-at="2022-06-03T18:43:15 IDT" duration-ms="16017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CrudTestPersonalDetails -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.AccountTests@2c35e847]" started-at="2022-06-03T18:43:15 IDT" name="afterTest" finished-at="2022-06-03T18:43:15 IDT" duration-ms="732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.AccountTests@2c35e847]" started-at="2022-06-03T18:43:15 IDT" name="beforeTest" finished-at="2022-06-03T18:43:22 IDT" duration-ms="6641" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="LogInwithFacebookToLupa()[pri:0, instance:tests.AccountTests@2c35e847]" started-at="2022-06-03T18:43:22 IDT" name="LogInwithFacebookToLupa" finished-at="2022-06-03T18:43:38 IDT" duration-ms="15831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogInwithFacebookToLupa -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.AccountTests@2c35e847]" started-at="2022-06-03T18:43:38 IDT" name="afterTest" finished-at="2022-06-03T18:43:39 IDT" duration-ms="723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.AccountTests -->
+      <class name="tests.E2ETests">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.E2ETests@7bd4937b]" started-at="2022-06-03T18:43:39 IDT" name="beforeTest" finished-at="2022-06-03T18:43:45 IDT" duration-ms="6087" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="editPics()[pri:6, instance:tests.E2ETests@7bd4937b]" started-at="2022-06-03T18:43:45 IDT" name="editPics" finished-at="2022-06-03T18:43:51 IDT" duration-ms="6310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editPics -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.E2ETests@7bd4937b]" started-at="2022-06-03T18:43:51 IDT" name="afterTest" finished-at="2022-06-03T18:43:52 IDT" duration-ms="704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.E2ETests -->
+    </test> <!-- TestsOnEdge2 -->
+    <test started-at="2022-06-03T18:43:52 IDT" name="TestsOnEdge3" finished-at="2022-06-03T18:46:24 IDT" duration-ms="152500">
+      <class name="tests.LinksTests">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.LinksTests@52af26ee]" started-at="2022-06-03T18:43:52 IDT" name="beforeMethod" finished-at="2022-06-03T18:43:58 IDT" duration-ms="6652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="LinksTestsOnMenuAlbumTmonot()[pri:0, instance:tests.LinksTests@52af26ee]" started-at="2022-06-03T18:43:58 IDT" name="LinksTestsOnMenuAlbumTmonot" finished-at="2022-06-03T18:44:51 IDT" duration-ms="52224" status="FAIL">
           <exception class="java.lang.ArrayIndexOutOfBoundsException">
             <message>
               <![CDATA[Index 11 out of bounds for length 11]]>
@@ -438,377 +659,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LinksTestsOnMenuAlbumTmonot -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.LinksTests@4fb3ee4e]" started-at="2022-05-28T21:48:46 IDT" name="afterMethod" finished-at="2022-05-28T21:48:46 IDT" duration-ms="774" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.LinksTests@52af26ee]" started-at="2022-06-03T18:44:51 IDT" name="afterMethod" finished-at="2022-06-03T18:44:51 IDT" duration-ms="827" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.LinksTests@4fb3ee4e]" started-at="2022-05-28T21:48:46 IDT" name="beforeMethod" finished-at="2022-05-28T21:48:53 IDT" duration-ms="6088" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.LinksTests@52af26ee]" started-at="2022-06-03T18:44:51 IDT" name="beforeMethod" finished-at="2022-06-03T18:44:58 IDT" duration-ms="6581" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="LinksTetsMenuBottomOfThePage()[pri:0, instance:tests.LinksTests@4fb3ee4e]" started-at="2022-05-28T21:48:53 IDT" name="LinksTetsMenuBottomOfThePage" finished-at="2022-05-28T21:49:54 IDT" duration-ms="60994" status="PASS">
+        <test-method signature="LinksTetsMenuBottomOfThePage()[pri:0, instance:tests.LinksTests@52af26ee]" started-at="2022-06-03T18:44:58 IDT" name="LinksTetsMenuBottomOfThePage" finished-at="2022-06-03T18:46:00 IDT" duration-ms="61973" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LinksTetsMenuBottomOfThePage -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.LinksTests@4fb3ee4e]" started-at="2022-05-28T21:49:54 IDT" name="afterMethod" finished-at="2022-05-28T21:49:54 IDT" duration-ms="795" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.LinksTests@52af26ee]" started-at="2022-06-03T18:46:00 IDT" name="afterMethod" finished-at="2022-06-03T18:46:01 IDT" duration-ms="787" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- tests.LinksTests -->
-      <class name="tests.FormsTests">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FormsTests@f5acb9d]" started-at="2022-05-28T21:46:57 IDT" name="beforeMethod" finished-at="2022-05-28T21:47:04 IDT" duration-ms="6708" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="errorMessagesContactMeForm()[pri:0, instance:tests.FormsTests@f5acb9d]" started-at="2022-05-28T21:47:04 IDT" name="errorMessagesContactMeForm" finished-at="2022-05-28T21:47:09 IDT" duration-ms="5640" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- errorMessagesContactMeForm -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.FormsTests@f5acb9d]" started-at="2022-05-28T21:47:09 IDT" name="afterMethod" finished-at="2022-05-28T21:47:10 IDT" duration-ms="703" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FormsTests@f5acb9d]" started-at="2022-05-28T21:47:10 IDT" name="beforeMethod" finished-at="2022-05-28T21:47:16 IDT" duration-ms="6100" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="errorMessagesLetTalkAboutItForm()[pri:0, instance:tests.FormsTests@f5acb9d]" started-at="2022-05-28T21:47:16 IDT" name="errorMessagesLetTalkAboutItForm" finished-at="2022-05-28T21:47:23 IDT" duration-ms="6967" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- errorMessagesLetTalkAboutItForm -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.FormsTests@f5acb9d]" started-at="2022-05-28T21:47:23 IDT" name="afterMethod" finished-at="2022-05-28T21:47:24 IDT" duration-ms="689" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FormsTests@f5acb9d]" started-at="2022-05-28T21:47:24 IDT" name="beforeMethod" finished-at="2022-05-28T21:47:31 IDT" duration-ms="6758" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="errorMessagesOnFormSendEmail()[pri:0, instance:tests.FormsTests@f5acb9d]" started-at="2022-05-28T21:47:31 IDT" name="errorMessagesOnFormSendEmail" finished-at="2022-05-28T21:47:37 IDT" duration-ms="6384" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- errorMessagesOnFormSendEmail -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.FormsTests@f5acb9d]" started-at="2022-05-28T21:47:37 IDT" name="afterMethod" finished-at="2022-05-28T21:47:38 IDT" duration-ms="705" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.FormsTests@f5acb9d]" started-at="2022-05-28T21:47:38 IDT" name="beforeMethod" finished-at="2022-05-28T21:47:44 IDT" duration-ms="5866" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="followOrderFormErrorMessages()[pri:0, instance:tests.FormsTests@f5acb9d]" started-at="2022-05-28T21:47:44 IDT" name="followOrderFormErrorMessages" finished-at="2022-05-28T21:47:53 IDT" duration-ms="9315" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- followOrderFormErrorMessages -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.FormsTests@f5acb9d]" started-at="2022-05-28T21:47:53 IDT" name="afterMethod" finished-at="2022-05-28T21:47:54 IDT" duration-ms="719" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- tests.FormsTests -->
-      <class name="tests.AccountTests">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.AccountTests@618425b5]" started-at="2022-05-28T21:43:19 IDT" name="beforeTest" finished-at="2022-05-28T21:43:25 IDT" duration-ms="6047" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="CheckingSearchResultsFromChat()[pri:0, instance:tests.AccountTests@618425b5]" started-at="2022-05-28T21:43:25 IDT" name="CheckingSearchResultsFromChat" finished-at="2022-05-28T21:43:31 IDT" duration-ms="5611" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckingSearchResultsFromChat -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.AccountTests@618425b5]" started-at="2022-05-28T21:43:31 IDT" name="afterTest" finished-at="2022-05-28T21:43:32 IDT" duration-ms="694" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.AccountTests@618425b5]" started-at="2022-05-28T21:43:32 IDT" name="beforeTest" finished-at="2022-05-28T21:43:38 IDT" duration-ms="6547" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="CreatAcoountErrorMessages()[pri:0, instance:tests.AccountTests@618425b5]" started-at="2022-05-28T21:43:38 IDT" name="CreatAcoountErrorMessages" finished-at="2022-05-28T21:43:46 IDT" duration-ms="7813" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreatAcoountErrorMessages -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.AccountTests@618425b5]" started-at="2022-05-28T21:43:46 IDT" name="afterTest" finished-at="2022-05-28T21:43:47 IDT" duration-ms="698" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.AccountTests@618425b5]" started-at="2022-05-28T21:43:47 IDT" name="beforeTest" finished-at="2022-05-28T21:43:53 IDT" duration-ms="6508" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="CrudTestPersonalDetails()[pri:0, instance:tests.AccountTests@618425b5]" started-at="2022-05-28T21:43:53 IDT" name="CrudTestPersonalDetails" finished-at="2022-05-28T21:44:09 IDT" duration-ms="15365" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CrudTestPersonalDetails -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.AccountTests@618425b5]" started-at="2022-05-28T21:44:09 IDT" name="afterTest" finished-at="2022-05-28T21:44:09 IDT" duration-ms="724" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.AccountTests@618425b5]" started-at="2022-05-28T21:44:09 IDT" name="beforeTest" finished-at="2022-05-28T21:44:15 IDT" duration-ms="6150" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="LogInwithFacebookToLupa()[pri:0, instance:tests.AccountTests@618425b5]" started-at="2022-05-28T21:44:15 IDT" name="LogInwithFacebookToLupa" finished-at="2022-05-28T21:44:32 IDT" duration-ms="16734" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LogInwithFacebookToLupa -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.AccountTests@618425b5]" started-at="2022-05-28T21:44:32 IDT" name="afterTest" finished-at="2022-05-28T21:44:33 IDT" duration-ms="745" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.AccountTests@618425b5]" started-at="2022-05-28T21:44:33 IDT" name="beforeTest" finished-at="2022-05-28T21:44:39 IDT" duration-ms="6442" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="connectToFacebookThroughChat()[pri:0, instance:tests.AccountTests@618425b5]" started-at="2022-05-28T21:44:39 IDT" name="connectToFacebookThroughChat" finished-at="2022-05-28T21:44:53 IDT" duration-ms="13358" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- connectToFacebookThroughChat -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.AccountTests@618425b5]" started-at="2022-05-28T21:44:53 IDT" name="afterTest" finished-at="2022-05-28T21:44:53 IDT" duration-ms="722" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- tests.AccountTests -->
-      <class name="tests.E2ETests">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:tests.E2ETests@543588e6]" started-at="2022-05-28T21:46:34 IDT" name="beforeTest" finished-at="2022-05-28T21:46:41 IDT" duration-ms="6541" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="editPics()[pri:6, instance:tests.E2ETests@543588e6]" started-at="2022-05-28T21:46:41 IDT" name="editPics" finished-at="2022-05-28T21:46:56 IDT" duration-ms="15637" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#mat\-checkbox\-1\-input"}
-  (Session info: MicrosoftEdge=101.0.1210.53)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'DESKTOP-JIL93TC', ip: '192.168.1.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.3'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [632bb84763905e0c46b6c57e1bc75678, findElement {using=id, value=mat-checkbox-1-input}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 101.0.1210.53, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:50389}, msedge: {msedgedriverVersion: 101.0.1210.53 (019dbf6dd738..., userDataDir: C:\Users\yakov\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50389/devtoo..., se:cdpVersion: 101.0.1210.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 632bb84763905e0c46b6c57e1bc75678]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#mat\-checkbox\-1\-input"}
-  (Session info: MicrosoftEdge=101.0.1210.53)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'DESKTOP-JIL93TC', ip: '192.168.1.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.3'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [632bb84763905e0c46b6c57e1bc75678, findElement {using=id, value=mat-checkbox-1-input}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 101.0.1210.53, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:50389}, msedge: {msedgedriverVersion: 101.0.1210.53 (019dbf6dd738..., userDataDir: C:\Users\yakov\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50389/devtoo..., se:cdpVersion: 101.0.1210.53, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 632bb84763905e0c46b6c57e1bc75678
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-at tests.E2ETests.editPics(E2ETests.java:103)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editPics -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.E2ETests@543588e6]" started-at="2022-05-28T21:46:56 IDT" name="afterTest" finished-at="2022-05-28T21:46:57 IDT" duration-ms="713" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- tests.E2ETests -->
-      <class name="tests.ButiqSparimTests">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.ButiqSparimTests@58695725]" started-at="2022-05-28T21:44:53 IDT" name="beforeMethod" finished-at="2022-05-28T21:44:59 IDT" duration-ms="5981" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="checkingIfLikeButtonsAreWorking()[pri:1, instance:tests.ButiqSparimTests@58695725]" started-at="2022-05-28T21:44:59 IDT" name="checkingIfLikeButtonsAreWorking" finished-at="2022-05-28T21:45:26 IDT" duration-ms="26514" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkingIfLikeButtonsAreWorking -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.ButiqSparimTests@58695725]" started-at="2022-05-28T21:45:26 IDT" name="afterMethod" finished-at="2022-05-28T21:45:27 IDT" duration-ms="751" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.ButiqSparimTests@58695725]" started-at="2022-05-28T21:45:27 IDT" name="beforeMethod" finished-at="2022-05-28T21:45:33 IDT" duration-ms="6791" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="rightAmuontOfBooksInEachCategory()[pri:2, instance:tests.ButiqSparimTests@58695725]" started-at="2022-05-28T21:45:33 IDT" name="rightAmuontOfBooksInEachCategory" finished-at="2022-05-28T21:46:33 IDT" duration-ms="59948" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- rightAmuontOfBooksInEachCategory -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.ButiqSparimTests@58695725]" started-at="2022-05-28T21:46:33 IDT" name="afterMethod" finished-at="2022-05-28T21:46:34 IDT" duration-ms="760" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- tests.ButiqSparimTests -->
-      <class name="tests.PriceTableTests">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.PriceTableTests@5d7148e2]" started-at="2022-05-28T21:49:54 IDT" name="beforeMethod" finished-at="2022-05-28T21:50:00 IDT" duration-ms="6128" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="CheckingTheAmountOfPagesBasedOnAmountOfClicks()[pri:0, instance:tests.PriceTableTests@5d7148e2]" started-at="2022-05-28T21:50:00 IDT" name="CheckingTheAmountOfPagesBasedOnAmountOfClicks" finished-at="2022-05-28T21:50:16 IDT" duration-ms="15875" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CheckingTheAmountOfPagesBasedOnAmountOfClicks -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.PriceTableTests@5d7148e2]" started-at="2022-05-28T21:50:16 IDT" name="afterMethod" finished-at="2022-05-28T21:50:17 IDT" duration-ms="712" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.PriceTableTests@5d7148e2]" started-at="2022-05-28T21:50:17 IDT" name="beforeMethod" finished-at="2022-05-28T21:50:23 IDT" duration-ms="6011" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="checkingTheInfoOfTheTable()[pri:0, instance:tests.PriceTableTests@5d7148e2]" started-at="2022-05-28T21:50:23 IDT" name="checkingTheInfoOfTheTable" finished-at="2022-05-28T21:50:35 IDT" duration-ms="12298" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkingTheInfoOfTheTable -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.PriceTableTests@5d7148e2]" started-at="2022-05-28T21:50:35 IDT" name="afterMethod" finished-at="2022-05-28T21:50:36 IDT" duration-ms="694" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- tests.PriceTableTests -->
       <class name="tests.UXTestsMainPage">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.UXTestsMainPage@25fb8912]" started-at="2022-05-28T21:50:36 IDT" name="beforeMethod" finished-at="2022-05-28T21:50:43 IDT" duration-ms="6617" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.UXTestsMainPage@6fd83fc1]" started-at="2022-06-03T18:46:01 IDT" name="beforeMethod" finished-at="2022-06-03T18:46:07 IDT" duration-ms="6688" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -819,15 +688,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="UXTestLupaLogo()[pri:0, instance:tests.UXTestsMainPage@25fb8912]" started-at="2022-05-28T21:50:43 IDT" name="UXTestLupaLogo" finished-at="2022-05-28T21:50:43 IDT" duration-ms="566" status="PASS">
+        <test-method signature="UXTestLupaLogo()[pri:0, instance:tests.UXTestsMainPage@6fd83fc1]" started-at="2022-06-03T18:46:07 IDT" name="UXTestLupaLogo" finished-at="2022-06-03T18:46:08 IDT" duration-ms="570" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UXTestLupaLogo -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.UXTestsMainPage@25fb8912]" started-at="2022-05-28T21:50:43 IDT" name="afterMethod" finished-at="2022-05-28T21:50:44 IDT" duration-ms="666" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.UXTestsMainPage@6fd83fc1]" started-at="2022-06-03T18:46:08 IDT" name="afterMethod" finished-at="2022-06-03T18:46:09 IDT" duration-ms="687" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.UXTestsMainPage@25fb8912]" started-at="2022-05-28T21:50:44 IDT" name="beforeMethod" finished-at="2022-05-28T21:50:50 IDT" duration-ms="6460" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.UXTestsMainPage@6fd83fc1]" started-at="2022-06-03T18:46:09 IDT" name="beforeMethod" finished-at="2022-06-03T18:46:15 IDT" duration-ms="6686" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -838,7 +707,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="UXTestOn2LinksFontAndColor()[pri:0, instance:tests.UXTestsMainPage@25fb8912]" started-at="2022-05-28T21:50:50 IDT" name="UXTestOn2LinksFontAndColor" finished-at="2022-05-28T21:50:51 IDT" duration-ms="703" status="FAIL">
+        <test-method signature="UXTestOn2LinksFontAndColor()[pri:0, instance:tests.UXTestsMainPage@6fd83fc1]" started-at="2022-06-03T18:46:15 IDT" name="UXTestOn2LinksFontAndColor" finished-at="2022-06-03T18:46:16 IDT" duration-ms="697" status="FAIL">
           <exception class="java.lang.ArrayIndexOutOfBoundsException">
             <message>
               <![CDATA[Index 4 out of bounds for length 4]]>
@@ -881,11 +750,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UXTestOn2LinksFontAndColor -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.UXTestsMainPage@25fb8912]" started-at="2022-05-28T21:50:51 IDT" name="afterMethod" finished-at="2022-05-28T21:50:52 IDT" duration-ms="678" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.UXTestsMainPage@6fd83fc1]" started-at="2022-06-03T18:46:16 IDT" name="afterMethod" finished-at="2022-06-03T18:46:17 IDT" duration-ms="669" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.UXTestsMainPage@25fb8912]" started-at="2022-05-28T21:50:52 IDT" name="beforeMethod" finished-at="2022-05-28T21:50:58 IDT" duration-ms="6518" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.UXTestsMainPage@6fd83fc1]" started-at="2022-06-03T18:46:17 IDT" name="beforeMethod" finished-at="2022-06-03T18:46:24 IDT" duration-ms="6723" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -896,15 +765,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="UXTestOnDiscountAd()[pri:0, instance:tests.UXTestsMainPage@25fb8912]" started-at="2022-05-28T21:50:58 IDT" name="UXTestOnDiscountAd" finished-at="2022-05-28T21:50:58 IDT" duration-ms="71" status="PASS">
+        <test-method signature="UXTestOnDiscountAd()[pri:0, instance:tests.UXTestsMainPage@6fd83fc1]" started-at="2022-06-03T18:46:24 IDT" name="UXTestOnDiscountAd" finished-at="2022-06-03T18:46:24 IDT" duration-ms="69" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UXTestOnDiscountAd -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.UXTestsMainPage@25fb8912]" started-at="2022-05-28T21:50:58 IDT" name="afterMethod" finished-at="2022-05-28T21:50:59 IDT" duration-ms="673" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.UXTestsMainPage@6fd83fc1]" started-at="2022-06-03T18:46:24 IDT" name="afterMethod" finished-at="2022-06-03T18:46:24 IDT" duration-ms="666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- tests.UXTestsMainPage -->
-    </test> <!-- TestEdge -->
+    </test> <!-- TestsOnEdge3 -->
   </suite> <!-- Suite -->
 </testng-results>

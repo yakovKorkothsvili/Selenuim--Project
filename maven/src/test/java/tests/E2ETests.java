@@ -51,7 +51,7 @@ public class E2ETests extends ElementsThatAllTestsHave{
  @Parameters ("browser")
   @BeforeMethod
   public static void beforeTest(String browser) throws InterruptedException {
-	 //String browser="Edge";
+	// String browser="Edge";
 	 
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();

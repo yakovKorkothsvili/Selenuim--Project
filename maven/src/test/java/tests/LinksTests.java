@@ -33,9 +33,9 @@ public class LinksTests extends ElementsThatAllTestsHave {
 	
  @Parameters ("browser")
   @BeforeMethod
-  public void beforeMethod(String browser) throws InterruptedException {
+  public void beforeMethod() throws InterruptedException {
 	  
-		//String browser="Edge";
+		String browser="Edge";
 	  
 		if (browser.equals("chrome")) {
 	   WebDriverManager.chromedriver().setup();
