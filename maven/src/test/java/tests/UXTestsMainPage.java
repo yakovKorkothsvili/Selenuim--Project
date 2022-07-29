@@ -34,7 +34,8 @@ public class UXTestsMainPage extends ElementsThatAllTestsHave {
 		static public String colorAlbum;
 		static public String fontFamliyKirTmonot;
 		static public String colorKirTmonot;
-		static public ArrayList<String> FontAndColorLinks=new ArrayList<String>(4);
+		static public ArrayList<String> FontAndColorAlbumTmonot=new ArrayList<String>(2);
+		static public ArrayList<String> FontAndColorKirTmonot=new ArrayList<String>(2);
 		//elements ccsValueDiscount
 		static public WebElement discountText;
 		static public WebElement discountBackround;
@@ -104,11 +105,11 @@ public class UXTestsMainPage extends ElementsThatAllTestsHave {
   
   @Test
   public void  UXTestOn2LinksFontAndColor() throws InterruptedException {
-	  UXTestsMainPage.findingElementsLinksAndTakingFontColorLink1();
+	  findingElementsLinksAndTakingFontColorLink1();
 	  
-	  UXTestsMainPage.TakingFontColorLink2AddingStringsToArrayList();
+	  TakingFontColorLink2AddingStringsToArrayList();
 	  
-	  UXFunctions.checkingFontAndColorOf2Links(FontAndColorLinks);
+	  UXFunctions.checkingFontAndColorOf2Links(FontAndColorAlbumTmonot, FontAndColorKirTmonot);
   }
 
   private static void findingElementsLinksAndTakingFontColorLink1() {
@@ -120,10 +121,10 @@ public class UXTestsMainPage extends ElementsThatAllTestsHave {
   private static void TakingFontColorLink2AddingStringsToArrayList() {
 	  fontFamliyKirTmonot=links.get(1).getCssValue("font-family");
 	  colorKirTmonot=links.get(1).getCssValue("color");
-	  FontAndColorLinks.add(fontFamliyAlbum);
-	  FontAndColorLinks.add(colorAlbum);
-	  FontAndColorLinks.add(fontFamliyKirTmonot);
-	  FontAndColorLinks.add(colorKirTmonot);
+	  FontAndColorAlbumTmonot.add(fontFamliyAlbum);
+	  FontAndColorAlbumTmonot.add(colorAlbum);
+	  FontAndColorKirTmonot.add(fontFamliyKirTmonot);
+	  FontAndColorKirTmonot.add(colorKirTmonot);
   }
   
   @Test 

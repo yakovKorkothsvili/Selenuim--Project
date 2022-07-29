@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>TestsOnChrome</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 03 18:31:31 IDT 2022</td>
+<td>Started on:</td><td>Tue Jun 14 17:33:05 IDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>419 seconds (419244 ms)</td>
+<tr><td>Total time:</td><td>416 seconds (416906 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,60 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.LinksTests.LinksTestsOnMenuAlbumTmonot()'><b>LinksTestsOnMenuAlbumTmonot</b><br>Test class: tests.LinksTests</td>
+<td><div><pre>java.lang.AssertionError: expected [https://www.lupa.co.il/products/layflat/#spu-6651] but found [https://www.lupa.co.il/products/layflat/]
+	at tools.LinksFunctions.CheckingIfTheTestGotToTheRightURLs(LinksFunctions.java:26)
+	at tests.LinksTests.LinksTestsOnMenuAlbumTmonot(LinksTests.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace519063059", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace519063059'><pre>java.lang.AssertionError: expected [https://www.lupa.co.il/products/layflat/#spu-6651] but found [https://www.lupa.co.il/products/layflat/]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at tools.LinksFunctions.CheckingIfTheTestGotToTheRightURLs(LinksFunctions.java:26)
+	at tests.LinksTests.LinksTestsOnMenuAlbumTmonot(LinksTests.java:75)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>69</td>
+<td>tests.LinksTests@2a54a73f</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,95 +129,85 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.AccountTests.CheckingSearchResultsFromChat()'><b>CheckingSearchResultsFromChat</b><br>Test class: tests.AccountTests</td>
-<td></td>
-<td>11</td>
-<td>tests.AccountTests@662b4c69</td></tr>
-<tr>
 <td title='tests.PriceTableTests.CheckingTheAmountOfPagesBasedOnAmountOfClicks()'><b>CheckingTheAmountOfPagesBasedOnAmountOfClicks</b><br>Test class: tests.PriceTableTests</td>
 <td></td>
 <td>15</td>
-<td>tests.PriceTableTests@3d6f0054</td></tr>
+<td>tests.PriceTableTests@16a0ee18</td></tr>
 <tr>
 <td title='tests.AccountTests.CreatAcoountErrorMessages()'><b>CreatAcoountErrorMessages</b><br>Test class: tests.AccountTests</td>
 <td></td>
-<td>5</td>
-<td>tests.AccountTests@662b4c69</td></tr>
+<td>6</td>
+<td>tests.AccountTests@fba92d3</td></tr>
 <tr>
 <td title='tests.AccountTests.CrudTestPersonalDetails()'><b>CrudTestPersonalDetails</b><br>Test class: tests.AccountTests</td>
 <td></td>
 <td>15</td>
-<td>tests.AccountTests@662b4c69</td></tr>
-<tr>
-<td title='tests.LinksTests.LinksTestsOnMenuAlbumTmonot()'><b>LinksTestsOnMenuAlbumTmonot</b><br>Test class: tests.LinksTests</td>
-<td></td>
-<td>51</td>
-<td>tests.LinksTests@16a0ee18</td></tr>
+<td>tests.AccountTests@fba92d3</td></tr>
 <tr>
 <td title='tests.LinksTests.LinksTetsMenuBottomOfThePage()'><b>LinksTetsMenuBottomOfThePage</b><br>Test class: tests.LinksTests</td>
 <td></td>
-<td>61</td>
-<td>tests.LinksTests@16a0ee18</td></tr>
+<td>58</td>
+<td>tests.LinksTests@2a54a73f</td></tr>
 <tr>
 <td title='tests.AccountTests.LogInwithFacebookToLupa()'><b>LogInwithFacebookToLupa</b><br>Test class: tests.AccountTests</td>
 <td></td>
 <td>15</td>
-<td>tests.AccountTests@662b4c69</td></tr>
+<td>tests.AccountTests@fba92d3</td></tr>
 <tr>
 <td title='tests.UXTestsMainPage.UXTestLupaLogo()'><b>UXTestLupaLogo</b><br>Test class: tests.UXTestsMainPage</td>
 <td></td>
 <td>0</td>
-<td>tests.UXTestsMainPage@505fc5a4</td></tr>
+<td>tests.UXTestsMainPage@3d6f0054</td></tr>
 <tr>
 <td title='tests.UXTestsMainPage.UXTestOn2LinksFontAndColor()'><b>UXTestOn2LinksFontAndColor</b><br>Test class: tests.UXTestsMainPage</td>
 <td></td>
 <td>0</td>
-<td>tests.UXTestsMainPage@505fc5a4</td></tr>
+<td>tests.UXTestsMainPage@3d6f0054</td></tr>
 <tr>
 <td title='tests.UXTestsMainPage.UXTestOnDiscountAd()'><b>UXTestOnDiscountAd</b><br>Test class: tests.UXTestsMainPage</td>
 <td></td>
 <td>0</td>
-<td>tests.UXTestsMainPage@505fc5a4</td></tr>
+<td>tests.UXTestsMainPage@3d6f0054</td></tr>
 <tr>
 <td title='tests.ButiqSparimTests.checkingIfLikeButtonsAreWorking()'><b>checkingIfLikeButtonsAreWorking</b><br>Test class: tests.ButiqSparimTests</td>
 <td></td>
 <td>26</td>
-<td>tests.ButiqSparimTests@fa49800</td></tr>
+<td>tests.ButiqSparimTests@662b4c69</td></tr>
 <tr>
 <td title='tests.PriceTableTests.checkingTheInfoOfTheTable()'><b>checkingTheInfoOfTheTable</b><br>Test class: tests.PriceTableTests</td>
 <td></td>
 <td>12</td>
-<td>tests.PriceTableTests@3d6f0054</td></tr>
+<td>tests.PriceTableTests@16a0ee18</td></tr>
 <tr>
 <td title='tests.E2ETests.editPics()'><b>editPics</b><br>Test class: tests.E2ETests</td>
 <td></td>
-<td>10</td>
-<td>tests.E2ETests@71238fc2</td></tr>
+<td>6</td>
+<td>tests.E2ETests@fa49800</td></tr>
 <tr>
 <td title='tests.FormsTests.errorMessagesContactMeForm()'><b>errorMessagesContactMeForm</b><br>Test class: tests.FormsTests</td>
 <td></td>
 <td>5</td>
-<td>tests.FormsTests@2a54a73f</td></tr>
+<td>tests.FormsTests@71238fc2</td></tr>
 <tr>
 <td title='tests.FormsTests.errorMessagesLetTalkAboutItForm()'><b>errorMessagesLetTalkAboutItForm</b><br>Test class: tests.FormsTests</td>
 <td></td>
 <td>7</td>
-<td>tests.FormsTests@2a54a73f</td></tr>
+<td>tests.FormsTests@71238fc2</td></tr>
 <tr>
 <td title='tests.FormsTests.errorMessagesOnFormSendEmail()'><b>errorMessagesOnFormSendEmail</b><br>Test class: tests.FormsTests</td>
 <td></td>
 <td>6</td>
-<td>tests.FormsTests@2a54a73f</td></tr>
+<td>tests.FormsTests@71238fc2</td></tr>
 <tr>
 <td title='tests.FormsTests.followOrderFormErrorMessages()'><b>followOrderFormErrorMessages</b><br>Test class: tests.FormsTests</td>
 <td></td>
 <td>8</td>
-<td>tests.FormsTests@2a54a73f</td></tr>
+<td>tests.FormsTests@71238fc2</td></tr>
 <tr>
 <td title='tests.ButiqSparimTests.rightAmuontOfBooksInEachCategory()'><b>rightAmuontOfBooksInEachCategory</b><br>Test class: tests.ButiqSparimTests</td>
 <td></td>
-<td>59</td>
-<td>tests.ButiqSparimTests@fa49800</td></tr>
+<td>65</td>
+<td>tests.ButiqSparimTests@662b4c69</td></tr>
 </table><p>
 </body>
 </html>

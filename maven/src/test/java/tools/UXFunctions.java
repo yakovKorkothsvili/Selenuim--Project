@@ -40,6 +40,7 @@ public class UXFunctions {
       assertEquals(CssValueLinkAlbumTmonot[i],cssValueAlbumTmonot.get(i));
       assertEquals(CssValueLinkKirTmonot[i], cssValueKirtmonot.get(i));
 		}
+		System.out.println("test passed");
 	}
 
 	static public void checkingCssValueOfTextAndBackroundDiscount(int[] location, String ColorText,
