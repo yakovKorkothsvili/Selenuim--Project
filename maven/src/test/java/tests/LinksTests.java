@@ -31,11 +31,11 @@ public class LinksTests extends ElementsThatAllTestsHave {
 	// elements Links
 	static public List<WebElement> linkS;
 
-	@Parameters("browser")
+	//@Parameters("browser")
 	@BeforeMethod
-	public void beforeMethod(String browser) throws InterruptedException {
+	public void beforeMethod() throws InterruptedException {
 
-		// String browser="Edge";
+		String browser="Edge";
 
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -56,7 +56,8 @@ public class LinksTests extends ElementsThatAllTestsHave {
 		Thread.sleep(1500);
 		cookiePopUp = driver.findElement(By.id("XMLID_54_"));
 		cookiePopUp.click();
-		driver.findElement(By.xpath("//div[@class='element-shape closeLightboxButton adoric_element']")).click();
+		driver.findElement(By.xpath("//div[@aria-label='close']")).click();
+
 	}
 
 	@AfterMethod
